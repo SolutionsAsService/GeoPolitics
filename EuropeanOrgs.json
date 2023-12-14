@@ -1,0 +1,302 @@
+{
+    "european_regional_organizations": [
+      {
+        "name": "European Union",
+        "abbreviation": "EU",
+        "type": "Political and Economic Union",
+        "founded": "1993",
+        "members": "27 European countries",
+        "purpose": "To promote peace, freedom, and justice across Europe."
+      },
+      {
+        "name": "Council of Europe",
+        "abbreviation": "CoE",
+        "type": "Intergovernmental Organization",
+        "founded": "1949",
+        "members": "47 European countries",
+        "purpose": "To uphold human rights, democracy, and the rule of law in Europe."
+      },
+      {
+        "name": "Central European Initiative",
+        "abbreviation": "CEI",
+        "type": "Regional Cooperation Framework",
+        "founded": "1989",
+        "members": "17 countries",
+        "purpose": "To assist its members in European integration and socio-economic development."
+      },
+      {
+        "name": "European Free Trade Association",
+        "abbreviation": "EFTA",
+        "type": "Trade Organization",
+        "founded": "1960",
+        "members": ["Iceland", "Liechtenstein", "Norway", "Switzerland"],
+        "purpose": "To promote free trade and economic integration among its members."
+      },
+      {
+        "name": "European Organisation for the Exploitation of Meteorological Satellites",
+        "abbreviation": "EUMETSAT",
+        "type": "Intergovernmental Satellite Organization",
+        "founded": "1986",
+        "members": "30 European states",
+        "purpose": "To provide weather and climate-related satellite data, images, and products."
+      },
+     
+      {
+        "name": "European Patent Organisation",
+        "abbreviation": "EPO",
+        "type": "Intergovernmental Organization",
+        "founded": "1977",
+        "members": "38 member states including all EU countries",
+        "purpose": "To grant European patents using a unified procedure."
+      },
+      {
+        "name": "European Organisation for the Safety of Air Navigation",
+        "abbreviation": "EUROCONTROL",
+        "type": "Intergovernmental Organization",
+        "founded": "1960",
+        "members": "41 member states and 2 comprehensive agreement states",
+        "purpose": "To manage air traffic control across Europe."
+      },
+      {
+        "name": "Council of the Baltic Sea States",
+        "abbreviation": "CBSS",
+        "type": "Regional Intergovernmental Organization",
+        "founded": "1992",
+        "members": "11 member states and the EU",
+        "purpose": "To promote cooperation for sustainability, security, and growth in the Baltic Sea region."
+      },
+      {
+        "name": "European Organization for Nuclear Research",
+        "abbreviation": "CERN",
+        "type": "Intergovernmental Research Organization",
+        "founded": "1954",
+        "members": "23 member states",
+        "purpose": "To operate the world's largest particle physics laboratory."
+      },
+      {
+        "name": "European Space Agency",
+        "abbreviation": "ESA",
+        "type": "Intergovernmental Organization",
+        "founded": "1975",
+        "members": "22 member states",
+        "purpose": "To coordinate the financial and intellectual resources of its members for space exploration."
+      },
+      {
+        "name": "European Molecular Biology Laboratory",
+        "abbreviation": "EMBL",
+        "type": "Intergovernmental Research Organization",
+        "founded": "1974",
+        "members": "27 member states, 2 associate members, and 2 prospect members",
+        "purpose": "To conduct research in molecular biology, study molecular mechanisms of life, and provide services to scientists in the member states."
+      },
+      {
+        "name": "Benelux",
+        "type": "Economic Union",
+        "founded": "1958",
+        "members": ["Belgium", "Netherlands", "Luxembourg"],
+        "purpose": "To promote economic collaboration and integration between its three member states."
+      },
+      {
+        "name": "Nordic Council",
+        "type": "Geopolitical and Cultural Cooperation",
+        "founded": "1952",
+        "members": ["Denmark", "Finland", "Iceland", "Norway", "Sweden", "Faroe Islands", "Greenland", "Åland Islands"],
+        "purpose": "To facilitate political and cultural cooperation among Nordic countries."
+      },
+      {
+        "name": "Visegrád Group",
+        "abbreviation": "V4",
+        "type": "Cultural and Political Alliance",
+        "founded": "1991",
+        "members": ["Czech Republic", "Hungary", "Poland", "Slovakia"],
+        "purpose": "To promote cooperation and further the European integration of member countries."
+      },
+      {
+        "name": "EUREKA",
+        "type": "Inter-Governmental Initiative",
+        "founded": "1985",
+        "members": "Over 40 countries including all EU members",
+        "purpose": "To support market-oriented research and development and innovation projects."
+      },
+      {
+        "name": "European Cooperation in Science and Technology",
+        "abbreviation": "COST",
+        "type": "Research and Development Network",
+        "founded": "1971",
+        "members": "38 member countries",
+        "purpose": "To enable researchers to set up their interdisciplinary research networks across Europe."
+      },
+      {
+        "name": "Community for Democracy and Rights of Nations",
+        "type": "Political Organization",
+        "members": ["Abkhazia", "Artsakh", "Transnistria", "South Ossetia"],
+        "purpose": "To collaborate on political and economic matters among member states."
+      },
+      {
+        "name": "South-East European Cooperation Process",
+        "abbreviation": "SEECP",
+        "type": "Political Forum",
+        "founded": "1996",
+        "members": "13 countries from Southeastern Europe",
+        "purpose": "To foster good neighbourly relations and cooperation in the region."
+      },
+      {
+        "name": "West Nordic Council",
+        "type": "Parliamentary Cooperation Forum",
+        "founded": "1985",
+        "members": ["Greenland", "Iceland", "Faroe Islands"],
+        "purpose": "To promote mutual interests and cooperation between the West Nordic countries."
+      },
+      {
+        "name": "Three Seas Initiative",
+        "type": "Cooperative Initiative",
+        "founded": "2015",
+        "members": "12 EU countries between the Adriatic, Baltic, and Black seas",
+        "purpose": "To promote cooperation in energy, infrastructure, and digitalization."
+      },
+      {
+        "name": "British–Irish Council",
+        "type": "Inter-Governmental Organization",
+        "founded": "1999",
+        "members": ["United Kingdom", "Ireland", "Isle of Man", "Guernsey", "Jersey"],
+        "purpose": "To promote positive, practical relationships among its members."
+      },
+      {
+        "name": "Nordic Investment Bank",
+        "abbreviation": "NIB",
+        "type": "International Financial Institution",
+        "founded": "1976",
+        "members": "Nordic and Baltic countries",
+        "purpose": "To finance projects that improve competitiveness and the environment of the Nordic and Baltic regions."
+      },
+      {
+        "name": "Northern Dimension Partnership in Public Health and Social Well-being",
+        "abbreviation": "NDPHS",
+        "type": "Cooperative Effort",
+        "founded": "2003",
+        "members": "EU, Russia, Norway, Iceland, and regional organizations",
+        "purpose": "To address public health and social well-being concerns in the Northern Dimension area."
+      },
+      {
+        "name": "Organisation for Joint Armament Cooperation",
+        "abbreviation": "OCCAR",
+        "type": "Inter-Governmental Organisation",
+        "founded": "1996",
+        "members": ["Belgium", "France", "Germany", "Italy", "Spain", "United Kingdom"],
+        "purpose": "To facilitate and manage collaborative armament programs between member states."
+      },
+      {
+        "name": "European Centre for Medium-range Weather Forecasts",
+        "abbreviation": "ECMWF",
+        "type": "Research Institute",
+        "founded": "1975",
+        "members": "34 states",
+        "purpose": "To provide accurate medium-range weather forecasts and climate-related services."
+      },
+      {
+        "name": "Benelux",
+        "type": "Economic Union",
+        "founded": "1958",
+        "members": ["Belgium", "Netherlands", "Luxembourg"],
+        "purpose": "To foster economic cooperation and integration among its member states."
+      },
+      {
+        "name": "Belgium–Luxembourg Economic Union",
+        "type": "Economic Union",
+        "founded": "1921",
+        "members": ["Belgium", "Luxembourg"],
+        "purpose": "To create a single economic space between the two countries."
+      },
+      {
+        "name": "British–Irish Council",
+        "type": "Intergovernmental Organization",
+        "founded": "1999",
+        "members": ["United Kingdom", "Ireland", "Isle of Man", "Guernsey", "Jersey"],
+        "purpose": "To promote positive relationships among the governments of the British Isles."
+      },
+      {
+        "name": "Central Commission for Navigation on the Rhine",
+        "abbreviation": "CCNR",
+        "type": "International Organisation",
+        "founded": "1815",
+        "members": ["Belgium", "France", "Germany", "Netherlands", "Switzerland"],
+        "purpose": "To ensure cooperation for navigation on the Rhine River."
+      },
+      {
+        "name": "Assembly of European Regions",
+        "abbreviation": "AER",
+        "type": "Regional Network",
+        "founded": "1985",
+        "members": "Approximately 200 regions from 35 countries",
+        "purpose": "To foster interregional cooperation and advocate for regional interests in Europe."
+      },
+      {
+        "name": "Eiroforum",
+        "type": "Collaborative Network",
+        "members": "Major European intergovernmental research organizations",
+        "purpose": "To collaborate on large-scale scientific projects and promote science and technology."
+      },
+      {
+        "name": "European Organization for Nuclear Research",
+        "abbreviation": "CERN",
+        "type": "Intergovernmental Research Organization",
+        "founded": "1954",
+        "members": "23 member states",
+        "purpose": "To operate the world's largest particle physics laboratory and conduct high-energy physics research."
+      },
+      {
+        "name": "European Southern Observatory",
+        "abbreviation": "ESO",
+        "type": "Intergovernmental Astronomy Organization",
+        "founded": "1962",
+        "members": "16 countries",
+        "purpose": "To provide state-of-the-art research facilities for astronomers and promote international cooperation in astronomy."
+      },
+      {
+        "name": "European Synchrotron Radiation Facility",
+        "abbreviation": "ESRF",
+        "type": "Research Facility",
+        "founded": "1988",
+        "members": "21 countries, including the European Union",
+        "purpose": "To operate a powerful synchrotron radiation source for multidisciplinary research."
+      },
+      {
+        "name": "Institut Laue–Langevin",
+        "abbreviation": "ILL",
+        "type": "International Research Institute",
+        "founded": "1967",
+        "members": "France, Germany, and the United Kingdom",
+        "purpose": "To operate a leading neutron science facility for research in physics, chemistry, biology, and materials science."
+      },
+      {
+        "name": "Baltic Marine Environment Protection Commission",
+        "type": "Regional Sea Convention",
+        "members": "All Baltic Sea countries and the EU",
+        "purpose": "To protect the marine environment of the Baltic Sea from all sources of pollution."
+      },
+      {
+        "name": "Council of the Baltic Sea States",
+        "abbreviation": "CBSS",
+        "type": "Political and Economic Cooperation",
+        "founded": "1992",
+        "members": "11 member states and the EU",
+        "purpose": "To promote growth, sustainability, and security in the Baltic Sea region."
+      },
+      {
+        "name": "Northern Dimension Partnership in Public Health and Social Well-being",
+        "abbreviation": "NDPHS",
+        "type": "Cooperative Effort",
+        "founded": "2003",
+        "members": "EU, Russia, Norway, Iceland, and regional organizations",
+        "purpose": "To address public health and social well-being concerns in the Northern Dimension area."
+      },
+      {
+        "name": "Three Seas Initiative",
+        "type": "Cooperative Initiative",
+        "founded": "2015",
+        "members": "12 EU countries between the Adriatic, Baltic, and Black seas",
+        "purpose": "To promote cooperation in energy, infrastructure, and digitalization."
+      }
+    ]
+  }
+  

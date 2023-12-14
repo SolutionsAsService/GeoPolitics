@@ -1,0 +1,238 @@
+{
+    "transcontinental_organizations": [
+      {
+        "name": "Group of Eight",
+        "abbreviation": "G8",
+        "type": "Economic and Political Forum",
+        "members": ["Canada", "France", "Germany", "Italy", "Japan", "Russia", "United Kingdom", "United States"],
+        "purpose": "A forum for the governments of eight of the world's largest national economies."
+      },
+      {
+        "name": "Asia-Europe Foundation",
+        "abbreviation": "ASEF",
+        "type": "Non-Profit Organization",
+        "members": "53 countries across Asia and Europe",
+        "purpose": "To promote better mutual understanding and closer cooperation between Asia and Europe."
+      },
+      {
+        "name": "Central Asian Cooperation Organization",
+        "type": "Economic and Political Alliance",
+        "members": ["Kazakhstan", "Kyrgyzstan", "Tajikistan", "Uzbekistan", "Russia"],
+        "purpose": "To enhance regional cooperation and integration among Central Asian states."
+      },
+      {
+        "name": "Community for Democracy and Rights of Nations",
+        "type": "Political Alliance",
+        "members": ["Abkhazia", "South Ossetia", "Transnistria", "Artsakh"],
+        "purpose": "To foster cooperation between unrecognized or partially recognized states."
+      },
+      {
+        "name": "Collective Security Treaty Organization",
+        "abbreviation": "CSTO",
+        "type": "Military Alliance",
+        "members": ["Armenia", "Belarus", "Kazakhstan", "Kyrgyzstan", "Russia", "Tajikistan"],
+        "purpose": "To provide collective defense for member states."
+      },
+      {
+        "name": "Conference on Interaction and Confidence Building Measures in Asia",
+        "abbreviation": "CICA",
+        "type": "Inter-Governmental Forum",
+        "members": "27 member states from Asia",
+        "purpose": "To enhance cooperation towards promoting peace, security, and stability in Asia."
+      },
+      {
+        "name": "Commonwealth of Independent States",
+        "abbreviation": "CIS",
+        "type": "Regional Organization",
+        "members": "12 member states from the Eurasian region",
+        "purpose": "To foster cooperation in political, economic, and military affairs."
+      },
+      {
+        "name": "Economic Cooperation Organization",
+        "abbreviation": "ECO",
+        "type": "Regional Economic Organization",
+        "members": ["Afghanistan", "Azerbaijan", "Iran", "Kazakhstan", "Kyrgyzstan", "Pakistan", "Tajikistan", "Turkey", "Turkmenistan", "Uzbekistan"],
+        "purpose": "To establish a single market for goods and services, much like the European Union."
+      },
+      {
+        "name": "Eurasian Economic Union",
+        "abbreviation": "EEU",
+        "type": "Economic Union",
+        "members": ["Armenia", "Belarus", "Kazakhstan", "Kyrgyzstan", "Russia"],
+        "purpose": "To encourage regional economic integration through the free movement of goods, services, and people within the union."
+      },
+      {
+        "name": "GUAM Organization for Democracy and Economic Development",
+        "abbreviation": "GUAM",
+        "type": "Regional Organization",
+        "members": ["Georgia", "Ukraine", "Azerbaijan", "Moldova"],
+        "purpose": "To promote democratic values, ensure stable development, and enhance international and regional security."
+      },
+      {
+        "name": "Organization of the Black Sea Economic Cooperation",
+        "abbreviation": "BSEC",
+        "type": "Economic Cooperation Organization",
+        "members": ["Albania", "Armenia", "Azerbaijan", "Bulgaria", "Georgia", "Greece", "Moldova", "Romania", "Russia", "Serbia", "Turkey", "Ukraine"],
+        "purpose": "To foster interaction and harmony among member states in the fields of commerce, economy, science, and technology."
+      },
+      {
+        "name": "Organization of Turkic States",
+        "abbreviation": "OTS",
+        "type": "International Organization",
+        "members": ["Azerbaijan", "Kazakhstan", "Kyrgyzstan", "Turkey", "Uzbekistan"],
+        "purpose": "To promote comprehensive cooperation among Turkic-speaking states."
+      },
+      {
+        "name": "Shanghai Cooperation Organisation",
+        "abbreviation": "SCO",
+        "type": "Eurasian Political, Economic, and Security Alliance",
+        "members": ["China", "India", "Kazakhstan", "Kyrgyzstan", "Pakistan", "Russia", "Tajikistan", "Uzbekistan"],
+        "purpose": "To ensure security and maintain stability across the vast Eurasian region."
+      },
+      {
+        "name": "TRACECA",
+        "type": "International Transport Cooperation Program",
+        "members": "14 member states from Eastern Europe, South Caucasus, and Central Asia",
+        "purpose": "To develop a transport corridor from Europe to China, via the Black Sea, the Caucasus, and Central Asia."
+      },
+      {
+        "name": "Union State",
+        "type": "Supranational Union",
+        "members": ["Russia", "Belarus"],
+        "purpose": "To achieve deeper economic integration, including a common currency, and closer political and military cooperation."
+      },
+      {
+        "name": "Group of Seven",
+        "abbreviation": "G7",
+        "type": "Economic and Political Forum",
+        "members": ["Canada", "France", "Germany", "Italy", "Japan", "United Kingdom", "United States"],
+        "purpose": "To discuss and consult on matters of international economic and monetary policy."
+      },
+      {
+        "name": "Group of Ten",
+        "abbreviation": "G10",
+        "type": "Economic Policy Group",
+        "members": "11 industrialized nations",
+        "purpose": "To coordinate economic and financial policy and lending."
+      },
+      {
+        "name": "North Atlantic Treaty Organization",
+        "abbreviation": "NATO",
+        "type": "Military Alliance",
+        "members": "30 European and North American countries",
+        "purpose": "To ensure the freedom and security of its members through political and military means."
+      },
+      {
+        "name": "Organization for Security and Co-operation in Europe",
+        "abbreviation": "OSCE",
+        "type": "Security-Oriented Intergovernmental Organization",
+        "members": "57 participating states",
+        "purpose": "To ensure peace, democracy, and stability for more than a billion people in Europe, Asia, and North America."
+      },
+      {
+        "name": "South Atlantic Peace and Cooperation Zone",
+        "abbreviation": "ZPCAS",
+        "type": "Intergovernmental Organization",
+        "members": "24 member states from Africa and South America",
+        "purpose": "To promote peace and security in the South Atlantic region."
+      },
+      {
+        "name": "Union for the Mediterranean",
+        "type": "Intergovernmental Organization",
+        "members": "42 member states from Europe and the Mediterranean Basin",
+        "purpose": "To enhance regional cooperation and partnership in the Mediterranean region."
+      },
+      {
+        "name": "Indian Ocean Rim Association for Regional Cooperation",
+        "abbreviation": "IOR-ARC",
+        "type": "International Organization",
+        "members": "22 member states bordering the Indian Ocean",
+        "purpose": "To strengthen regional cooperation and sustainable development within the Indian Ocean region."
+      },
+      {
+        "name": "Indian Ocean Commission",
+        "abbreviation": "COI",
+        "type": "Intergovernmental Organization",
+        "members": ["Comoros", "Madagascar", "Mauritius", "Réunion (France)", "Seychelles"],
+        "purpose": "To support cooperation in the Indian Ocean region."
+      },
+      {
+        "name": "Arctic Council",
+        "type": "High-level Intergovernmental Forum",
+        "members": "Canada, Denmark, Finland, Iceland, Norway, Russia, Sweden, United States",
+        "purpose": "To address issues faced by the Arctic governments and the indigenous people of the Arctic."
+      },
+      {
+        "name": "ANZUS",
+        "type": "Military Alliance",
+        "members": ["Australia", "New Zealand", "United States"],
+        "purpose": "To foster mutual defense and security in the Pacific region."
+      },
+      {
+        "name": "Asia-Pacific Economic Cooperation",
+        "abbreviation": "APEC",
+        "type": "Economic Forum",
+        "members": "21 Pacific Rim member economies",
+        "purpose": "To promote free trade and economic cooperation throughout the Asia-Pacific region."
+      },
+      {
+        "name": "Colombo Plan",
+        "type": "Regional Organisation",
+        "members": "27 countries in the Asia-Pacific region",
+        "purpose": "To enhance economic and social development in member countries."
+      },
+      {
+        "name": "Group of Five",
+        "abbreviation": "G5",
+        "type": "Forum of Large Developing Economies",
+        "members": ["Brazil", "China", "India", "Mexico", "South Africa"],
+        "purpose": "To discuss and communicate their interests on global economic issues."
+      },
+      {
+        "name": "Melanesian Spearhead Group",
+        "abbreviation": "MSG",
+        "type": "Sub-regional Trade Bloc",
+        "members": ["Fiji", "Papua New Guinea", "Solomon Islands", "Vanuatu", "New Caledonia's FLNKS"],
+        "purpose": "To promote economic growth and trade among Melanesian countries."
+      },
+      {
+        "name": "Pacific Islands Forum",
+        "type": "Political and Economic Policy Organisation",
+        "members": "18 member states and territories in the Pacific region",
+        "purpose": "To enhance cooperation and unity among Pacific countries."
+      },
+      {
+        "name": "Pacific Regional Environment Programme",
+        "abbreviation": "SPREP",
+        "type": "Intergovernmental Organisation",
+        "members": "Pacific Island countries and territories",
+        "purpose": "To promote cooperation on environmental protection and sustainable development."
+      },
+      {
+        "name": "Secretariat of the Pacific Community",
+        "type": "Scientific and Technical Organisation",
+        "members": "26 member countries and territories",
+        "purpose": "To provide development assistance to Pacific countries and territories."
+      },
+      {
+        "name": "African, Caribbean and Pacific Group of States",
+        "type": "Group of countries",
+        "members": "79 African, Caribbean, and Pacific states",
+        "purpose": "To support sustainable development and poverty reduction within its member states."
+      },
+      {
+        "name": "Technical Centre for Agricultural and Rural Cooperation ACP-EU",
+        "abbreviation": "CTA",
+        "type": "International Institution",
+        "members": "ACP Group of States and the European Union",
+        "purpose": "To advance food security, resilience, and inclusive economic growth in Africa, the Caribbean, and the Pacific."
+      },
+      {
+        "name": "Asian-African Legal Consultative Organization",
+        "abbreviation": "AALCO",
+        "type": "International Governmental Organisation",
+        "members": "47 member states from Asia and Africa",
+        "purpose": "To serve as an advisory body on matters of international law in Asia and Africa."
+      }
+    ]
+  }

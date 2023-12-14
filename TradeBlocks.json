@@ -1,0 +1,96 @@
+{
+    "trade_blocs": [
+      {
+        "abbreviation": "EFTA",
+        "full_name": "European Free Trade Association",
+        "type": "Trade Organization",
+        "founded": "1960",
+        "members": ["Iceland", "Liechtenstein", "Norway", "Switzerland"],
+        "headquarters": "Geneva, Switzerland",
+        "objective": "Promote free trade and economic integration among its members"
+      },
+      {
+        "abbreviation": "CARICOM",
+        "full_name": "Caribbean Community",
+        "type": "Economic and Political Union",
+        "founded": "1973",
+        "members": ["Antigua and Barbuda", "Bahamas", "Barbados", "Belize", "Dominica", "Grenada", "Guyana", "Haiti", "Jamaica", "Montserrat", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Suriname", "Trinidad and Tobago"],
+        "headquarters": "Georgetown, Guyana",
+        "objective": "Economic integration and cooperation among members"
+      },
+      {
+        "abbreviation": "ECOWAS",
+        "full_name": "Economic Community of West African States",
+        "type": "Economic Union",
+        "founded": "1975",
+        "members": ["Benin", "Burkina Faso", "Cape Verde", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Ivory Coast", "Liberia", "Mali", "Niger", "Nigeria", "Senegal", "Sierra Leone", "Togo"],
+        "headquarters": "Abuja, Nigeria",
+        "objective": "Promote economic integration across the region"
+      },
+      {
+        "abbreviation": "ECCAS",
+        "full_name": "Economic Community of Central African States",
+        "type": "Economic Union",
+        "founded": "1983",
+        "members": ["Angola", "Burundi", "Cameroon", "Central African Republic", "Chad", "Congo", "Democratic Republic of the Congo", "Equatorial Guinea", "Gabon", "Sao Tome and Principe"],
+        "headquarters": "Libreville, Gabon",
+        "objective": "Economic cooperation and regional integration"
+      },
+      {
+        "abbreviation": "EAC",
+        "full_name": "East African Community",
+        "type": "Regional Inter-Governmental Organization",
+        "founded": "2000",
+        "members": ["Burundi", "Kenya", "Rwanda", "South Sudan", "Tanzania", "Uganda"],
+        "headquarters": "Arusha, Tanzania",
+        "objective": "Wider economic, social, and political integration"
+      },
+      {
+        "abbreviation": "SADC",
+        "full_name": "Southern African Development Community",
+        "type": "Economic Union",
+        "founded": "1992",
+        "members": ["Angola", "Botswana", "Comoros", "Democratic Republic of Congo", "Eswatini", "Lesotho", "Madagascar", "Malawi", "Mauritius", "Mozambique", "Namibia", "Seychelles", "South Africa", "Tanzania", "Zambia", "Zimbabwe"],
+        "headquarters": "Gaborone, Botswana",
+        "objective": "Promote sustainable and equitable economic growth and socio-economic development"
+      },
+      {
+        "abbreviation": "MERCOSUR",
+        "full_name": "Southern Common Market",
+        "type": "Economic and Political Union",
+        "founded": "1991",
+        "members": ["Argentina", "Brazil", "Paraguay", "Uruguay"],
+        "headquarters": "Montevideo, Uruguay",
+        "objective": "Free movement of goods, services, and people among member states"
+      },
+      {
+        "abbreviation": "CEFTA",
+        "full_name": "Central European Free Trade Agreement",
+        "type": "Trade Agreement",
+        "founded": "1992",
+        "members": ["Albania", "Bosnia and Herzegovina", "Kosovo", "Moldova", "Montenegro", "North Macedonia", "Serbia"],
+        "headquarters": "Brussels, Belgium",
+        "objective": "Expansion of regional trade in Central and Southeast Europe"
+      },
+      {
+        "abbreviation": "Arab League",
+        "full_name": "League of Arab States",
+        "type": "Regional Organization",
+        "founded": "1945",
+        "members": ["22 Arab countries"],
+        "headquarters": "Cairo, Egypt",
+        "objective": "Strengthening ties among member states, coordinate policies, and promote common interests"
+      },
+      {
+        "abbreviation": "EU",
+        "full_name": "European Union",
+        "type": "Political and Economic Union",
+        "founded": "1993",
+        "members": ["27 European countries"],
+        "headquarters": "Brussels, Belgium",
+        "objective": "Promote peace, offer freedom, security and justice without internal borders, sustainable development based on balanced economic growth and price stability, a highly competitive market economy with full employment and social progress, and environmental protection"
+      }
+      
+    ]
+  }
+  

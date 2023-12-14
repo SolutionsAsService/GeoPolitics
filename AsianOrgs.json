@@ -1,0 +1,116 @@
+{
+    "asian_regional_organizations": [
+      {
+        "name": "Asia Cooperation Dialogue",
+        "abbreviation": "ACD",
+        "type": "Continental Cooperation Initiative",
+        "founded": "2002",
+        "members": "34 Asian countries",
+        "purpose": "To promote Asian cooperation at a continental level and integrate separate regional organizations."
+      },
+      {
+        "name": "Asian Development Bank",
+        "abbreviation": "ADB",
+        "type": "Regional Development Bank",
+        "founded": "1966",
+        "members": "68 members (49 from the region)",
+        "purpose": "To promote social and economic development in Asia."
+      },
+      {
+        "name": "Asia-Pacific Economic Cooperation",
+        "abbreviation": "APEC",
+        "type": "Economic Forum",
+        "founded": "1989",
+        "members": "21 Pacific Rim member economies",
+        "purpose": "To foster economic growth and prosperity in the Asia-Pacific region."
+      },
+      {
+        "name": "East Asia Summit",
+        "abbreviation": "EAS",
+        "type": "Annual Meeting of Leaders",
+        "founded": "2005",
+        "members": "18 countries, including ASEAN member states, Australia, China, India, Japan, New Zealand, Russia, South Korea, and the United States",
+        "purpose": "To promote strategic dialogue and cooperation on political, security, and economic issues of common regional concern."
+      },
+      {
+        "name": "Association of Southeast Asian Nations",
+        "abbreviation": "ASEAN",
+        "type": "Geopolitical and Economic Union",
+        "founded": "1967",
+        "members": ["Brunei", "Cambodia", "Indonesia", "Laos", "Malaysia", "Myanmar", "Philippines", "Singapore", "Thailand", "Vietnam"],
+        "purpose": "To promote intergovernmental cooperation and facilitates economic, political, security, military, educational, and sociocultural integration among its members and other Asian states."
+      },
+      {
+        "name": "Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation",
+        "abbreviation": "BIMSTEC",
+        "type": "Regional Organization",
+        "founded": "1997",
+        "members": ["Bangladesh", "Bhutan", "India", "Myanmar", "Nepal", "Sri Lanka", "Thailand"],
+        "purpose": "To create an enabling environment for rapid economic development through identification and implementation of specific cooperation projects."
+      },
+      {
+        "name": "International Network for Bamboo and Rattan",
+        "abbreviation": "INBAR",
+        "type": "Intergovernmental Organization",
+        "founded": "1997",
+        "members": "46 member states",
+        "purpose": "To improve the social, economic, and environmental benefits of bamboo and rattan."
+      },
+      {
+        "name": "Mekong–Ganga Cooperation",
+        "abbreviation": "MGC",
+        "type": "Regional Cooperation Initiative",
+        "founded": "2000",
+        "members": ["Cambodia", "India", "Laos", "Myanmar", "Thailand", "Vietnam"],
+        "purpose": "To facilitate closer ties between the Ganga and Mekong river regions in areas such as tourism, education, and transportation."
+      },
+      {
+        "name": "Mekong River Commission",
+        "abbreviation": "MRC",
+        "type": "Intergovernmental Organization",
+        "founded": "1995",
+        "members": ["Cambodia", "Laos", "Thailand", "Vietnam"],
+        "purpose": "To manage the Mekong River's resources and promote sustainable development."
+      },
+      {
+        "name": "Partnerships in Environmental Management for the Seas of East Asia",
+        "abbreviation": "PEMSEA",
+        "type": "Regional Partnership Program",
+        "members": "11 Country Partners, 2 Regional Partners",
+        "purpose": "To foster and sustain healthy and resilient oceans, coasts, communities and economies across the Seas of East Asia."
+      },
+      {
+        "name": "South Asian Association for Regional Cooperation",
+        "abbreviation": "SAARC",
+        "type": "Regional Intergovernmental Organization",
+        "founded": "1985",
+        "members": ["Afghanistan", "Bangladesh", "Bhutan", "India", "Maldives", "Nepal", "Pakistan", "Sri Lanka"],
+        "purpose": "To promote economic and regional integration."
+      },
+      {
+        "name": "Southeast Asian Ministers of Education Organization",
+        "abbreviation": "SEAMEO",
+        "type": "Intergovernmental Organization",
+        "founded": "1965",
+        "members": "11 Southeast Asian countries",
+        "purpose": "To promote cooperation in education, science and culture in the Southeast Asian region."
+      },
+      {
+        "name": "Trilateral Cooperation Secretariat",
+        "abbreviation": "TCS",
+        "type": "Intergovernmental Organization",
+        "founded": "2011",
+        "members": ["China", "Japan", "South Korea"],
+        "purpose": "To promote peace and common prosperity among the three countries."
+      },
+      {
+        "name": "Gulf Cooperation Council",
+        "abbreviation": "GCC",
+        "type": "Political and Economic Alliance",
+        "founded": "1981",
+        "members": ["Bahrain", "Kuwait", "Oman", "Qatar", "Saudi Arabia", "United Arab Emirates"],
+        "purpose": "To achieve unity among its members based on their common objectives and their similar political and cultural identities."
+      }
+    ]
+  }
+  

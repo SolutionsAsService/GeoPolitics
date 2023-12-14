@@ -1,0 +1,67 @@
+{
+    "alliances": [
+      {
+        "name": "NATO",
+        "type": "Military Alliance",
+        "members": [
+          "United States", "United Kingdom", "Germany", "France", "Canada", "Italy", "Netherlands", "Belgium", "Luxembourg", "Denmark", "Norway", "Portugal", "Greece", "Turkey", "Spain", "Czech Republic", "Hungary", "Poland", "Bulgaria", "Estonia", "Latvia", "Lithuania", "Romania", "Slovakia", "Slovenia", "Albania", "Croatia", "North Macedonia", "Montenegro"
+        ]
+      },
+      {
+        "name": "GCC",
+        "type": "Economic and Political Union",
+        "members": [
+          "Bahrain", "Kuwait", "Oman", "Qatar", "Saudi Arabia", "United Arab Emirates"
+        ]
+      },
+      {
+        "name": "EU",
+        "type": "Political and Economic Union",
+        "members": [
+          "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden"
+        ]
+      },
+      {
+        "name": "ASEAN",
+        "type": "Geopolitical and Economic Organization",
+        "members": [
+          "Indonesia", "Malaysia", "Philippines", "Singapore", "Thailand", "Brunei", "Vietnam", "Laos", "Myanmar", "Cambodia"
+        ]
+      },
+      {
+        "name": "AU",
+        "type": "Continental Union",
+        "members": "All 55 African countries"
+      },
+      {
+        "name": "BRICS",
+        "type": "Economic Association",
+        "members": [
+          "Brazil", "Russia", "India", "China", "South Africa"
+        ]
+      },
+      {
+        "name": "OPEC",
+        "type": "Intergovernmental Organization/Oil Cartel",
+        "members": [
+          "Algeria", "Angola", "Congo", "Equatorial Guinea", "Gabon", "Iran", "Iraq", "Kuwait", "Libya", "Nigeria", "Saudi Arabia", "United Arab Emirates", "Venezuela"
+        ]
+      },
+      {
+        "name": "G7",
+        "type": "Intergovernmental Economic Organization",
+        "members": [
+          "Canada", "France", "Germany", "Italy", "Japan", "United Kingdom", "United States"
+        ]
+      },
+      {
+        "name": "G20",
+        "type": "International Forum",
+        "members": [
+          "Argentina", "Australia", "Brazil", "Canada", "China", "France", "Germany", "India", "Indonesia", "Italy", "Japan", "Mexico", "Russia", "Saudi Arabia", "South Africa", "South Korea", "Turkey", "United Kingdom", "United States", "European Union"
+        ]
+      }
+    ]
+  }
+
+  
