@@ -1,0 +1,97 @@
+{
+    "educational_organizations_and_universities": [
+      {
+        "name": "Academy of European Law",
+        "abbreviation": "ERA",
+        "type": "European Public Law Institution",
+        "members": "Member states of the European Union",
+        "purpose": "To provide training in European law to legal practitioners."
+      },
+      {
+        "name": "Asian Institute of Technology",
+        "abbreviation": "AIT",
+        "type": "International Postgraduate Institution",
+        "members": "Countries in the Asia-Pacific region",
+        "purpose": "To advance education and research in the field of science, engineering, and technology."
+      },
+      {
+        "name": "Cerlalc",
+        "type": "Regional Center for Book Development",
+        "members": "21 member states from Latin America and the Caribbean",
+        "purpose": "To promote book production and reading in the Spanish and Portuguese-speaking regions."
+      },
+      {
+        "name": "Commonwealth of Learning",
+        "abbreviation": "COL",
+        "type": "Inter-Governmental Organization",
+        "members": "Member states of the Commonwealth of Nations",
+        "purpose": "To encourage the development and sharing of open learning and distance education knowledge, resources, and technologies."
+      },
+      {
+        "name": "EUCLID (university)",
+        "type": "International Online University",
+        "members": "Participating governments from around the world",
+        "purpose": "To deliver quality degree programs to students in the international public service sector."
+      },
+      {
+        "name": "European Schools",
+        "type": "International Schools",
+        "members": "European Union member states",
+        "purpose": "To provide a multilingual and multicultural education for children of EU employees."
+      },
+      {
+        "name": "European University Institute",
+        "type": "International Postgraduate and Doctoral Research Institute",
+        "members": "EU member states",
+        "purpose": "To conduct research and offer postgraduate level courses in social sciences, humanities, and law."
+      },
+      {
+        "name": "IHE Delft Institute for Water Education",
+        "type": "International Water Education Institute",
+        "members": "Worldwide member states",
+        "purpose": "To provide education and research in water management to improve global water sector performance."
+      },
+      {
+        "name": "International Bureau of Education",
+        "abbreviation": "IBE",
+        "type": "UNESCO's Specialized Education Bureau",
+        "members": "Member states of UNESCO",
+        "purpose": "To advance curriculum development and education standards worldwide."
+      },
+      {
+        "name": "International Institute for the Unification of Private Law",
+        "type": "Autonomous Intergovernmental Institution",
+        "members": "63 member states",
+        "purpose": "To study needs and methods for modernizing, harmonizing, and coordinating private and in particular commercial law."
+      },
+      {
+        "name": "Model United Nations",
+        "abbreviation": "MUN",
+        "type": "Educational Simulation",
+        "members": "Participating educational institutions worldwide",
+        "purpose": "To educate participants about civics, effective communication, globalization, and multilateral diplomacy."
+      },
+      {
+        "name": "United Nations University",
+        "abbreviation": "UNU",
+        "type": "Global Research University",
+        "members": "UN member states",
+        "purpose": "To contribute, through research and education, to efforts to resolve pressing global problems."
+      },
+      {
+        "name": "University for Peace",
+        "abbreviation": "UPEACE",
+        "type": "International University",
+        "members": "Member states of the United Nations",
+        "purpose": "To provide humanity with an international institution of higher education for peace."
+      },
+      {
+        "name": "World Maritime University",
+        "abbreviation": "WMU/IMO",
+        "type": "Postgraduate Maritime University",
+        "members": "Member states of the International Maritime Organization",
+        "purpose": "To build global maritime capacity through advanced education and research."
+      }
+    ]
+  }
+  

@@ -1,0 +1,160 @@
+{
+    "defunct_organizations": [
+      {
+        "name": "Allied Control Council",
+        "type": "Military Occupation Authority",
+        "duration": "1945-1948",
+        "members": ["United States", "United Kingdom", "Soviet Union", "France"],
+        "purpose": "To govern Germany in the immediate aftermath of World War II."
+      },
+      {
+        "name": "Arab Cooperation Council",
+        "type": "Economic and Political Union",
+        "duration": "1989-1990",
+        "members": ["Egypt", "Iraq", "Jordan", "Yemen"],
+        "purpose": "To strengthen economic ties and coordinate political positions among Arab countries."
+      },
+      {
+        "name": "Central Treaty Organization",
+        "abbreviation": "CENTO",
+        "type": "Military Alliance",
+        "duration": "1955-1979",
+        "members": ["Iran", "Iraq", "Pakistan", "Turkey", "United Kingdom"],
+        "purpose": "To prevent Soviet Union expansion and promote regional security in the Middle East."
+      },
+      {
+        "name": "Comecon",
+        "type": "Economic Organization",
+        "duration": "1949-1991",
+        "members": "Soviet Union, Eastern Bloc countries, and others",
+        "purpose": "To facilitate and coordinate the economic development of communist countries."
+      },
+      {
+        "name": "Council of Ambassadors",
+        "type": "Diplomatic Forum",
+        "duration": "1920-1931",
+        "members": ["France", "Italy", "Japan", "United Kingdom", "United States"],
+        "purpose": "To execute some of the provisions of the Treaty of Versailles post World War I."
+      },
+      {
+        "name": "Customs and Economic Union of Central Africa",
+        "type": "Economic Union",
+        "duration": "1964-1966",
+        "members": ["Cameroon", "Central African Republic", "Chad", "Congo", "Gabon"],
+        "purpose": "To establish a common market and customs union among member states."
+      },
+      {
+        "name": "Delian League",
+        "type": "Ancient Greek Military Alliance",
+        "duration": "478-404 BC",
+        "members": "Various Greek city-states led by Athens",
+        "purpose": "To defend against Persian expansion and fund the defense of Athens."
+      },
+      {
+        "name": "Eurasian Economic Community",
+        "abbreviation": "EAEC",
+        "type": "Economic Union",
+        "duration": "2000-2014",
+        "members": "Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan, and later Uzbekistan",
+        "purpose": "To encourage economic integration among members; transformed into Eurasian Economic Union."
+      },
+      {
+        "name": "French Community",
+        "type": "Political Union",
+        "duration": "1958-1995",
+        "members": "France and its former colonies",
+        "purpose": "To maintain a degree of French influence in the post-colonial era."
+      },
+      {
+        "name": "French Union",
+        "type": "Political Union",
+        "duration": "1946-1958",
+        "members": "France and its overseas territories and colonies",
+        "purpose": "To replace the French colonial empire with a new political entity."
+      },
+      {
+        "name": "G33",
+        "type": "International Coalition",
+        "duration": "Active in the mid-1970s",
+        "members": "33 developing countries",
+        "purpose": "To address issues related to agriculture, food security, and trade."
+      },
+      {
+        "name": "International Authority for the Ruhr",
+        "type": "International Regulatory Body",
+        "duration": "1949-1952",
+        "members": "Allied countries post World War II",
+        "purpose": "To control the production of coal and steel in the Ruhr Area in Germany."
+      },
+      {
+        "name": "International Trade Organization",
+        "abbreviation": "ITO",
+        "type": "Proposed International Organization",
+        "duration": "Proposed in 1948, never fully established",
+        "members": "Proposed for United Nations member states",
+        "purpose": "Intended to regulate international trade but never fully established."
+      },
+      {
+        "name": "Latin League",
+        "type": "Ancient Italian Confederation",
+        "duration": "7th century BC to early 4th century BC",
+        "members": "Latin tribes and cities in ancient Italy",
+        "purpose": "To defend against external threats and resolve internal conflicts."
+      },
+      {
+        "name": "Latin Union",
+        "type": "International Organization",
+        "duration": "1954-2012",
+        "members": "Countries with Latin-based languages",
+        "purpose": "To promote and protect Latin culture and languages."
+      },
+      {
+        "name": "League of Corinth",
+        "type": "Ancient Greek Military Alliance",
+        "duration": "337 BC",
+        "members": "Greek city-states led by Macedon",
+        "purpose": "To facilitate a unified Greek military action against Persia."
+      },
+      {
+        "name": "League of Nations",
+        "type": "International Organization",
+        "duration": "1920-1946",
+        "members": "Various global nations",
+        "purpose": "To maintain world peace and prevent future conflicts post World War I."
+      },
+      {
+        "name": "Peloponnesian League",
+        "type": "Ancient Greek Military Alliance",
+        "duration": "6th century BC to mid-4th century BC",
+        "members": "Sparta and its allies",
+        "purpose": "To provide mutual protection and maintain hegemony over the Peloponnese."
+      },
+      {
+        "name": "Organisation of African Unity",
+        "abbreviation": "OAU",
+        "type": "International Organization",
+        "duration": "1963-2002",
+        "members": "African states",
+        "purpose": "To promote unity and solidarity of African states; precursor to the African Union."
+      },
+      {
+        "name": "Southeast Asia Treaty Organization",
+        "abbreviation": "SEATO",
+        "type": "International Organization for Defense",
+        "duration": "1954-1977",
+        "members": ["Australia", "France", "New Zealand", "Pakistan", "Philippines", "Thailand", "United Kingdom", "United States"],
+        "purpose": "To prevent communism in Southeast Asia."
+      },
+      {
+        "name": "Union of African States",
+        "type": "Political Union",
+        "duration": "1961-1963",
+        "members": ["Ghana", "Guinea", "Mali"],
+        "purpose": "To achieve greater political, economic, and social integration between African states."
+      }
+    ]
+  }
+     
+  
+  
+  

@@ -1,0 +1,88 @@
+{
+    "african_regional_organizations": [
+      {
+        "name": "African Organisation for Standardisation",
+        "abbreviation": "ARSO",
+        "type": "Standardization Body",
+        "members": "Members from various African countries",
+        "purpose": "To harmonize African standards and conformity assessment procedures."
+      },
+      {
+        "name": "African Union",
+        "abbreviation": "AU",
+        "type": "Continental Union",
+        "members": "55 African countries",
+        "purpose": "To promote unity and solidarity of African states and act as a collective voice for the African continent."
+      },
+      {
+        "name": "Economic Community of Central African States",
+        "abbreviation": "ECCAS",
+        "type": "Economic Union",
+        "members": ["Angola", "Burundi", "Cameroon", "Central African Republic", "Chad", "Congo", "Democratic Republic of Congo", "Equatorial Guinea", "Gabon", "Sao Tome and Principe"],
+        "purpose": "To promote economic cooperation and collective autonomy among the members."
+      },
+      {
+        "name": "Conseil de l'Entente",
+        "type": "Political and Economic Council",
+        "members": ["Benin", "Burkina Faso", "Ivory Coast", "Niger", "Togo"],
+        "purpose": "To foster economic and political cooperation among member states."
+      },
+      {
+        "name": "Economic Community of West African States",
+        "abbreviation": "ECOWAS",
+        "type": "Economic Union",
+        "members": ["Benin", "Burkina Faso", "Cape Verde", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Ivory Coast", "Liberia", "Mali", "Niger", "Nigeria", "Senegal", "Sierra Leone", "Togo"],
+        "purpose": "To promote economic integration and cooperation among its members."
+      },
+      {
+        "name": "East African Community",
+        "abbreviation": "EAC",
+        "type": "Regional Inter-Governmental Organization",
+        "members": ["Burundi", "Kenya", "Rwanda", "South Sudan", "Tanzania", "Uganda"],
+        "purpose": "To foster the economic, social, and political integration of its member states."
+      },
+      {
+        "name": "West African Economic and Monetary Union",
+        "abbreviation": "UEMOA",
+        "type": "Economic and Monetary Union",
+        "members": ["Benin", "Burkina Faso", "Ivory Coast", "Guinea-Bissau", "Mali", "Niger", "Senegal", "Togo"],
+        "purpose": "To promote economic integration among countries that share a common currency, the West African CFA franc."
+      },
+      {
+        "name": "Southern African Development Community",
+        "abbreviation": "SADC",
+        "type": "Economic Community",
+        "members": ["Angola", "Botswana", "Comoros", "Democratic Republic of Congo", "Eswatini", "Lesotho", "Madagascar", "Malawi", "Mauritius", "Mozambique", "Namibia", "Seychelles", "South Africa", "Tanzania", "Zambia", "Zimbabwe"],
+        "purpose": "To further socio-economic cooperation and integration as well as political and security cooperation among its members."
+      },
+      {
+        "name": "Intergovernmental Authority on Development",
+        "abbreviation": "IGAD",
+        "type": "Trade Bloc",
+        "members": ["Djibouti", "Eritrea", "Ethiopia", "Kenya", "Somalia", "South Sudan", "Sudan", "Uganda"],
+        "purpose": "To assist and complement the efforts of its member states to achieve development."
+      },
+      {
+        "name": "Arab Maghreb Union",
+        "abbreviation": "AMU",
+        "type": "Economic Union",
+        "members": ["Algeria", "Libya", "Mauritania", "Morocco", "Tunisia"],
+        "purpose": "To promote cooperation and economic integration in the Maghreb region."
+      },
+      {
+        "name": "International Conference on the Great Lakes Region",
+        "abbreviation": "ICGLR",
+        "type": "Intergovernmental Organization",
+        "members": ["Angola", "Burundi", "Central African Republic", "Congo", "Democratic Republic of Congo", "Kenya", "Rwanda", "South Sudan", "Sudan", "Tanzania", "Uganda", "Zambia"],
+        "purpose": "To facilitate cooperation in peace and security, democracy and good governance, economic development, and regional integration."
+      },
+      {
+        "name": "African Ministers Council on Water",
+        "abbreviation": "AMCOW",
+        "type": "Ministerial Council",
+        "members": "Member states of the African Union",
+        "purpose": "To provide political leadership, policy direction, and advocacy in water management and provision in Africa."
+      }
+    ]
+  }
+  

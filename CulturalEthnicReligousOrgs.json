@@ -1,0 +1,99 @@
+{
+    "cultural_ethnic_linguistic_religious_organizations": [
+      {
+        "name": "Commonwealth of Nations",
+        "type": "Political Organization",
+        "members": [ "Antigua and Barbuda", "Australia", "Bahamas", "Bangladesh", "Barbados", "Belize", "Botswana", "Brunei", "Cameroon", "Canada",
+        "Cyprus", "Dominica", "Eswatini", "Fiji", "Ghana", "Grenada", "Guyana", "India", "Jamaica", "Kenya",
+        "Kiribati", "Lesotho", "Malawi", "Malaysia", "Maldives", "Malta", "Mauritius", "Mozambique", "Namibia", "Nauru",
+        "New Zealand", "Nigeria", "Pakistan", "Papua New Guinea", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "Seychelles",
+        "Sierra Leone", "Singapore", "Solomon Islands", "South Africa", "Sri Lanka", "Tanzania", "The Gambia", "Tonga", "Trinidad and Tobago", "Tuvalu",
+        "Uganda", "United Kingdom", "Vanuatu", "Zambia" ],
+        "purpose": "To foster international cooperation and trade links between people all over the world."
+      },
+      {
+        "name": "International Centre for the Study of the Preservation and Restoration of Cultural Property",
+        "abbreviation": "ICCROM",
+        "type": "Intergovernmental Organization",
+        "members": "Over 130 member states",
+        "purpose": "To promote the conservation of all forms of cultural heritage, in every region of the world."
+      },
+      {
+        "name": "Organisation internationale de la Francophonie",
+        "abbreviation": "OIF",
+        "type": "International Organization",
+        "members": [
+            "Albania", "Andorra", "Armenia", "Belgium", "Benin", "Bulgaria", "Burkina Faso", "Burundi", "Cape Verde", "Cambodia",
+            "Cameroon", "Canada", "Central African Republic", "Chad", "Comoros", "Congo", "Democratic Republic of Congo", "Djibouti", "Dominica", "Egypt",
+            "Equatorial Guinea", "France", "Gabon", "Ghana", "Greece", "Guinea", "Guinea-Bissau", "Haiti", "Ivory Coast", "Laos",
+            "Lebanon", "Luxembourg", "Madagascar", "Mali", "Mauritania", "Mauritius", "Moldova", "Monaco", "Morocco", "Niger",
+            "Qatar", "Romania", "Rwanda", "Saint Lucia", "Sao Tome and Principe", "Senegal", "Seychelles", "Switzerland", "Togo", "Tunisia",
+            "Vanuatu", "Vietnam"
+          ],
+        "purpose": "To promote the French language and cultural and linguistic diversity and to promote peace, democracy, and human rights."
+      },
+      {
+        "name": "Community of Portuguese Language Countries",
+        "abbreviation": "CPLP",
+        "type": "Political Organization",
+        "members": ["Angola", "Brazil", "Cape Verde", "East Timor", "Equatorial Guinea", "Guinea-Bissau", "Mozambique", "Portugal", "Sao Tome and Principe"],
+        "purpose": "To deepen mutual friendship and cooperation among its members in the areas of language, education, and culture."
+      },
+      {
+        "name": "Organization of Ibero-American States",
+        "abbreviation": "OEI",
+        "type": "International Organization",
+        "members": [
+            "Andorra", "Argentina", "Bolivia", "Brazil", "Colombia", "Costa Rica", "Cuba", "Dominican Republic", "Ecuador", "El Salvador",
+            "Spain", "Guatemala", "Honduras", "Mexico", "Nicaragua", "Panama", "Paraguay", "Peru", "Portugal", "Puerto Rico",
+            "Uruguay", "Venezuela"
+          ],
+        "purpose": "To promote education, science, technology, and culture in the Ibero-American region."
+      },
+      {
+        "name": "Arab League",
+        "type": "Regional Organization",
+        "members": [
+            "Algeria", "Bahrain", "Comoros", "Djibouti", "Egypt", "Iraq", "Jordan", "Kuwait", "Lebanon", "Libya",
+            "Mauritania", "Morocco", "Oman", "Palestine", "Qatar", "Saudi Arabia", "Somalia", "Sudan", "Syria", "Tunisia",
+            "United Arab Emirates", "Yemen"
+          ],
+        "purpose": "To strengthen ties among member states, coordinate policies, and promote common interests."
+      },
+      {
+        "name": "Organisation of Islamic Cooperation",
+        "abbreviation": "OIC",
+        "type": "Intergovernmental Organization",
+        "members": [
+            "Afghanistan", "Albania", "Algeria", "Azerbaijan", "Bahrain", "Bangladesh", "Benin", "Brunei Darussalam", "Burkina Faso", "Cameroon",
+            "Chad", "Comoros", "Cote d'Ivoire", "Djibouti", "Egypt", "Gabon", "Gambia", "Guinea", "Guinea-Bissau", "Guyana", "Indonesia", "Iran",
+            "Iraq", "Jordan", "Kazakhstan", "Kuwait", "Kyrgyzstan", "Lebanon", "Libya", "Malaysia", "Maldives", "Mali", "Mauritania", "Morocco",
+            "Mozambique", "Niger", "Nigeria", "Oman", "Pakistan", "Palestine", "Qatar", "Saudi Arabia", "Senegal", "Sierra Leone", "Somalia",
+            "Sudan", "Suriname", "Syria", "Tajikistan", "Togo", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "United Arab Emirates", "Uzbekistan",
+            "Yemen"
+          ],
+        "purpose": "To safeguard and protect the interests of the Muslim world in the spirit of promoting international peace and harmony."
+      },
+      {
+        "name": "International Organization of Turkic Culture",
+        "abbreviation": "TÜRKSOY",
+        "type": "International Organization",
+        "members":  [
+            "Azerbaijan", "Kazakhstan", "Kyrgyzstan", "Turkey", "Turkmenistan", "Uzbekistan", "Northern Cyprus"
+          ],
+        "purpose": "To promote Turkic culture and art."
+      },
+      {
+        "name": "Interparliamentary Assembly on Orthodoxy",
+        "type": "International Assembly",
+        "members": [
+            "Greece", "Cyprus", "Russia", "Armenia", "Azerbaijan", "Bulgaria", "Serbia", "Montenegro", "Romania", "Georgia",
+            "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Uzbekistan", "Moldova", "Albania", "Poland", "Czech Republic",
+            "Slovakia", "Estonia", "Latvia", "Lithuania", "Belarus", "Ukraine", "Finland", "Sweden", "Australia", "USA",
+            "Canada", "Asia", "Africa", "Middle East"
+          ],
+        "purpose": "To foster relationships and mutual understanding among Orthodox Christian communities worldwide."
+      }
+    ]
+  }
+  

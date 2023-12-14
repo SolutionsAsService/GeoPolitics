@@ -1,0 +1,91 @@
+{
+    "arms_control_organizations_and_treaties": [
+      {
+        "name": "Conference on Disarmament",
+        "type": "Multilateral Disarmament Forum",
+        "members": [
+          "Algeria", "Argentina", "Australia", "Austria", "Bangladesh", "Belarus", "Belgium", "Brazil", "Bulgaria", "Canada",
+          "Chile", "China", "Colombia", "Cuba", "Democratic People's Republic of Korea", "Ecuador", "Egypt", "Ethiopia", "Finland",
+          "France", "Germany", "Hungary", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Japan", "Kazakhstan",
+          "Kenya", "Malaysia", "Mexico", "Mongolia", "Morocco", "Myanmar", "Netherlands", "New Zealand", "Nigeria", "Norway",
+          "Pakistan", "Peru", "Philippines", "Poland", "Republic of Korea", "Romania", "Russia", "Saudi Arabia", "Senegal", "Slovakia",
+          "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland", "Syria", "Thailand", "Tunisia", "Turkey", "Ukraine",
+          "United Kingdom", "United States", "Venezuela", "Vietnam", "Zimbabwe"
+        ],
+        "purpose": "To negotiate arms control and disarmament agreements."
+      },
+      {
+        "name": "Organisation for the Prohibition of Chemical Weapons",
+        "abbreviation": "OPCW",
+        "type": "Intergovernmental Organization",
+        "members": [
+          "All member states of the United Nations except for Egypt, Israel, North Korea, and South Sudan"
+        ],
+        "purpose": "To implement the provisions of the Chemical Weapons Convention to achieve a world free of chemical weapons."
+      },
+      {
+        "name": "Preparatory Commission for the Comprehensive Nuclear-Test-Ban Treaty Organization",
+        "abbreviation": "CTBTO",
+        "type": "International Organization",
+        "members": [
+            "Algeria", "Argentina", "Australia", "Austria", "Bangladesh", "Belgium", "Brazil", "Bulgaria", "Canada", "Chile", "China", "Colombia", 
+            "Congo", "Cuba", "Czech Republic", "Ecuador", "Egypt", "Finland", "France", "Germany", "Ghana", "Greece", "Hungary", "Indonesia", 
+            "Iran", "Iraq", "Ireland", "Israel", "Italy", "Japan", "Jordan", "Kazakhstan", "Kenya", "South Korea", "Kuwait", "Mexico", 
+            "Morocco", "Netherlands", "New Zealand", "Nigeria", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Romania", 
+            "Russia", "Saudi Arabia", "Senegal", "Serbia", "Singapore", "Slovakia", "South Africa", "Spain", "Sweden", "Switzerland", 
+            "Syria", "Thailand", "Turkey", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uzbekistan", "Venezuela", "Vietnam",
+            "Zambia", "Zimbabwe"
+          ],
+        "purpose": "To build up the verification regime of the Comprehensive Nuclear-Test-Ban Treaty in preparation for its entry into force."
+      },
+      {
+        "name": "Wassenaar Arrangement",
+        "type": "Multilateral Export Control Regime",
+        "members": [
+          "Argentina", "Australia", "Austria", "Belgium", "Bulgaria", "Canada", "Croatia", "Czech Republic", "Denmark", "Estonia",
+          "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Japan", "Latvia", "Lithuania", "Luxembourg", "Malta",
+          "Mexico", "Netherlands", "New Zealand", "Norway", "Poland", "Portugal", "Republic of Korea", "Romania", "Russia", "Slovakia",
+          "Slovenia", "South Africa", "Spain", "Sweden", "Switzerland", "Turkey", "Ukraine", "United Kingdom", "United States"
+        ],
+        "purpose": "To contribute to regional and international security and stability by promoting transparency in the transfer of arms and dual-use goods and technologies."
+      },
+      {
+        "name": "Nuclear Suppliers Group",
+        "abbreviation": "NSG",
+        "type": "Group of Nuclear Supplier Countries",
+        "members": [
+          "Argentina", "Australia", "Austria", "Belarus", "Belgium", "Brazil", "Bulgaria", "Canada", "China", "Croatia", "Czech Republic",
+          "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Japan", "Kazakhstan",
+          "Latvia", "Lithuania", "Luxembourg", "Malta", "Mexico", "Netherlands", "New Zealand", "Norway", "Poland", "Portugal", "Republic of Korea",
+          "Romania", "Russia", "Serbia", "Slovakia", "Slovenia", "South Africa", "Spain", "Sweden", "Switzerland", "Turkey", "Ukraine",
+          "United Kingdom", "United States"
+        ],
+        "purpose": "To prevent nuclear proliferation by controlling the export of materials, equipment, and technology that can be used to manufacture nuclear weapons."
+      },
+      {
+        "name": "Australia Group",
+        "abbreviation": "AG",
+        "type": "Export Control Regime",
+        "members": [
+          "Australia", "Austria", "Belgium", "Bulgaria", "Canada", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "European Union",
+          "Finland", "France", "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Japan", "Latvia", "Lithuania", "Luxembourg", "Malta",
+          "Mexico", "Netherlands", "New Zealand", "Norway", "Poland", "Portugal", "Republic of Korea", "Romania", "Slovakia", "Slovenia", "Spain",
+          "Sweden", "Switzerland", "Turkey", "Ukraine", "United Kingdom", "United States"
+        ],
+        "purpose": "To help member countries identify those exports which need to be controlled so as not to contribute to the spread of chemical and biological weapons."
+      },
+      {
+        "name": "Missile Technology Control Regime",
+        "abbreviation": "MTCR",
+        "type": "Multilateral Export Control Regime",
+        "members": [
+            "Argentina", "Australia", "Austria", "Belgium", "Brazil", "Bulgaria", "Canada", "Czech Republic", "Denmark", "Finland", "France", 
+            "Germany", "Greece", "Hungary", "Iceland", "India", "Ireland", "Italy", "Japan", "Luxembourg", "Netherlands", "New Zealand", "Norway", 
+            "Poland", "Portugal", "Republic of Korea", "Russia", "South Africa", "Spain", "Sweden", "Switzerland", "Turkey", "Ukraine", 
+            "United Kingdom", "United States"
+          ],
+        "purpose": "To restrict the proliferation of missiles, rocket systems, unmanned air vehicles, and related technology for systems capable of carrying a 500 kg payload at least 300 km."
+      }
+    ]
+  }
+  

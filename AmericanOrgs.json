@@ -1,0 +1,114 @@
+{
+    "americas_regional_organizations": [
+      {
+        "name": "Organization of American States",
+        "abbreviation": "OAS",
+        "type": "Continental Organization",
+        "members": "35 member states in the Americas",
+        "purpose": "To promote democracy, human rights, security, and development in the Western Hemisphere."
+      },
+      {
+        "name": "Union of South American Nations",
+        "abbreviation": "USAN",
+        "type": "Political Union",
+        "members": ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela"],
+        "purpose": "To build a regional space for cultural, social, and economic integration."
+      },
+      {
+        "name": "Mercosur",
+        "type": "Economic and Political Bloc",
+        "members": ["Argentina", "Brazil", "Paraguay", "Uruguay", "Venezuela (suspended)"],
+        "purpose": "To promote free trade and fluid movement of goods, people, and currency."
+      },
+      {
+        "name": "Andean Community of Nations",
+        "abbreviation": "CAN",
+        "type": "Customs Union",
+        "members": ["Bolivia", "Colombia", "Ecuador", "Peru"],
+        "purpose": "To promote development through integration and economic and social cooperation."
+      },
+      {
+        "name": "Forum for the Progress and Integration of South America",
+        "abbreviation": "PROSUR",
+        "type": "Regional Forum",
+        "members": "South American countries",
+        "purpose": "To ensure regional integration and development, focusing on infrastructure, energy, health, and security."
+      },
+      {
+        "name": "Caribbean Community",
+        "abbreviation": "CARICOM",
+        "type": "Economic and Political Union",
+        "members": ["Antigua and Barbuda", "Bahamas", "Barbados", "Belize", "Dominica", "Grenada", "Guyana", "Haiti", "Jamaica", "Montserrat", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Suriname", "Trinidad and Tobago"],
+        "purpose": "To promote economic integration and cooperation among its members."
+      },
+      {
+        "name": "Association of Caribbean States",
+        "abbreviation": "ACS",
+        "type": "Regional Organization",
+        "members": "25 member states and 3 associate members from the Caribbean basin",
+        "purpose": "To enhance regional cooperation and integration in trade, transport, sustainable tourism, and natural disasters."
+      },
+      {
+        "name": "Organisation of Eastern Caribbean States",
+        "abbreviation": "OECS",
+        "type": "International Inter-governmental Organization",
+        "members": ["Antigua and Barbuda", "Dominica", "Grenada", "Montserrat", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Anguilla", "British Virgin Islands"],
+        "purpose": "To promote harmonization among member states in foreign policy, defense and security, and economic affairs."
+      },
+      {
+        "name": "Central American Parliament",
+        "abbreviation": "PARLACEN",
+        "type": "Political and Legislative Assembly",
+        "members": ["Guatemala", "El Salvador", "Honduras", "Nicaragua", "Panama", "Dominican Republic"],
+        "purpose": "To achieve political integration in Central America."
+      },
+      {
+        "name": "Bolivarian Alliance for the Americas",
+        "abbreviation": "ALBA",
+        "type": "Political Alliance",
+        "members": ["Antigua and Barbuda", "Bolivia", "Cuba", "Dominica", "Grenada", "Nicaragua", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Venezuela"],
+        "purpose": "To implement policies of social welfare and mutual economic aid."
+      },
+      {
+        "name": "Rio Group",
+        "type": "International Organization",
+        "members": "Latin American countries",
+        "purpose": "To provide a forum for Latin American nations to discuss and solve regional issues."
+      },
+      {
+        "name": "System of Cooperation Among the American Air Forces",
+        "abbreviation": "SICOFAA",
+        "type": "Military Organization",
+        "members": "Air forces of 21 American states",
+        "purpose": "To promote cooperation, friendship, and mutual understanding among the American air forces."
+      },
+      {
+        "name": "Central American Bank for Economic Integration",
+        "abbreviation": "CABEI",
+        "type": "Financial Institution",
+        "members": "Central American countries",
+        "purpose": "To promote economic integration and balanced economic and social development in the region."
+      },
+      {
+        "name": "Central American Integration System",
+        "abbreviation": "SICA",
+        "type": "Regional Integration System",
+        "members": ["Belize", "Costa Rica", "El Salvador", "Guatemala", "Honduras", "Nicaragua", "Panama", "Dominican Republic"],
+        "purpose": "To achieve regional integration in Central America."
+      },
+      {
+        "name": "Community of Latin American and Caribbean States",
+        "abbreviation": "CELAC",
+        "type": "Regional Bloc",
+        "members": "33 countries in Latin America and the Caribbean",
+        "purpose": "To deepen political, economic, social, and cultural integration in Latin America and the Caribbean."
+      },
+      {
+        "name": "Pacific Alliance",
+        "type": "Trade Bloc",
+        "members": ["Chile", "Colombia", "Mexico", "Peru"],
+        "purpose": "To form an area of deep economic integration and to move gradually toward the free mobility of goods, services, resources, and people."
+      }
+    ]
+  }
+  

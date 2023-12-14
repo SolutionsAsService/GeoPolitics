@@ -1,0 +1,125 @@
+{
+    "ideological_and_political_groupings": [
+      {
+        "name": "Quadrilateral Security Dialogue",
+        "abbreviation": "QUAD",
+        "type": "Strategic Dialogue",
+        "members": ["Australia", "India", "Japan", "United States"],
+        "purpose": "To ensure and sustain an open, free and prosperous Indo-Pacific region."
+      },
+      {
+        "name": "Non-Aligned Movement",
+        "abbreviation": "NAM",
+        "type": "International Organization",
+        "members": [
+            "Afghanistan", "Algeria", "Angola", "Antigua and Barbuda", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", 
+            "Belize", "Benin", "Bhutan", "Bolivia", "Botswana", "Brunei", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", 
+            "Cameroon", "Central African Republic", "Chad", "Chile", "Colombia", "Comoros", "Congo", "Costa Rica", "Côte d'Ivoire", "Cuba", 
+            "Democratic Republic of the Congo", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Eswatini", 
+            "Ethiopia", "Fiji", "Gabon", "Gambia", "Ghana", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", 
+            "Haiti", "Honduras", "India", "Indonesia", "Iran", "Iraq", "Jamaica", "Jordan", "Kazakhstan", "Kenya", 
+            "Kuwait", "Kyrgyzstan", "Laos", "Lebanon", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Malaysia", 
+            "Maldives", "Mali", "Mauritania", "Mauritius", "Mongolia", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nepal", 
+            "Nicaragua", "Niger", "Nigeria", "North Korea", "Oman", "Pakistan", "Palestine", "Panama", "Papua New Guinea", "Peru", 
+            "Philippines", "Qatar", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "São Tomé and Príncipe", "Saudi Arabia", "Senegal", "Seychelles", 
+            "Sierra Leone", "Singapore", "Somalia", "South Africa", "South Sudan", "Sri Lanka", "Sudan", "Suriname", "Syria", "Tajikistan", 
+            "Tanzania", "Thailand", "Timor-Leste", "Togo", "Trinidad and Tobago", "Tunisia", "Turkmenistan", "Uganda", "United Arab Emirates", "Uzbekistan", 
+            "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+          ],
+        "purpose": "To ensure the national independence, sovereignty, territorial integrity and security of non-aligned countries."
+      },
+      {
+        "name": "Group of Seven",
+        "abbreviation": "G7",
+        "type": "International Intergovernmental Economic Organization",
+        "members": ["Canada", "France", "Germany", "Italy", "Japan", "United Kingdom", "United States"],
+        "purpose": "To discuss and deliberate on international economic and monetary issues."
+      },
+      {
+        "name": "Group of 15",
+        "abbreviation": "G-15",
+        "type": "Summit Level Group",
+        "members": [
+            "Algeria", "Argentina", "Brazil", "Chile", "Egypt", "India", "Indonesia", "Iran", "Jamaica", "Kenya", 
+            "Malaysia", "Mexico", "Nigeria", "Peru", "Senegal", "Sri Lanka", "Venezuela", "Zimbabwe"
+          ],
+        "purpose": "To foster cooperation and provide input for other international groups, such as the World Trade Organization and the Group of Seven."
+      },
+      {
+        "name": "Group of 77",
+        "abbreviation": "G-77",
+        "type": "Coalition of Developing Nations",
+        "members": "134 member countries",
+        "purpose": "To provide the means for the countries of the South to articulate and promote their collective economic interests."
+      },
+      {
+        "name": "Group of 24",
+        "abbreviation": "G24",
+        "type": "Intergovernmental Group",
+        "members": "28 member countries",
+        "purpose": "To coordinate the positions of developing countries on monetary and development finance issues."
+      },
+      {
+        "name": "G20",
+        "type": "International Forum",
+        "members": "19 countries and the European Union",
+        "purpose": "To discuss policy pertaining to the promotion of international financial stability."
+      },
+      {
+        "name": "Alliance of Small Island States",
+        "abbreviation": "AOSIS",
+        "type": "Coalition of Small Island and Low-lying Coastal Countries",
+        "members": [
+            "Antigua and Barbuda", "Bahamas", "Bahrain", "Barbados", "Belize", "Cabo Verde", "Comoros", "Cook Islands", "Cuba", "Dominica", 
+            "Dominican Republic", "Fiji", "Federated States of Micronesia", "Grenada", "Guinea-Bissau", "Guyana", "Haiti", "Jamaica", "Kiribati", "Maldives", 
+            "Marshall Islands", "Mauritius", "Nauru", "Niue", "Palau", "Papua New Guinea", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", 
+            "Samoa", "São Tomé and Príncipe", "Seychelles", "Singapore", "Solomon Islands", "Suriname", "Timor-Leste", "Tonga", "Trinidad and Tobago", "Tuvalu", "Vanuatu"
+          ],
+        "purpose": "To amplify the voices of small island developing states (SIDS) in United Nations processes."
+      },
+      {
+        "name": "BRICS",
+        "type": "Political and Economic Union",
+        "members": ["Brazil", "Russia", "India", "China", "South Africa"],
+        "purpose": "To encourage commercial, political, and cultural cooperation between its members."
+      },
+      {
+        "name": "Bolivarian Alliance for the Americas",
+        "abbreviation": "ALBA",
+        "type": "Political Alliance",
+        "members": ["Antigua and Barbuda", "Bolivia", "Cuba", "Dominica", "Grenada", "Nicaragua", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Venezuela"],
+        "purpose": "To promote social, political, and economic integration in Latin America and the Caribbean."
+      },
+      {
+        "name": "Association of World Election Bodies",
+        "abbreviation": "AWEB",
+        "type": "International Association",
+        "members": "Over 100 election management bodies worldwide",
+        "purpose": "To promote and support sustainable democracy through election management bodies."
+      },
+      {
+        "name": "New Agenda Coalition",
+        "type": "International Coalition",
+        "members": ["Brazil", "Egypt", "Ireland", "Mexico", "New Zealand", "South Africa", "Sweden"],
+        "purpose": "To promote nuclear disarmament and non-proliferation."
+      },
+      {
+        "name": "Non-Proliferation and Disarmament Initiative",
+        "type": "International Initiative",
+        "members": ["Australia", "Canada", "Chile", "Germany", "Japan", "Mexico", "Netherlands", "Poland", "Turkey", "United Arab Emirates"],
+        "purpose": "To advance the implementation of non-proliferation and disarmament commitments and objectives."
+      },
+      {
+        "name": "Western European and Others Group",
+        "abbreviation": "WEOG",
+        "type": "United Nations Regional Group",
+        "members": [
+            "Andorra", "Australia", "Austria", "Belgium", "Canada", "Cyprus", "Denmark", "Finland", "France", "Germany", 
+            "Greece", "Iceland", "Ireland", "Israel", "Italy", "Liechtenstein", "Luxembourg", "Malta", "Monaco", "Netherlands", 
+            "New Zealand", "Norway", "Portugal", "San Marino", "Spain", "Sweden", "Switzerland", "Turkey", "United Kingdom", "United States"
+          ],
+        "purpose": "To provide a forum for coordination and exchange of information on UN-related issues."
+      }
+    ]
+  }
+  
