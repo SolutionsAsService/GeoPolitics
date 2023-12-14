@@ -1,0 +1,87 @@
+{
+    "nuclear_power_organizations": [
+      {
+        "name": "European Atomic Energy Community",
+        "abbreviation": "Euratom",
+        "type": "International Organization",
+        "members": [
+          "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", 
+          "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", 
+          "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden"
+        ],
+        "purpose": "To coordinate the member states' research programs for the peaceful use of nuclear energy."
+      },
+      {
+        "name": "International Atomic Energy Agency",
+        "abbreviation": "IAEA",
+        "type": "International Organization",
+        "members": [
+            "Afghanistan", "Albania", "Algeria", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bangladesh", "Belarus",
+            "Belgium", "Belize", "Benin", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Bulgaria", "Burkina Faso", "Cambodia",
+            "Cameroon", "Canada", "Chile", "China", "Colombia", "Costa Rica", "Côte d'Ivoire", "Croatia", "Cuba", "Cyprus",
+            "Czech Republic", "Democratic Republic of the Congo", "Denmark", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Estonia", "Ethiopia", "Finland",
+            "France", "Gabon", "Georgia", "Germany", "Ghana", "Greece", "Guatemala", "Haiti", "Holy See", "Honduras",
+            "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica",
+            "Japan", "Jordan", "Kazakhstan", "Kenya", "Korea (Republic of)", "Kuwait", "Kyrgyzstan", "Latvia", "Lebanon", "Libya",
+            "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Mali", "Malta", "Mauritius", "Mexico", "Monaco", "Mongolia",
+            "Montenegro", "Morocco", "Myanmar", "Namibia", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria",
+            "North Macedonia", "Norway", "Oman", "Pakistan", "Panama", "Paraguay", "Peru", "Philippines", "Poland", "Portugal",
+            "Qatar", "Romania", "Russia", "Saudi Arabia", "Senegal", "Serbia", "Singapore", "Slovakia", "Slovenia", "South Africa",
+            "Spain", "Sri Lanka", "Sudan", "Sweden", "Switzerland", "Syria", "Tajikistan", "Thailand", "Tunisia", "Turkey",
+            "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Venezuela", "Vietnam", "Yemen",
+            "Zambia", "Zimbabwe"
+          ],
+        "purpose": "To promote the peaceful use of nuclear energy and to inhibit its use for any military purpose, including nuclear weapons."
+      },
+      {
+        "name": "International Centre for Synchrotron-Light for Experimental Science Applications in the Middle East",
+        "abbreviation": "SESAME",
+        "type": "Research Organization",
+        "members": [
+          "Cyprus", "Egypt", "Iran", "Israel", "Jordan", "Pakistan", "Palestinian Authority", "Turkey"
+        ],
+        "purpose": "To foster scientific and technological excellence in the Middle East and neighboring regions."
+      },
+      {
+        "name": "Korean Peninsula Energy Development Organization",
+        "abbreviation": "KEDO",
+        "type": "International Organization",
+        "duration": "1995-2006",
+        "members": [
+          "South Korea", "Japan", "United States", "European Union"
+        ],
+        "purpose": "Established to implement the Agreed Framework signed by North Korea and the United States."
+      },
+      {
+        "name": "Nuclear Energy Agency",
+        "abbreviation": "NEA",
+        "type": "Specialized Agency",
+        "members": [
+            "Argentina", "Australia", "Austria", "Belgium", "Canada", "Chile", "Czech Republic", "Denmark", "European Union", "Finland",
+            "France", "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Israel", "Italy", "Japan", "Korea (Republic of)",
+            "Luxembourg", "Mexico", "Netherlands", "New Zealand", "Norway", "Poland", "Portugal", "Romania", "Russia", "Slovak Republic",
+            "Slovenia", "Spain", "Sweden", "Switzerland", "Turkey", "United Kingdom", "United States"
+          ],
+        "purpose": "To assist its member countries in maintaining and further developing, through international cooperation, the scientific, technological, and legal bases required for a safe, environmentally friendly, and economical use of nuclear energy."
+      },
+      {
+        "name": "United Nations Atomic Energy Commission",
+        "type": "United Nations Commission",
+        "duration": "1946-1952",
+        "members": [
+          "Members of the United Nations at that time"
+        ],
+        "purpose": "To deal with the problems raised by the discovery of atomic energy and to make proposals for the control of nuclear energy."
+      },
+      {
+        "name": "World Association of Nuclear Operators",
+        "abbreviation": "WANO",
+        "type": "Non-profit Association",
+        "members": [
+            "Operators of nuclear power plants from more than 30 countries, including but not limited to: United States, United Kingdom, France, Canada, Japan, Russia, China, South Korea, Germany, Ukraine, Sweden, Spain, Finland, Belgium, Switzerland, Czech Republic, Slovakia, Hungary, Bulgaria, Romania, Brazil, South Africa, India, Pakistan, United Arab Emirates"
+          ],
+        "purpose": "To maximize the safety and reliability of nuclear power plants worldwide by working together to assess, benchmark, and improve performance through mutual support, exchange of information, and emulation of best practices."
+      }
+    ]
+  }
+  
