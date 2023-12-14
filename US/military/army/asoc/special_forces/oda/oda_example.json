@@ -1,0 +1,187 @@
+{
+  "Operational_Detachment_Alpha": {
+    "Team_Size": 12,
+    "Unit_Type": "Special Forces",
+    "Specialization": "Direct action, counter-terrorism, foreign internal defense, reconnaissance",
+    "Members": [
+      {
+        "Name": "Member 1",
+        "Paygrade": "E-7",
+        "MOS": "18B - Special Forces Weapons Sergeant",
+        "Time_in_Special_Forces": "5 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "Crye Precision JPC",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 2",
+        "Paygrade": "E-8",
+        "MOS": "18C - Special Forces Engineer Sergeant",
+        "Time_in_Special_Forces": "7 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "London Bridge Trading LBT-6094",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 3",
+        "Paygrade": "E-6",
+        "MOS": "18D - Special Forces Medical Sergeant",
+        "Time_in_Special_Forces": "6 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Foldable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "Crye Precision JPC",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 4",
+        "Paygrade": "E-7",
+        "MOS": "18E - Special Forces Communications Sergeant",
+        "Time_in_Special_Forces": "8 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "Crye Precision JPC",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 5",
+        "Paygrade": "E-7",
+        "MOS": "18F - Special Forces Assistant Operations and Intelligence Sergeant",
+        "Time_in_Special_Forces": "9 years",
+        "Gear": {
+          "Weapon": "HK417",
+          "Attachments": ["Leupold Mark 4 LR/T Scope", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM762-RC Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Geissele Super Modular Rail (SMR)",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "London Bridge Trading LBT-6094",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 6",
+        "Paygrade": "E-8",
+        "MOS": "18X - Special Forces Candidate (Officer)",
+        "Time_in_Special_Forces": "4 years",
+        "Gear": {
+          "Weapon": "M1911A1 Pistol",
+          "Attachments": [],
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "Crye Precision JPC",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 7",
+        "Paygrade": "E-6",
+        "MOS": "18Z - Special Forces Senior Sergeant",
+        "Time_in_Special_Forces": "12 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "London Bridge Trading LBT-6094",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 8",
+        "Paygrade": "E-7",
+        "MOS": "18B - Special Forces Weapons Sergeant",
+        "Time_in_Special_Forces": "7 years",
+        "Gear": {
+          "Weapon": "Mk 17 SCAR-H",
+          "Attachments": ["Trijicon ACOG TA31RCO Scope", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM762-RC Suppressor"],
+          "Stock": "Foldable",
+          "Rail_System": "Geissele Super Modular Rail (SMR)",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "Crye Precision JPC",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 9",
+        "Paygrade": "E-6",
+        "MOS": "18D - Special Forces Medical Sergeant",
+        "Time_in_Special_Forces": "5 years",
+        "Gear": {
+          "Weapon": "HK416",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "Crye Precision JPC",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 10",
+        "Paygrade": "E-8",
+        "MOS": "18E - Special Forces Communications Sergeant",
+        "Time_in_Special_Forces": "10 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Adjustable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "London Bridge Trading LBT-6094",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 11",
+        "Paygrade": "E-7",
+        "MOS": "18F - Special Forces Assistant Operations and Intelligence Sergeant",
+        "Time_in_Special_Forces": "8 years",
+        "Gear": {
+          "Weapon": "HK417",
+          "Attachments": ["Leupold Mark 4 LR/T Scope", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM762-RC Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Geissele Super Modular Rail (SMR)",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "London Bridge Trading LBT-6094",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      },
+      {
+        "Name": "Member 12",
+        "Paygrade": "E-6",
+        "MOS": "18Z - Special Forces Senior Sergeant",
+        "Time_in_Special_Forces": "11 years",
+        "Gear": {
+          "Weapon": "M4A1 SOPMOD Block II",
+          "Attachments": ["EOTech EXPS3 Holographic Sight", "AN/PEQ-15 Laser Target Designator", "SureFire SOCOM556-RC2 Suppressor"],
+          "Stock": "Retractable",
+          "Rail_System": "Daniel Defense RIS II",
+          "Helmet": "Ops-Core FAST Ballistic Helmet",
+          "Plate_Carrier": "London Bridge Trading LBT-6094",
+          "Night_Vision_Goggles": "AN/PVS-15"
+        }
+      }
+    ]
+  }
+} 
