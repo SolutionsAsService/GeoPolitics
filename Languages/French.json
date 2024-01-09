@@ -1,0 +1,185 @@
+{
+  "Language Name": "French",
+  "Native Name": "français",
+  "Pronunciation": "[fʁɑ̃sɛ]",
+  "Native to": [
+    "France",
+    "Belgium",
+    "Switzerland",
+    "Monaco",
+    "Francophone Africa",
+    "Canada",
+    "and other locations in the Francophonie"
+  ],
+  "Speakers": {
+    "L1": "81 million (2020)",
+    "L2": "229 million (2022)",
+    "Total": "310 million"
+  },
+  "Language Family": {
+    "Indo-European": {
+      "Italic": {
+        "Latino-Faliscan": {
+          "Romance": {
+            "Italo-Western": {
+              "Western Romance": {
+                "Gallo-Romance": {
+                  "Oïl": "French"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Writing System": {
+    "Latin script": "French alphabet",
+    "French Braille",
+    "Signed forms": "Signed French (français signé)"
+  },
+  "Official Status": {
+    "Official language in": "28 countries",
+    "Administrative/cultural": [
+      "Algeria",
+      "Cambodia",
+      "Laos",
+      "Lebanon",
+      "Mali",
+      "Mauritania",
+      "Mauritius",
+      "Morocco",
+      "New Hampshire (United States)",
+      "Tunisia",
+      "Vietnam"
+    ],
+    "Intergovernmental organizations": [
+      "Organisation internationale de la Francophonie",
+      "United Nations",
+      "International Olympic Committee",
+      "General Conference on Weights and Measures",
+      "International Committee of the Red Cross",
+      "European Union",
+      "African Union",
+      "North Atlantic Treaty Organization",
+      "World Trade Organization",
+      "Council of Europe"
+    ],
+    "Regulated by": {
+      "Académie Française (French Academy)": "France",
+      "Office québécois de la langue française (Quebec Board of the French Language)": "Quebec"
+    }
+  },
+  "Language Codes": {
+    "ISO 639-1": "fr",
+    "ISO 639-2": {
+      "B": "fre",
+      "T": "fra"
+    },
+    "ISO 639-3": "fra",
+    "Glottolog": "stan1290",
+    "Linguasphere": "51-AAA-i"
+  },
+  "Geographic Distribution": {
+    "Europe": {
+      "Knowledge of French in the European Union and candidate countries": "Spoken by 19.71% of the European Union's population",
+      "Official Language in France since": "1992",
+      "Language Mandated in France for": "Legal documents in 1539",
+      "Official language in": {
+        "Belgium": "Federal level",
+        "Switzerland": "Western part (Romandy)",
+        "Luxembourg": "Official language of the country",
+        "Monaco": "Official language of the country"
+      }
+    },
+    "Africa": {
+      "Majority of French-speaking population lives in": "Africa",
+      "Estimated 141 million African people can speak French": "First or second language",
+      "Expected to reach 700 million French speakers worldwide by": "2050",
+      "French is the fastest growing language on the continent": "Official or foreign languages"
+    },
+    "Americas": {
+      "Canada": {
+        "First language of": "9.5 million people",
+        "Sole official language in": "Quebec",
+        "Official language in": "all territories"
+      },
+      "United States": {
+        "Fourth most spoken language after": "English, Spanish, and Chinese",
+        "Second-most spoken language in": "Maine and New Hampshire",
+        "Tied with Spanish in": "Louisiana"
+      },
+      "Caribbean": {
+        "Official language in": "Haiti",
+        "Principal language of": "education, administration, business, and public signage"
+      }
+    },
+    "Other Territories": {
+      "Official language in": "French Guiana",
+      "Official language of": "Saint Pierre and Miquelon",
+      "French special collectivity": "Puducherry (India)"
+    },
+    "Asia": {
+      "Southeast Asia": {
+        "Former official language of": "French Indochina (Vietnam, Laos, Cambodia)",
+        "Continues to be an administrative language in": "Laos and Cambodia",
+        "Influences waned in recent decades in": "Vietnam",
+        "Full members of La Francophonie": "Vietnam, Laos, and Cambodia"
+      },
+      "India": {
+        "Former official language of French India": "Puducherry (Pondicherry)"
+      }
+    }
+  },
+  "Varieties": {
+    "Standard French": {
+      "Based on": "Parisian French",
+      "Used in": "Media, education, administration, and formal situations"
+    },
+    "African French": "Varieties spoken in Africa",
+    "Canadian French": "Varieties spoken in Canada",
+    "Belgian French": "Varieties spoken in Belgium",
+    "Swiss French": "Varieties spoken in Switzerland",
+    "Quebec French": "Varieties spoken in Quebec",
+    "Louisiana French": "Varieties spoken in Louisiana",
+    "Acadian French": "Varieties spoken in Acadiana",
+    "Cajun French": "Varieties spoken by Cajuns in Louisiana"
+  },
+  "Dialects": {
+    "Northern French": "Varieties spoken in Northern France",
+    "Central French": "Varieties spoken in Central France",
+    "Southern French": "Varieties spoken in Southern France",
+    "Western French": "Varieties spoken in Western France",
+    "Eastern French": "Varieties spoken in Eastern France",
+    "Occitan": "Varieties spoken in Occitania",
+    "Corsican": "Varieties spoken in Corsica",
+    "Breton": "Varieties spoken in Brittany",
+    "Norman": "Varieties spoken in Normandy",
+    "Franco-Provençal": "Varieties spoken in Franco-Provence",
+    "Burgundian": "Varieties spoken in Burgundy",
+    "Jurassien": "Varieties spoken in Jura",
+    "Lorrain": "Varieties spoken in Lorraine",
+    "Alsatian": "Varieties spoken in Alsace",
+    "Mosellan": "Varieties spoken in Moselle",
+    "Lorraine Franconian": "Varieties spoken in Lorraine Franconia",
+    "Rhaeto-Romance": "Varieties spoken in Rhaeto-Romance-speaking areas",
+    "Francoprovençal": "Varieties spoken in Francoprovençal-speaking areas",
+    "Occitano-Romance": "Varieties spoken in Occitano-Romance-speaking areas",
+    "Catalan": "Varieties spoken in Catalonia",
+    "Gascon": "Varieties spoken in Gascony",
+    "Arpitan": "Varieties spoken in Arpitan-speaking areas",
+    "Walloon": "Varieties spoken in Walloon-speaking areas",
+    "Picard": "Varieties spoken in Picard-speaking areas",
+    "Lorrain": "Varieties spoken in Lorrain-speaking areas",
+    "Champenois": "Varieties spoken in Champenois-speaking areas",
+    "Franc-Comtois": "Varieties spoken in Franc-Comtois-speaking areas",
+    "Bourguignon": "Varieties spoken in Bourguignon-speaking areas",
+    "Franconian": "Varieties spoken in Franconian-speaking areas",
+    "Luxembourgish": "Varieties spoken in Luxembourgish-speaking areas",
+    "East Central German": "Varieties spoken in East Central German-speaking areas",
+    "Pennsylvania German": "Varieties spoken in Pennsylvania German-speaking areas",
+    "Haitian Creole French": "Varieties spoken in Haiti",
+    "Louisiana Creole French": "Varieties spoken in Louisiana Creole-speaking areas",
+    "African Pidgin French": "Varieties spoken in African Pidgin French-speaking areas"
+  }
+}
