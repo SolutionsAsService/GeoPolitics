@@ -1,0 +1,82 @@
+{
+  "Language": "Russian",
+  "Description": "Russian is an East Slavic language spoken primarily in Russia and parts of Eastern Europe and Asia.",
+  "NativeSpeakers": {
+    "L1": "150 million (2020 census)",
+    "L2": "110 million (2020 census)"
+  },
+  "LanguageFamily": {
+    "Indo-European": "Balto-Slavic",
+    "Slavic": "East Slavic"
+  },
+  "WritingSystem": {
+    "Alphabet": "Cyrillic (Russian alphabet)",
+    "Braille": "Russian Braille"
+  },
+  "OfficialStatus": {
+    "OfficialLanguageIn": [
+      "Russia",
+      "Belarus",
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Tajikistan"
+    ],
+    "InterethnicLanguage": [
+      "Uzbekistan",
+      "Moldova (Gagauzia, Left Bank of the Dniester)",
+      "Ukraine (Autonomous Republic of Crimea)",
+      "Abkhazia",
+      "South Ossetia",
+      "Transnistria"
+    ]
+  },
+  "Organizations": [
+    "United Nations",
+    "IAEA",
+    "ICAO",
+    "UNESCO",
+    "WHO",
+    "CIS",
+    "EAEU",
+    "CSTO",
+    "SCO",
+    "OSCE",
+    "ATS",
+    "ISO"
+  ],
+  "RecognizedMinorityLanguageIn": [
+    "Romania",
+    "Armenia",
+    "Czech Republic",
+    "Slovakia",
+    "Moldova",
+    "Ukraine",
+    "China"
+  ],
+  "RegulatedBy": "Russian Language Institute at the Russian Academy of Sciences",
+  "LanguageCodes": {
+    "ISO639-1": "ru",
+    "ISO639-2": "rus",
+    "ISO639-3": "rus"
+  },
+  "GeographicDistribution": {
+    "Russia": "137.5 million speakers",
+    "CIS and Baltic countries": "93.7 million speakers",
+    "Eastern Europe": "12.9 million speakers",
+    "Western Europe": "7.3 million speakers",
+    "Asia": "2.7 million speakers",
+    "Middle East and North Africa": "1.3 million speakers",
+    "Sub-Saharan Africa": "0.1 million speakers",
+    "Latin America": "0.2 million speakers",
+    "U.S., Canada, Australia, and New Zealand": "4.1 million speakers"
+  },
+  "AdditionalInfo": [
+    "Russian is the most spoken Slavic language and the most spoken native language in Europe.",
+    "It is one of the six official languages of the United Nations.",
+    "Russian is written in the Cyrillic alphabet and features 'soft' and 'hard' sounds in its phonemes.",
+    "The language has notable lexical similarities with Bulgarian due to a common Church Slavonic influence.",
+    "Russian has been influenced by Western and Central European languages, Uralic, Turkic, Persian, Arabic, and Hebrew.",
+    "It is classified as a level III language in terms of learning difficulty for native English speakers.",
+    "Russian is widely used in the former Soviet Union countries and beyond."
+  ]
+}
