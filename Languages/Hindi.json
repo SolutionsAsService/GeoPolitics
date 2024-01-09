@@ -1,0 +1,72 @@
+{
+  "language": "Modern Standard Hindi",
+  "commonName" : "Hindi",
+  "endonyms": {
+    "formal": "आधुनिक मानक हिन्दी",
+    "informal": "हिन्दी"
+  },
+  "script": "Devanagari",
+  "native_to": "India",
+  "region": "Hindi Belt, Western Uttar Pradesh, Delhi",
+  "ethnicity": "Indian",
+  "speakers": {
+    "L1": 340000000,
+    "L2": 260000000
+  },
+  "language_family": {
+    "root": "Indo-European",
+    "branch": "Indo-Iranian",
+    "sub_branch": "Indo-Aryan",
+    "group": "Central",
+    "subgroup": "Western Hindi languages, Hindustani"
+  },
+  "early_forms": [
+    "Shauraseni Prakrit", "Shauraseni Apabhraṃśa", "Old Hindi", "Hindustani", "Kauravi"
+  ],
+  "dialects": "Various Hindi languages",
+  "writing_systems": [
+    "Devanagari (official)",
+    "Kaithi (historical)",
+    "Mahajani (historical)",
+    "Laṇḍā (historical)",
+    "Latin (Hinglish, unofficial)",
+    "Devanagari Braille"
+  ],
+  "signed_forms": "Signed Hindi",
+  "official_status": {
+    "official_language": "India",
+    "recognized_minority_language": ["South Africa", "United Arab Emirates"]
+  },
+  "regulatory_bodies": "Central Hindi Directorate",
+  "language_codes": {
+    "ISO_639-1": "hi",
+    "ISO_639-2": "hin",
+    "ISO_639-3": "hin"
+  },
+  "glottolog": "hind1269",
+  "linguasphere": "59-AAF-qf",
+  "lingua_franca": {
+    "description": "Lingua franca of the Hindi Belt, spoken in other parts of India in simplified or pidginised varieties.",
+    "pidginised_varieties": ["Bazaar Hindustani", "Haflong Hindi"]
+  },
+  "other_recognized_languages": {
+    "official_hindi_languages": ["Fiji Hindi (Fiji)", "Caribbean Hindustani (Suriname, Trinidad and Tobago, Guyana)"],
+    "related_languages": ["Awadhi", "Bhojpuri"]
+  },
+  "mutual_intelligibility": {
+    "standard_hindi_and_urdu": "Mutually intelligible with standard Urdu"
+  },
+  "global_ranking": {
+    "first_language": "Fourth most-spoken first language in the world",
+    "combined_with_urdu": "Third most-spoken language in the world (including first and second language speakers)"
+  },
+  "fastest_growing_language": {
+    "ranking_in_india": "Fastest growing language in India (2011 census)"
+  },
+  "references": [
+    {"id": 1, "source": "Source 1"},
+    {"id": 2, "source": "Source 2"},
+    {"id": 3, "source": "Source 3"},
+    ...
+  ]
+}
