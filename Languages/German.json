@@ -1,0 +1,67 @@
+{
+  "language": "German",
+  "endonym": "Deutsch",
+  "pronunciation": "[dɔɪtʃ]",
+  "native_to": ["Germany", "Austria", "Switzerland", "Italy (South Tyrol)", "Liechtenstein", "Luxembourg", "Belgium"],
+  "speakers": {
+    "native": 95000000,
+    "second_language": 80000000
+  },
+  "language_family": {
+    "root": "Indo-European",
+    "branch": "Germanic",
+    "sub_branch": "West Germanic"
+  },
+  "standard_forms": ["Standard German (German, Swiss, Austrian)"],
+  "writing_system": ["Latin script (German alphabet)", "German Braille"],
+  "historical_writing_systems": ["Runic", "Hebrew Alphabet"],
+  "signed_forms": ["Signed German"],
+  "official_status": {
+    "countries": ["Austria", "Belgium", "Germany", "Liechtenstein", "Luxembourg", "Switzerland"],
+    "subdivision": "South Tyrol (Italy)",
+    "recognized_minority": ["Brazil", "Czech Republic", "Denmark", "Hungary", "Namibia", "Poland", "Romania", "Russia", "Slovakia"]
+  },
+  "language_codes": {
+    "ISO_639-1": "de",
+    "ISO_639-2": ["ger (B)", "deu (T)"],
+    "ISO_639-3_various": ["deu – German", "gmh – Middle High German", "goh – Old High German", "..."]
+  },
+  "glottolog": "stan1295",
+  "linguasphere": [
+    "52-ACB–dl (Standard German)",
+    "52-AC (Continental West Germanic)",
+    "..."
+  ],
+  "historical_evolution": {
+    "Old_High_German": "Developed from Proto-Germanic in Early Middle Ages",
+    "Middle_High_German": ["1050-1350 CE", "Includes Nibelungenlied, Parzival, Tristan"],
+    "Early_New_High_German": ["1250-1550 CE", "Includes Martin Luther's Bible translation"],
+    "New_High_German": "16th Century—Present"
+  },
+  "grammar": {
+    "cases": ["Nominative", "Accusative", "Genitive", "Dative"],
+    "genders": ["Masculine", "Feminine", "Neuter"],
+    "numbers": ["Singular", "Plural"],
+    "verbs": ["Strong", "Weak"]
+  },
+  "vocabulary_origin": {
+    "Germanic_branch": "Majority",
+    "Latin_and_Greek": "Minor",
+    "French_and_English": "Fewer words"
+  },
+  "pluricentric_language": ["German", "Austrian", "Swiss Standard German"],
+  "dialect_diversity": ["Low German", "Bavarian", "Alemannic"],
+  "pronunciation_details": {
+    "nk": "[ŋk]",
+    "ng": "[ŋ]",
+    "r": "Various pronunciations",
+    "s": ["[z]", "[ʃ]", "[s]"],
+    "special_letters": ["Ä", "Ö", "Ü", "ß"]
+  },
+  "interesting_facts": {
+    "shared_vocabulary_with_English": "60%",
+    "unique_concepts": ["fremdschämen", "Fernweh"],
+    "capitalization_rule": "All nouns are capitalized",
+    "unique_letter": "Eszett (ß)"
+  }
+}
