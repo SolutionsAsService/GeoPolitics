@@ -1,0 +1,72 @@
+{
+  "language": "Dutch",
+  "endonym": "Nederlands",
+  "pronunciation": "[ˈneːdərlɑnts]",
+  "language_family": {
+    "root": "Indo-European",
+    "branch": "Germanic",
+    "sub_branch": "West Germanic",
+    "group": "Low Franconian"
+  },
+  "early_forms": {
+    "initial": "Frankish",
+    "evolution": ["Old Dutch", "Middle Dutch"]
+  },
+  "speakers": {
+    "native": 25000000,
+    "second_language": 5000000,
+    "total": 30000000
+  },
+  "writing_systems": {
+    "primary": "Latin (Dutch alphabet)",
+    "alternative": ["Dutch Braille", "Signed Dutch (NmG)"]
+  },
+  "official_status": {
+    "countries": ["Netherlands", "Belgium", "Suriname", "Aruba", "Curaçao", "Sint Maarten"],
+    "organizations": ["Benelux", "Caribbean Community", "European Union", "PROSUR", "Union of South American Nations"]
+  },
+  "regulatory_body": "Dutch Language Union",
+  "language_codes": {
+    "ISO_639_1": "nl",
+    "ISO_639_2": ["dut (B)", "nld (T)"],
+    "ISO_639_3": "nld",
+    "Glottolog": "mode1257",
+    "Linguasphere": "52-ACB-a"
+  },
+  "dialects": [
+    "Central", "Flemish", "Low Saxon", "Stadsfries", "West Frisian"
+  ],
+  "related_languages": {
+    "sister_language": "Afrikaans",
+    "mutually_intelligible": true,
+    "speakers_of_sister_language": 16000000
+  },
+  "grammar": {
+    "sentence_structure": "SVO and SOV",
+    "tenses": ["Present", "Past"],
+    "aspects": ["Perfective", "Imperfective"],
+    "moods": ["Indicative", "Imperative", "Conditional"],
+    "voices": ["Active", "Middle", "Passive"],
+    "genders": ["Masculine", "Feminine", "Neuter"]
+  },
+  "vocabulary": {
+    "origin": "Germanic",
+    "loanwords": {
+      "english": "Significant",
+      "french": "Moderate"
+    }
+  },
+  "pronunciation_details": {
+    "consonant_shift": "Not undergone High German consonant shift",
+    "umlaut_usage": "Does not use Germanic umlaut as grammatical marker",
+    "subjunctive_usage": "Largely abandoned",
+    "morphology_leveling": "Most of case system leveled"
+  },
+  "historical_notes": {
+    "oldest_known_word": "wad",
+    "significant_texts": ["Statenvertaling Bible translation"],
+    "language_birthplace": ["Flanders", "Brabant"],
+    "maturity_reached_in": "Holland"
+  },
+  "cognates_with_english": ["day - dag", "water - water", "world - wereld", "two - twee", "no - nee"]
+}
