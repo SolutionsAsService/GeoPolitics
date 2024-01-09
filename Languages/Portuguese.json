@@ -27,8 +27,9 @@
     "Macau (China)"
   ],
   "co_official_status": ["East Timor", "Equatorial Guinea", "Macau"],
-  "ethnicity": ["Lusophones", "Portuguese", "Brazilians", "Luso-Asians", "Luso-Africans"],
-  "speakers": {
+  "ethnicity": { "Lusophones": [ "Portuguese", "Brazilians", "Luso-Asians", "Luso-Africans"],
+  },
+    "speakers": {
     "native": "230,000,000",
     "second_language": "25,000,000",
     "total": "260,000,000"
