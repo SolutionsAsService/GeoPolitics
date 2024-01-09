@@ -1,0 +1,89 @@
+{
+  "language": "Arabic",
+  "endonyms": {
+    "formal": "اَلْعَرَبِيَّة",
+    "pronunciation": "al-ʿarabiyyah",
+    "informal": "عَرَبِيّ",
+    "informal_pronunciation": ["ˈʕarabiː", "ʕaraˈbij"]
+  },
+  "script": "Naskh script",
+  "native_to": "Arab world and surrounding regions",
+  "ethnicity": ["Arabs", "Other Middle East and North African peoples"],
+  "speakers": {
+    "native": 360000000,
+    "L2_users": 270000000
+  },
+  "language_family": {
+    "root": "Afro-Asiatic",
+    "branch": "Semitic",
+    "sub_branch": "West Semitic",
+    "group": "Central Semitic"
+  },
+  "early_forms": ["Proto-Afroasiatic", "Proto-Semitic", "Proto-Arabic", "Old Arabic", "Pre-classical Arabic", "Old Hijazi Arabic", "Classical Arabic"],
+  "standard_forms": ["Modern Standard Arabic"],
+  "dialects": [
+    "Egyptian", "Sudanese", "Levantine", "Maghrebi", "Mesopotamian", "Peninsular", "Central Asian", "Chadian", "Shirvani", "Siculo-Arabic", "Andalusi", "Cypriot", "Saʽidi", "Judeo-Arabic"
+  ],
+  "writing_systems": [
+    "Arabic alphabet",
+    "Latin script (various forms)",
+    "Hebrew alphabet",
+    "Syriac alphabet",
+    "Greek alphabet"
+  ],
+  "signed_forms": "Signed Arabic (various national forms)",
+  "official_status": {
+    "official_language": [
+      "Algeria", "Bahrain", "Chad", "Comoros", "Djibouti", "Egypt", "Eritrea", "Iraq", "Jordan", "Kuwait", "Lebanon", "Libya", "Mauritania", "Morocco", "Oman", "Palestine", "Qatar", "Saudi Arabia", "Somalia", "Sudan", "Syria", "Tunisia", "United Arab Emirates", "Yemen", "Zanzibar (Tanzania)", "Sahrawi Arab Democratic Republic", "Somaliland"
+    ],
+    "international_organizations": ["African Union", "Arab League", "Organisation of Islamic Cooperation", "United Nations"],
+    "special_status": ["Iran", "Pakistan"],
+    "recognized_minority": ["Cyprus", "Israel", "Mali", "Niger", "Philippines", "Senegal", "South Africa"]
+  },
+  "regulatory_bodies": [
+    "Supreme Council of the Arabic language in Algeria", "Academy of the Arabic Language in Cairo", "Academy of the Arabic Language in Israel", "Iraqi Academy of Sciences", "Jordan Academy of Arabic", "Academy of the Arabic Language in Jamahiriya", "Academy of the Arabic Language in Rabat", "Academy of the Arabic Language in Riyadh", "Academy of the Arabic Language in Mogadishu", "Academy of the Arabic Language in Khartoum", "Arab Academy of Damascus", "Beit Al-Hikma Foundation"
+  ],
+  "language_codes": {
+    "ISO_639-1": "ar",
+    "ISO_639-2": "ara",
+    "ISO_639-3": {
+      "inclusive_code": "ara",
+      "individual_codes": [
+        "arq", "xaa", "abv", "avl", "shu", "acy", "adf", "arz", "acm", "afb", "ayh", "mey", "acw", "apc", "ayl", "ary", "ars", "acx", "ayp", "aao", "aec", "ayn", "ssh", "sqr", "arb", "apd", "acq", "abh", "aeb", "auz"
+      ]
+    }
+  },
+  "glottolog": "arab1395",
+  "linguasphere": "12-AAC",
+  "diglossia": {
+    "presence": true,
+    "description": "Opposition between standard prestige language (Literary Arabic: Modern Standard Arabic or Classical Arabic) and diverse vernacular varieties (mother tongues)."
+  },
+  "colloquial_varieties": {
+    "relationship_with_MSA": "Significantly vary, not mutually intelligible",
+    "MSA_acquisition": "Through formal education",
+    "usage": "Literature, official documents, formal written media, formal contexts, news bulletins, prayers"
+  },
+  "vernaculars": {
+    "communication_medium": "Usual medium of communication in all domains",
+    "standardization": "Not standardized",
+    "mutual_intelligibility": "Varies significantly"
+  },
+  "writing_variation": {
+    "traditional_script": "Arabic alphabet (right-to-left abjad)",
+    "online_presence": "Significant increase in dialects written online",
+    "alternative_scripts": [
+      "Latin script", "Hebrew characters", "Syriac alphabet", "Greek alphabet"
+    ]
+  },
+  "international_presence": {
+    "spoken_ranking": "Sixth most spoken language in the world",
+    "status": "Most spoken language that is neither Chinese nor Indo-European"
+  },
+  "references": [
+    {"id": 1, "source": "Source 1"},
+    {"id": 2, "source": "Source 2"},
+    {"id": 3, "source": "Source 3"},
+    ...
+  ]
+}
