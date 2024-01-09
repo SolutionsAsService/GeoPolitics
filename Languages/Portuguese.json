@@ -1,0 +1,77 @@
+{
+  "language": "Portuguese",
+  "endonym": "português or língua portuguesa",
+  "type": "Western Romance language",
+  "language_family": {
+    "root": "Indo-European",
+    "branch": "Italic",
+    "sub_branch": "Latino-Faliscan",
+    "group": "Romance",
+    "sub_group": "Italo-Western",
+    "classification": "Western Romance",
+    "sub_classification": "Ibero-Romance",
+    "regional_classification": "West Iberian",
+    "specific_classification": "Galician-Portuguese"
+  },
+  "origin": "Iberian Peninsula, Europe",
+  "official_language_in": [
+    "Portugal",
+    "Brazil",
+    "Cape Verde",
+    "Angola",
+    "Mozambique",
+    "Guinea-Bissau",
+    "São Tomé and Príncipe",
+    "East Timor",
+    "Equatorial Guinea",
+    "Macau (China)"
+  ],
+  "co_official_status": ["East Timor", "Equatorial Guinea", "Macau"],
+  "ethnicity": ["Lusophones", "Portuguese", "Brazilians", "Luso-Asians", "Luso-Africans"],
+  "speakers": {
+    "native": 230000000,
+    "second_language": 25000000,
+    "total": 260000000
+  },
+  "dialects": [
+    "Goan",
+    "Nusantaran",
+    "European",
+    "Brazilian",
+    "Uruguayan",
+    "São Tomean",
+    "Macanese",
+    "Angolan",
+    "Cape Verde",
+    "Guinean",
+    "Mozambican",
+    "Judaeo-Portuguese (extinct)"
+  ],
+  "writing_system": ["Latin (Portuguese alphabet)", "Portuguese Braille"],
+  "signed_forms": ["Manually coded Portuguese"],
+  "regulated_by": {
+    "Portugal": "Lisbon Academy of Sciences (Lisbon Academy Class of Letters)",
+    "Brazil": "Academia Brasileira de Letras",
+    "Mozambique": "Escola Portuguesa de Moçambique (future)"
+  },
+  "language_codes": {
+    "ISO_639-1": "pt",
+    "ISO_639-2": "por",
+    "ISO_639-3": "por"
+  },
+  "classification_systems": {
+    "glottolog": "port1283",
+    "linguasphere": "51-AAA-a"
+  },
+  "presence_worldwide": {
+    "native_language_majority": ["Portugal", "Brazil", "other Lusophone countries"],
+    "official_administrative_language": [],
+    "cultural_secondary_language": ["Uruguay", "Spain (Galician language)", "South Africa"]
+  },
+  "UNESCO_status": "Not endangered",
+  "phonetic_symbols": "IPA (International Phonetic Alphabet)",
+  "global_influence": "One of the 10 most influential languages in the world",
+  "pronunciation": {
+    "standard": "[puɾtuˈɣeʃ], [poʁtuˈɡe(j)s]"
+  }
+}
