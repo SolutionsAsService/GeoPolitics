@@ -13,16 +13,16 @@
          "PortogueseName": "Associação Latino-Americana de Integração",
         "Abbreviation": "LAIA / ALADI",
         "Type": "International and Regional Organization",
-      "Members": ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Cuba", "Ecuador", "Mexico", "Paraguay", "Panama", "Peru", "Uruguay", "Venezuela" ],
-      "AdministrativeCenter": "Montevideo, Uruguay",
-      "WorkingLanguages": ["Spanish", "Portuguese"],
-      "Establishment": "12 August 1980",
-      "Area": "35,262,114 km2",
-      "Population": "515,722,726 (2008 estimate)",
-      "Density": "14.6/km2",
-      "Timezone": "UTC-3 to -8",
-      "Website": "http://www.aladi.org",
-     "Objectives": "Promoting harmonious and balanced socio-economic development in the region with the long-term goal of establishing a Latin-American single market."
+        "Members": ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Cuba", "Ecuador", "Mexico", "Paraguay", "Panama", "Peru", "Uruguay", "Venezuela" ],
+        "AdministrativeCenter": "Montevideo, Uruguay",
+        "WorkingLanguages": ["Spanish", "Portuguese"],
+        "Establishment": "12 August 1980",
+        "Area": "35,262,114 km2",
+        "Population": "515,722,726 (2008 estimate)",
+        "Density": "14.6/km2",
+        "Timezone": "UTC-3 to -8",
+        "Website": "http://www.aladi.org",
+        "Objectives": "Promoting harmonious and balanced socio-economic development in the region with the long-term goal of establishing a Latin-American single market."
      },
 
       {
