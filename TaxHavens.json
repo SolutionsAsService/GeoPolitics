@@ -1,0 +1,159 @@
+[
+    {
+        "country": "Marshall Islands",
+        "corporate_tax": {
+            "lowest_rate": "0.8%",
+            "highest_rate": "3%"
+        },
+        "individual_income_tax": {
+            "lowest_marginal_rate": "0%",
+            "highest_marginal_rate": "12%"
+        },
+        "vat_gst_sales_tax": "4% (highest rate), 2% (lowest rate)",
+        "notes": "Taxation in Marshall Islands"
+    },
+    {
+        "country": "Belize",
+        "corporate_tax": {
+            "lowest_rate": "0.75%",
+            "highest_rate": "19%"
+        },
+        "individual_income_tax": {
+            "lowest_marginal_rate": "0%",
+            "highest_marginal_rate": "25%"
+        },
+        "vat_gst_sales_tax": "12.5%",
+        "sales_tax_exemptions": "0% (In general exempted, except in some specific cases)",
+        "notes": "Taxation in Belize"
+    },
+    {
+        "country": "Niue",
+        "corporate_tax": "0%",
+        "vat_gst_sales_tax": "12.5%",
+        "notes": "Taxation in Niue"
+    },
+    {
+        "country": "Norfolk Island",
+        "corporate_tax": "0%",
+        "notes": "Taxation in Norfolk Island"
+    },
+    {
+        "country": "Palau",
+        "corporate_tax": "0%",
+        "notes": "Taxation in Palau"
+    },
+    {
+        "country": "Tokelau",
+        "corporate_tax": "0%",
+        "notes": "Taxation in Tokelau"
+    },
+    {
+        "country": "Turks and Caicos Islands",
+        "corporate_tax": "0%",
+        "notes": "Taxation in Turks and Caicos Islands"
+    },
+    {
+        "country": "Anguilla",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in Anguilla"
+    },
+    {
+        "country": "Bahamas",
+        "corporate_tax": "0%",
+        "individual_income_tax": {
+            "lowest_marginal_rate": "0%",
+            "additional_tax": "8.8% social security tax"
+        },
+        "vat_gst_sales_tax": "12% (standard rate)",
+        "notes": "Taxation in the Bahamas"
+    },
+    {
+        "country": "Bahrain",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "vat_gst_sales_tax": {
+            "standard_rate": "10%",
+            "essential_goods": "0%"
+        },
+        "notes": "Taxation in Bahrain"
+    },
+    {
+        "country": "Bermuda",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in Bermuda"
+    },
+    {
+        "country": "Cayman Islands",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in the Cayman Islands"
+    },
+    {
+        "country": "Pitcairn Islands",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in Pitcairn Islands"
+    },
+    {
+        "country": "Saint Barthélemy",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in Saint Barthélemy"
+    },
+    {
+        "country": "Sark",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "property_personal_capital_tax": "maximum £6,500",
+        "notes": "Taxation in Sark"
+    },
+    {
+        "country": "Vanuatu",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in Vanuatu"
+    },
+    {
+        "country": "British Virgin Islands",
+        "corporate_tax": "0%",
+        "notes": "Taxation in the British Virgin Islands"
+    },
+    {
+        "country": "Wallis and Futuna",
+        "corporate_tax": "0%",
+        "individual_income_tax": "0%",
+        "notes": "Taxation in Wallis and Futuna"
+    },
+    {
+        "country": "Guernsey",
+        "corporate_tax": "0%",
+        "individual_income_tax": {
+            "lowest_marginal_rate": "0% (if earning under £658.67 a month)",
+            "highest_marginal_rate": "20% (+ 6.6-11.3% Social Security)"
+        },
+        "vat_gst_sales_tax": "0%",
+        "notes": "Taxation in Guernsey"
+    },
+    {
+        "country": "Isle of Man",
+        "corporate_tax": "0%",
+        "individual_income_tax": {
+            "lowest_marginal_rate": "10%",
+            "highest_marginal_rate": "20%"
+        },
+        "vat_gst_sales_tax": "20% (standard rate), 5% (home renovations)",
+        "notes": "Taxation in Isle of Man"
+    },
+    {
+        "country": "Jersey",
+        "corporate_tax": "0%",
+        "individual_income_tax": {
+            "lowest_marginal_rate": "0%",
+            "highest_marginal_rate": "20%"
+        },
+        "vat_gst_sales_tax": "5%",
+        "notes": "Taxation in Jersey"
+    }
+]
