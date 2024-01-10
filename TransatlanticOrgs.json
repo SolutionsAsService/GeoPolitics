@@ -1,8 +1,12 @@
 {
     "Transatlantic_Orgs": [
       {
-        "FullName": "Organization of American States",
-        "abbreviation": "OAS",
+        "FullName": "Organization of Ibero-American States",
+        "SpanishName": "Organización de Estados Iberoamericanos", 
+         "PortugueseName": "Organização de Estados Iberoamericanos", 
+        "Catalan": "Organització d'Estats Iberoamericans",
+        "formalName": "the Organization of Ibero-American States for Education, Science and Culture",
+        "abbreviation": "OEI",
         "type": "Continental Organization",
         "members": "35 member states in the Americas",
         "purpose": "To promote democracy, human rights, security, and development in the Western Hemisphere."
