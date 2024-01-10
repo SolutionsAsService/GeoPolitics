@@ -1,21 +1,22 @@
 {
     "americas_regional_organizations": [
       {
-        "name": "Organization of American States",
+        "FullName": "Organization of American States",
         "abbreviation": "OAS",
         "type": "Continental Organization",
         "members": "35 member states in the Americas",
         "purpose": "To promote democracy, human rights, security, and development in the Western Hemisphere."
       },
       {
-        "name": "Union of South American Nations",
+        "FullName": "Union of South American Nations",
         "abbreviation": "USAN",
         "type": "Political Union",
         "members": ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela"],
         "purpose": "To build a regional space for cultural, social, and economic integration."
       },
       {
-        "name": "Mercosur",
+        "CommonName": "Mercosur",
+        "FullName": "Southern Common Market",
         "type": "Economic and Political Bloc",
         "members": ["Argentina", "Brazil", "Paraguay", "Uruguay", "Venezuela (suspended)"],
         "purpose": "To promote free trade and fluid movement of goods, people, and currency."
