@@ -3,6 +3,9 @@
       
           {
        "FullName": "Organization of American States",
+              "Spanish": "Organización de los Estados Americanos",
+               "Portuguese": "Organização dos Estados Americanos",
+              "French": "Organisation des États américains",
        "Abbreviations": ["OAS", "OEA"],
        "Type": "International Organization",
        "MemberStates": "32 member states in the Americas",
