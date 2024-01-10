@@ -7,7 +7,7 @@
         "Catalan": "Organització d'Estats Iberoamericans",
         "formalName": "the Organization of Ibero-American States for Education, Science and Culture",
         "abbreviation": "OEI",
-        "type": "Continental Organization",
-        "members": "35 member states in the Americas",
-        "purpose": "To promote democracy, human rights, security, and development in the Western Hemisphere."
+        "type": "International Organization",
+        "members": ["Andorra", "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica", "Cuba", "Dominican Republic", "Ecuador", "El Salvador", "Equatorial Guinea", "Guatemala", "Honduras", "Mexico", "Nicaragua", "Panama", "Paraguay", "Peru", "Portugal", "Spain", "Uruguay", "Venezuela"],
+        "purpose": "purpose of the OEI is to promote intergovernmental cooperation among its member nations, primarily in the fields of education, science, technology and the arts"
       },
