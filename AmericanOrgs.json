@@ -19,6 +19,7 @@
         "FullName": "Southern Common Market",
         "type": "Economic and Political Bloc",
         "members": ["Argentina", "Brazil", "Paraguay", "Uruguay", "Venezuela (suspended)"],
+        "AssociateMembers": ["Bolivia", "Chile", "Colombia", "Ecuador", "Guyana", "Peru", "Suriname"],
         "purpose": "To promote free trade and fluid movement of goods, people, and currency."
       },
       {
