@@ -1,17 +1,30 @@
 [
     {
-        "country": "Marshall Islands",
-        "corporate_tax": {
-            "lowest_rate": "0.8%",
-            "highest_rate": "3%"
-        },
-        "individual_income_tax": {
-            "lowest_marginal_rate": "0%",
-            "highest_marginal_rate": "12%"
-        },
-        "vat_gst_sales_tax": "4% (highest rate), 2% (lowest rate)",
-        "notes": "Taxation in Marshall Islands"
+    "country": "Marshall Islands",
+    "corporate_tax": {
+        "lowest_rate": "0.8%",
+        "highest_rate": "3%"
     },
+    "individual_income_tax": {
+        "lowest_marginal_rate": "0%",
+        "highest_marginal_rate": "12%",
+        "exemption_threshold": "$1,040 for incomes up to $5,200 per year"
+    },
+    "vat_gst_sales_tax": {
+        "standard_rate": "8%",
+        "additional_taxes": {
+            "alcohol": "specific tax rate",
+            "tobacco": "specific tax rate",
+            "fuel": "specific tax rate"
+        }
+    },
+    "tax_for_non_residents": {
+        "corporate_tax_on_domestic_income": "10%",
+        "annual_company_registration_fee": "varies"
+    },
+    "notes": "Taxation in Marshall Islands. Notable for no personal income tax, capital gains tax, or inheritance tax. Provides tax incentives for foreign investors and has specific regulations for non-residents."
+},
+
     {
         "country": "Belize",
         "corporate_tax": {
