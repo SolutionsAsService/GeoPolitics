@@ -168,5 +168,72 @@
         },
         "vat_gst_sales_tax": "5%",
         "notes": "Taxation in Jersey"
+    },
+    {
+    "country": "Puerto Rico",
+    "corporate_tax": {
+        "notes": "Details on corporate tax rates for Puerto Rico in 2024 are not explicitly found. General trends indicate high taxes on domestic corporations with lower taxes on U.S. subsidiaries."
+    },
+    "individual_income_tax": {
+        "residency_rules": {
+            "taxed_on_worldwide_income": "Puerto Rican residents",
+            "taxed_on_local_income": "Non-residents"
+        },
+        "tax_brackets": [
+            {
+                "income_range": "Not over $9,000",
+                "rate": "0%"
+            },
+            {
+                "income_range": "$9,001 - $25,000",
+                "rate": "7%"
+            },
+            {
+                "income_range": "$25,001 - $41,500",
+                "rate": "14%"
+            },
+            {
+                "income_range": "$41,501 - $61,500",
+                "rate": "25%"
+            },
+            {
+                "income_range": "Over $61,500",
+                "rate": "33%"
+            }
+        ],
+        "additional_taxes": {
+            "gradual_adjustment_tax": {
+                "description": "5% on net taxable income over $500,000",
+                "limit": "Limited to 33% of personal and dependents' exemption plus $8,895"
+            }
+        },
+        "capital_gains_tax": {
+            "long_term": "15%",
+            "short_term": "Regular gradual rates"
+        },
+        "investment_income_tax": {
+            "non-resident_foreign_nationals": {
+                "long_term_capital_gains": "25%"
+            },
+            "non-resident_US_citizens": {
+                "long_term_capital_gains": "15%"
+            }
+        }
+    },
+    "sales_tax": {
+        "standard_rate": "6%",
+        "average_rate_after_local_surtaxes": "7%",
+        "exemptions": {
+            "prescription_drugs": "Exempt",
+            "groceries": "1%",
+            "prepared_food": "6%",
+            "non-prescription_drugs": "6%"
+        }
+    },
+    "other_notes": {
+        "historical_context": "Past tax policies, such as Section 936, significantly impacted Puerto Rico's economy and fiscal situation.",
+        "triple_tax_exempt_bonds": "Interest on bonds issued by Puerto Rico’s government is exempt from federal, state, or local taxes."
     }
+}
+
 ]
