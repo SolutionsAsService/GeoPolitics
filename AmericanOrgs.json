@@ -20,6 +20,7 @@
         "type": "Economic and Political Bloc",
         "members": ["Argentina", "Brazil", "Paraguay", "Uruguay", "Venezuela (suspended)"],
         "AssociateMembers": ["Bolivia", "Chile", "Colombia", "Ecuador", "Guyana", "Peru", "Suriname"],
+        "ObserverMembers": ["New Zealand", "Mexico"],
         "purpose": "To promote free trade and fluid movement of goods, people, and currency.",
          "establishedBy": {
           "treaty": "the Treaty of Asunción" 
