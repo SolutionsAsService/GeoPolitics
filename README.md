@@ -1,4 +1,8 @@
-# Historical and Contemporary International Organizations
+# GeoPolitics Repo
+
+## Includes
+- Historical and Contemporary International Organizations
+- Tax Havens
 
 This repository contains a collection of JSON files that provide detailed information about various historical and contemporary international organizations, including defunct organizations, ideological and political groupings, and arms control organizations and treaties. Each file is structured to offer comprehensive insights into the member states, purposes, and operational durations of these organizations.
 
