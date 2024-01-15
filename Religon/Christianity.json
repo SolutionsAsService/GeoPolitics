@@ -1,0 +1,88 @@
+{
+  "Religion": "Christianity",
+  "Description": "An Abrahamic monotheistic religion based on the life and teachings of Jesus",
+  "Followers": {
+    "Name": "Christians",
+    "Number": 2400000000,
+    "Percentage_of_World_Population": 31.2,
+    "Majority_in_Countries": 157
+  },
+  "Beliefs": {
+    "Core": "Jesus is the Son of God and the Messiah",
+    "Salvation": "Belief in Jesus' ministry, crucifixion, and resurrection",
+    "Gospel": "The 'good news' of Jesus's teachings and salvation"
+  },
+  "Scriptures": {
+    "Bible": {
+      "Old_Testament": "Hebrew Bible",
+      "New_Testament": ["Gospels of Matthew, Mark, Luke, John", "Epistles", "Apocalyptic literature"]
+    },
+    "Languages": ["Biblical Hebrew", "Koine Greek"]
+  },
+  "Origin": {
+    "Time_Period": "1st century AD",
+    "Location": "Judaea, Roman Empire",
+    "Founder": "Jesus",
+    "Separated_From": "Second Temple Judaism"
+  },
+  "Branches": {
+    "Roman_Catholicism": 1300000000,
+    "Protestantism": 900000000,
+    "Eastern_Orthodoxy": 220000000,
+    "Oriental_Orthodoxy": 60000000,
+    "Restorationism": 35000000,
+    "Church_of_the_East": 600000
+  },
+  "History
+": {
+"Early_Christianity": {
+"Context": "Judaic sect with Hellenistic influence",
+"Spread": "Eastern Mediterranean, despite persecution",
+"Gentile_Inclusion": "2nd century separation from Judaism"
+},
+"Roman_Empire_Era": {
+"Edict_of_Milan": "313 AD by Emperor Constantine I",
+"Council_of_Nicaea": "325 AD",
+"State_Religion": "380 AD"
+},
+"Schisms": {
+"Church_of_the_East": "5th century",
+"East-West_Schism": "1054 between Eastern Orthodox and Catholic Church",
+"Protestant_Reformation": "16th century"
+},
+"Global_Expansion": {
+"Age_of_Discovery": "15th-17th century",
+"Missionary_Work": "Worldwide spread"
+},
+"Modern_Era": {
+"Role_in_Western_Civilization": ["Late antiquity", "Middle Ages"],
+"Growth": ["Africa", "Asia"],
+"Decline": ["Western countries"]
+}
+},
+"Demographics": {
+"Major_Branches": ["Roman Catholicism", "Protestantism", "Eastern Orthodoxy"],
+"Population": {
+"Africa": "Growing",
+"Asia": "Growing",
+"Middle_East": "Persecuted",
+"North_Africa": "Persecuted",
+"Europe": "Dominant but declining",
+"Americas": "Dominant"
+}
+},
+"Cultural_Influence": {
+"Development_of_Western_Civilization": true,
+"Art": "Significant contributions",
+"Literature": "Influential",
+"Law_and_Politics": "Historical impact"
+},
+"Ecumenism": {
+"Description": "Efforts toward Christian unity",
+"Challenges": "Doctrinal differences"
+},
+"Criticism_and_Apologetics": {
+"Criticism": "Various theological and moral criticisms",
+"Apologetics": "Defense of Christian doctrines"
+}
+}
