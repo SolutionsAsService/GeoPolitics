@@ -33,8 +33,7 @@
     "Restorationism": 35000000,
     "Church_of_the_East": 600000
   },
-  "History
-": {
+  "History": {
 "Early_Christianity": {
 "Context": "Judaic sect with Hellenistic influence",
 "Spread": "Eastern Mediterranean, despite persecution",
@@ -62,8 +61,8 @@
 },
 "Demographics": {
 "Major_Branches": ["Roman Catholicism", "Protestantism", "Eastern Orthodoxy"],
-"Population": {
-"Africa": "Growing",
+     "Population": {
+        "Africa": "Growing",
 "Asia": "Growing",
 "Middle_East": "Persecuted",
 "North_Africa": "Persecuted",
@@ -71,7 +70,7 @@
 "Americas": "Dominant"
 }
 },
-"Cultural_Influence": {
+    "Cultural_Influence": {
 "Development_of_Western_Civilization": true,
 "Art": "Significant contributions",
 "Literature": "Influential",
@@ -81,7 +80,7 @@
 "Description": "Efforts toward Christian unity",
 "Challenges": "Doctrinal differences"
 },
-"Criticism_and_Apologetics": {
+    "Criticism_and_Apologetics": {
 "Criticism": "Various theological and moral criticisms",
 "Apologetics": "Defense of Christian doctrines"
 }
