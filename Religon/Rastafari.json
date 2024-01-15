@@ -1,0 +1,69 @@
+{
+  "Religion": "Rastafari",
+  "Alternative_Names": ["Rastafarianism"],
+  "Type": {
+    "Category": "Abrahamic religion",
+    "Classification": ["New religious movement", "Social movement"]
+  },
+  "Development": {
+    "Era": "1930s",
+    "Location": "Jamaica",
+    "Context": "Developed among impoverished Afro-Jamaican communities"
+  },
+  "Central_Figures": {
+    "Notable_Clergymen": ["Leonard Howell"],
+    "Key_Figure": "Haile Selassie I, Emperor of Ethiopia"
+  },
+  "Beliefs": {
+    "God": {
+      "Name": "Jah",
+      "Nature": "Monotheistic, partially residing within individuals"
+    },
+    "Haile_Selassie": {
+      "Roles": ["Second Coming of Jesus", "Jah incarnate", "Human prophet"],
+      "Significance": "Central to Rastafari beliefs"
+    },
+    "Afrocentrism": {
+      "Focus": "African diaspora, oppression in Western society",
+      "Promised_Land": "Africa (referred to as 'Zion')"
+    }
+  },
+  "Practices": {
+    "Livity": "Rastafari way of life",
+    "Groundations": {
+      "Description": "Communal meetings",
+      "Activities": ["Music", "Chanting", "Discussions", "Smoking cannabis"]
+    },
+    "Diet": "Ital dietary requirements",
+    "Hair_Style": "Dreadlocks",
+    "Gender_Roles": "Patriarchal"
+  },
+  "Influences": {
+    "Ethiopianism": "Significant influence",
+    "Back_to_Africa_Movement": "Promoted by Marcus Garvey"
+  },
+  "Conflict": {
+    "Era": "1950s",
+    "Nature": "Clashes with Jamaican society and law enforcement"
+  },
+  "Cultural_Impact": {
+    "Eras": ["1960s", "1970s"],
+    "Medium": "Reggae music",
+    "Notable_Figure": "Bob Marley"
+  },
+  "Current_Status": {
+    "Decentralization": "No central authority, diverse practices",
+    "Denominations": ["Nyahbinghi", "Bobo Ashanti", "Twelve Tribes of Israel"],
+    "Estimated_Followers": {
+      "Worldwide": "700,000 to one million",
+      "Primary_Location": "Jamaica"
+    },
+    "Demographics": {
+      "Ethnicity": "Primarily black African descent",
+      "Membership": "Some groups accept only black members"
+    }
+  },
+  "Symbols": {
+    "Flag": "Ethiopian Royal Standard (green, gold, red, lion of Judah)"
+  }
+}
