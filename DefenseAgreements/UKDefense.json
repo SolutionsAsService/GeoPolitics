@@ -1,0 +1,110 @@
+{
+  "UKDefense": {
+    "EU": [
+      {
+        "country": "France",
+        "startYear": 2010,
+        "highlights": [
+          {
+            "event": "Lancaster House treaties",
+            "details": [
+              {
+                "focus": "Defence and security agreement",
+                "activities": [
+                  "Joint exercises and training",
+                  "Military doctrine development",
+                  "Military personnel exchange programmes",
+                  "Access to each other’s defence market",
+                  "Force and capability pooling in military operations"
+                ]
+              },
+              {
+                "focus": "Nuclear weapons cooperation",
+                "activities": [
+                  "Safety and security",
+                  "Stockpile certification",
+                  "Nuclear/radiological counterterrorism"
+                ]
+              }
+            ],
+            "outcome": [
+              {
+                "initiative": "Combined Joint Expeditionary Force (CJEF)",
+                "capability": "Rapid deployment of over 10,000 personnel for various operations",
+                "status": "Reached full operating capacity in November 2020"
+              },
+              {
+                "goals": "10-year objectives achieved",
+                "includes": [
+                  "Joint nuclear facility",
+                  "Cooperation around aircraft carriers",
+                  "Development of complex weapons systems"
+                ]
+              }
+            ],
+            "future": "Commitment to continue close consultation and cooperation"
+          }
+        ],
+        "impactOfBrexit": {
+          "analysis": "UK-France cooperation expected to be unaffected",
+          "challenges": [
+            "Logistical issues for the defence industry",
+            "Visa concerns for staff circulation"
+          ]
+        },
+        "currentStatus": "Strong support and commitment to future cooperation"
+      },
+      {
+        "country": "Germany",
+        "agreementYear": 2018,
+        "highlights": [
+          {
+            "event": "Joint vision statement",
+            "details": "Commitment to future military and defence policy cooperation",
+            "activities": [
+              "Combined training as part of NATO’s air policing mission"
+            ],
+            "milestones": [
+              {
+                "event": "First UK-Germany Defence Ministerial Council",
+                "location": "RAF Brize Norton",
+                "date": "March 2019"
+              }
+            ],
+            "background": "Signing delayed due to Brexit uncertainty",
+            "potential": "Described as a largely untapped resource"
+          }
+        ]
+      },
+      {
+        "country": "Netherlands",
+        "longTermCooperation": true,
+        "highlights": [
+          {
+            "event": "United Kingdom/Netherlands Amphibious Force (UKNLAF)",
+            "startYear": 1972,
+            "purpose": "Conduct operations and training as a single force"
+          },
+          {
+            "event": "Joint vision statement",
+            "date": "2017",
+            "signatories": [
+              "UK Defence Secretary Michael Fallon",
+              "The Netherlands"
+            ],
+            "goal": "Strengthen defence relations"
+          },
+          {
+            "recentActivity": "Combined training in the Mediterranean",
+            "date": "September 2020",
+            "activities": [
+              "Joint manoeuvres",
+              "Mock air attack",
+              "Close-range sail past"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
