@@ -108,3 +108,53 @@
     ]
   }
 }
+
+{
+  "NonEUDefenceCooperation": [
+    {
+      "countries": "UK-US",
+      "description": "Long-standing defence relationship with collaboration on various defence operations, engagements, and agreements.",
+      "keyEvents": [
+        {
+          "year": 2007,
+          "event": "UK-US Defense Trade Cooperation Treaty",
+          "purpose": "Facilitate movement of certain categories of equipment and information between both countries."
+        },
+        {
+          "context": "Cooperation in Afghanistan",
+          "details": "Increased military cooperation due to joint operations in Helmand; FCO worked with the US to develop civilian plans and assisted with national level development programmes."
+        },
+        {
+          "year": 2021,
+          "event": "Discussion between the Prime Minister and US President Joe Biden",
+          "outcome": "Recommitment to the NATO alliance and shared values in promoting human rights and protecting democracy."
+        }
+      ],
+      "analysis": {
+        "by": "Peter Roberts, Director of Military Sciences at Rusi",
+        "concerns": "Decline in the military value the UK brings to the relationship, particularly in terms of GDP percentage and operational support in areas like Afghanistan."
+      }
+    },
+    {
+      "countries": "UK-Japan",
+      "description": "Increased defence cooperation, including joint military exercises and policy development.",
+      "keyEvents": [
+        {
+          "year": 2016,
+          "event": "Joint exercise with RAF Typhoon fighters hosted by the Japan Air Self-Defense Force."
+        },
+        {
+          "year": 2017,
+          "event": "Cross services agreement",
+          "purpose": "Enable UK and Japanese defence forces to act together in joint exercises and disaster relief operations."
+        },
+        {
+          "year": 2020,
+          "event": "UK’s long-term commitment to working with Japan",
+          "details": "Announced deployment of a new carrier strike group, CSG21, led by the aircraft carrier HMS Queen Elizabeth, to uphold the security of the Indo-Pacific."
+        }
+      ]
+    }
+  ]
+}
+
