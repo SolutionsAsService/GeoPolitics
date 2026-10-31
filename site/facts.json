@@ -2,7 +2,7 @@
   "built_from": "https://github.com/SolutionsAsService/GeoPolitics data/ and data/sources/",
   "figures": {
     "threads": {
-      "value": 152,
+      "value": 151,
       "procedure": "organisations, languages and games series with two or more placed members (one thread each)"
     },
     "countries": {
@@ -30,7 +30,7 @@
       "procedure": "objects with a `members` field in data/*.json, after merging duplicates"
     },
     "proseMembers": {
-      "value": 86,
+      "value": 87,
       "procedure": "of those, `members` given as prose rather than a list"
     },
     "filledFromWikidata": {
@@ -62,7 +62,7 @@
       "procedure": "editions awarded but never held, left off the games threads"
     },
     "stillUnthreaded": {
-      "value": 76,
+      "value": 77,
       "procedure": "organisations with fewer than two placed members after filling"
     },
     "unmappedNames": {
@@ -70,7 +70,7 @@
       "procedure": "distinct member names that resolve to no country (territories, regions, prose)"
     },
     "maxThrough": {
-      "value": 35,
+      "value": 34,
       "procedure": "the most threads through one country"
     },
     "heritageSites": {
@@ -94,7 +94,7 @@
       "procedure": "threads in the Politics domain"
     },
     "threads_economics": {
-      "value": 31,
+      "value": 30,
       "procedure": "threads in the Economics domain"
     },
     "threads_defence": {

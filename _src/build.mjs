@@ -135,7 +135,9 @@ for (const file of files) {
 // One body, one thread: the repository lists some bodies in two files (NATO in CountryBlocks and TranscontinentOrgs;
 // the EU as "EU" and "European Union"). Records sharing a name or abbreviation are merged; the longer member list is
 // drawn, and the record says it was listed twice and where.
-const keysOf = (o) => [o.name, o.abbr].filter((k) => k && norm(k).length >= 2).map(norm);
+const keyNorm = (k) => k.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\bthe\b/g, "").replace(/\s+/g, " ").trim();
+const ABBR_OF = { "group of seven": "g7", "group of eight": "g8", "group of twenty": "g20", "group of 77": "g77", "group of fifteen": "g15" }; // a name and its number-abbreviation are one body
+const keysOf = (o) => [...new Set([o.name, o.abbr].filter(Boolean).map(keyNorm).flatMap((k) => [k, ABBR_OF[k]]).filter((k) => k && k.length >= 2))];
 const groups = [];
 for (const o of orgs) {
   const g = groups.find((g) => g.keys.some((k) => keysOf(o).includes(k)));
@@ -388,7 +390,8 @@ function countryMap(c) {
   const members = new Set(mine.flatMap((o) => o.members));
   const knots = placed.filter((p) => members.has(p.iso3)).map((p) => {
     const [x, y] = proj(p.lon, p.lat);
-    return `<circle class="k${p.iso3 === c.iso3 ? " me" : ""}" cx="${x}" cy="${y}" r="${p.iso3 === c.iso3 ? Math.max(knotR(through.get(p.iso3) ?? 1), 4) : knotR(through.get(p.iso3) ?? 0)}"/>`;
+    const r = knotR(through.get(p.iso3) ?? 0);
+    return p.iso3 === c.iso3 ? `<circle class="me-ring" cx="${x}" cy="${y}" r="${(r + 3).toFixed(2)}"/><circle class="k me" cx="${x}" cy="${y}" r="${r}"/>` : `<circle class="k" cx="${x}" cy="${y}" r="${r}"/>`;
   }).join("");
   return `<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`The ${mine.length} threads through ${c.name}`)}"><use href="land.svg#base"/>${mine.map((o) => `<use href="threads.svg#t-${o.id}"/>`).join("")}<g aria-hidden="true">${knots}</g></svg>`;
 }
@@ -429,18 +432,14 @@ ${script}
 }
 
 const legendSwatch = (k) => `<svg class="sw" viewBox="0 0 40 10" aria-hidden="true"><path d="M1 5H39" stroke="${DOMAINS[k].color}" stroke-width="2.4" stroke-dasharray="${DOMAINS[k].dash}" fill="none"/></svg>`;
-const domainTile = (k) => `<li class="tile t-${k}"><a href="${k}.html"><span class="tname">${legendSwatch(k)}${DOMAINS[k].label}</span><span class="tnum">${fig(`threads_${k}`)}</span><span class="tsub">threads</span></a><button type="button" class="tog" aria-pressed="true" data-d="${k}" aria-label="${DOMAINS[k].label} threads">shown</button></li>`;
+const domainTile = (k) => `<li class="tile t-${k}"><a href="${k}.html"><span class="tname">${legendSwatch(k)}${DOMAINS[k].label}</span><span class="tnum">${fig(`threads_${k}`)}</span><span class="tsub">threads</span></a><label class="tog"><input type="checkbox" checked data-d="${k}"><span class="sr">${DOMAINS[k].label} threads </span>shown</label></li>`;
 const heritageTile = `<li class="tile t-heritage"><a href="heritage.html"><span class="tname"><svg class="sw" viewBox="0 0 40 10" aria-hidden="true"><circle cx="20" cy="5" r="4" fill="none" stroke="#0f6b74" stroke-width="2"/></svg>Heritage</span><span class="tnum">${fig("heritageSites")}</span><span class="tsub">World Heritage Sites</span></a></li>`;
 
 const SCRIPT = `<script>
 (() => {
   const svg = document.getElementById("weave"); if (!svg) return;
   const ths = [...svg.querySelectorAll(".th")];
-  for (const b of document.querySelectorAll(".tog")) b.addEventListener("click", () => {
-    const on = b.getAttribute("aria-pressed") !== "true";
-    b.setAttribute("aria-pressed", on); b.textContent = on ? "shown" : "hidden";
-    svg.classList.toggle("hide-" + b.dataset.d, !on);
-  });
+  for (const b of document.querySelectorAll(".tog input")) b.addEventListener("change", () => svg.classList.toggle("hide-" + b.dataset.d, !b.checked));
   const out = document.getElementById("readout");
   const show = (iso, name, n) => {
     svg.classList.add("focusing");
@@ -473,7 +472,7 @@ const keyDot = (n) => `<svg class="key" viewBox="-8 -8 16 16" aria-hidden="true"
 const sizeKey = `<span class="sizekey">A knot's area is proportional to the threads through it: ${keyDot(1)} 1 ${keyDot(10)} 10 ${keyDot(maxThrough)} ${maxThrough}.</span>`;
 const fringe = (() => {
   const n = notThreaded.length, w = 1000, step = w / (n + 1);
-  const strands = Array.from({ length: n }, (_, i) => { const x = (step * (i + 1)).toFixed(1), d = (i * 37) % 7 - 3; return `<path d="M${x} 2c${d} 6 ${-d} 10 ${d / 2} 16"/>`; }).join("");
+  const strands = Array.from({ length: n }, (_, i) => { const x = step * (i + 1), len = 7 + ((i * 53) % 11), sway = ((i * 29) % 9) - 4, curl = ((i * 17) % 5) - 2; return `<path d="M${x.toFixed(1)} 1c${sway} ${(len / 3).toFixed(1)} ${-sway + curl} ${((2 * len) / 3).toFixed(1)} ${(curl * 1.5).toFixed(1)} ${len}"/>`; }).join("");
   return `<a class="fringe" href="organisations.html#loose" aria-label="${n} records too loose to draw: see why"><svg viewBox="0 0 1000 20" preserveAspectRatio="none" aria-hidden="true">${strands}</svg><span>${n} loose threads: records that could not be drawn</span></a>`;
 })();
 const religionCount = readdirSync(join(DATA, "Religion")).length;
@@ -486,7 +485,7 @@ pages["index.html"] = page({
   description: `${fig("threads")} threads through ${fig("statesThreaded")} states and ${fig("territoriesThreaded")} territories: every alliance, union, shared language and games host as one thread across the map.`,
   script: SCRIPT,
   body: `<section class="hero"><div class="wrap">
-<h1>The world, woven: <span>${fig("threads")} threads</span> through ${fig("statesThreaded")} states and ${fig("territoriesThreaded")} territories.</h1>
+<h1>The world, woven: <span>${fig("threads")} threads</span> through ${fig("statesThreaded")} states, ${fig("territoriesThreaded")} territories and ${fig("historicThreaded")} historic state.</h1>
 <p class="how">One thread is one organisation, shared language or games series, drawn through its members from west to east. ${sizeKey} <span id="readout" aria-live="polite">Point at a country to trace it (on a phone, tap once); click to open it.</span></p>
 ${mapSvg({ id: "weave", label: `World map with ${fig("threads")} threads through ${fig("statesThreaded")} states, ${fig("territoriesThreaded")} territories and ${fig("historicThreaded")} historic state` })}
 ${fringe}
@@ -501,8 +500,8 @@ ${fringe}
 </div></section>`,
 });
 
-const orgRow = (o) => `<tr id="${o.id}"><th scope="row">${esc(o.name)}${o.abbr && o.abbr !== o.name ? ` <span class="abbr">${esc(o.abbr)}</span>` : ""}${o.note ? `<br><span class="note">${esc(o.note)}</span>` : ""}</th><td>${esc(o.type)}</td><td>${o.members.length >= 2 ? o.members.map((m) => `<a href="country-${m.toLowerCase()}.html">${esc(countries.get(m).name)}</a>`).join(", ") : `<span class="note">Not threaded: ${esc(o.prose ? `members given as "${o.prose}"` : "fewer than two members resolve to countries")}</span>`}${o.unresolved?.length ? `<br><span class="note">Not placed: ${o.unresolved.map(esc).join("; ")}</span>` : ""}</td><td class="src">${esc(o.source)}${o.filled ? `<br><span class="note">Filled because ${esc(o.filled)}</span>` : ""}${o.fillRejected ? `<br><span class="note">${esc(o.fillRejected)}</span>` : ""}${o.listedAlso ? `<br><span class="note">Also listed in ${esc(o.listedAlso.join("; "))}; drawn once</span>` : ""}</td></tr>`;
-const orgTable = (list, caption) => `<div class="tbl"><table><caption>${esc(caption)}</caption><thead><tr><th scope="col">Organisation</th><th scope="col">Type</th><th scope="col">Members</th><th scope="col">Source</th></tr></thead><tbody>${list.map(orgRow).join("")}</tbody></table></div>`;
+const orgRow = (o, suffix = "") => `<tr id="${o.id}${suffix}"><th scope="row">${esc(o.name)}${o.abbr && o.abbr !== o.name ? ` <span class="abbr">${esc(o.abbr)}</span>` : ""}${o.note ? `<br><span class="note">${esc(o.note)}</span>` : ""}</th><td>${esc(o.type)}</td><td>${o.members.length >= 2 ? o.members.map((m) => `<a href="country-${m.toLowerCase()}.html">${esc(countries.get(m).name)}</a>`).join(", ") : `<span class="note">Not threaded: ${esc(o.prose ? `members given as "${o.prose}"` : "fewer than two members resolve to countries")}</span>`}${o.unresolved?.length ? `<br><span class="note">Not placed: ${o.unresolved.map(esc).join("; ")}</span>` : ""}</td><td class="src">${esc(o.source)}${o.filled ? `<br><span class="note">Filled because ${esc(o.filled)}</span>` : ""}${o.fillRejected ? `<br><span class="note">${esc(o.fillRejected)}</span>` : ""}${o.listedAlso ? `<br><span class="note">Also listed in ${esc(o.listedAlso.join("; "))}; drawn once</span>` : ""}</td></tr>`;
+const orgTable = (list, caption, suffix = "") => `<div class="tbl"><table><caption>${esc(caption)}</caption><thead><tr><th scope="col">Organisation</th><th scope="col">Type</th><th scope="col">Members</th><th scope="col">Source</th></tr></thead><tbody>${list.map((o) => orgRow(o, suffix)).join("")}</tbody></table></div>`;
 
 for (const [k, D] of Object.entries(DOMAINS)) {
   const list = orgs.filter((o) => o.domain === k);
@@ -519,7 +518,7 @@ ${mapSvg({ only: [k], id: "weave", label: `${D.label} threads on the world map` 
 pages["heritage.html"] = page({
   file: "heritage.html", current: "heritage.html", title: "Heritage · GeoPolitics", description: `${fig("heritageSites")} World Heritage Sites across ${heritage.size} places, from Wikidata.`,
   body: `<section class="head"><div class="wrap"><p class="kicker">Heritage</p><h1>${fig("heritageSites")} World Heritage Sites in ${heritage.size} places.</h1>
-<p class="how">Art and heritage are not threads: a site belongs to a place. Each ring's area is proportional to the place's sites. A site that crosses a border counts in each country it lies in, so the table sums to ${fig("heritageByCountrySum")}, more than the ${fig("heritageSites")} sites. Source: Wikidata, UNESCO World Heritage Site id (P757) by country (P17)${WD_HER ? `, fetched ${WD_HER.fetched.slice(0, 10)}` : ""}.</p>
+<p class="how">Art and heritage are not threads: a site belongs to a place. Each ring's area is proportional to the place's sites: ${[1, 10, Math.max(...heritage.values())].map((n) => `<svg class="key" viewBox="-17 -17 34 34" aria-hidden="true" style="width:${Math.max(10, 2 * 16 * Math.sqrt(n / Math.max(...heritage.values())) + 4).toFixed(0)}px;height:auto"><circle class="her" r="${(16 * Math.sqrt(n / Math.max(...heritage.values()))).toFixed(2)}"/></svg> ${n}`).join(" ")}. A site that crosses a border counts in each country it lies in, so the table sums to ${fig("heritageByCountrySum")}, more than the ${fig("heritageSites")} sites. Source: Wikidata, UNESCO World Heritage Site id (P757) by country (P17)${WD_HER ? `, fetched ${WD_HER.fetched.slice(0, 10)}` : ""}.</p>
 <svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="World Heritage Sites by country: the table below lists every country"><use href="land.svg#base"/>${[...heritage.entries()].filter(([iso]) => countries.get(iso)?.lon != null).sort((a, b) => b[1] - a[1]).map(([iso, n]) => { const [x, y] = proj(countries.get(iso).lon, countries.get(iso).lat); const mx = Math.max(...heritage.values()); return `<circle class="her" cx="${x}" cy="${y}" r="${(16 * Math.sqrt(n / mx)).toFixed(2)}"><title>${esc(countries.get(iso).name)}: ${n} sites</title></circle>`; }).join("")}</svg></div></section>
 <section class="body"><div class="wrap"><div class="tbl"><table><caption>World Heritage Sites by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Sites</th></tr></thead><tbody>${[...heritage.entries()].sort((a, b) => b[1] - a[1] || countries.get(a[0]).name.localeCompare(countries.get(b[0]).name)).map(([iso, n]) => `<tr><th scope="row"><a href="country-${iso.toLowerCase()}.html">${esc(countries.get(iso).name)}</a></th><td class="num">${n}</td></tr>`).join("")}</tbody></table></div></div></section>`,
 });
@@ -530,7 +529,7 @@ pages["countries.html"] = page({
   script: `<script>(() => { const q = document.getElementById("q"), rows = [...document.querySelectorAll("#clist li")]; const n = document.getElementById("n"); q.addEventListener("input", () => { const v = q.value.trim().toLowerCase(); let k = 0; for (const r of rows) { const hit = !v || r.dataset.k.includes(v); r.hidden = !hit; k += hit; } n.textContent = k; }); })();</script>`,
   body: `<section class="head"><div class="wrap"><p class="kicker">Countries</p><h1>${allPlaced.length} countries, and the threads through each.</h1><p class="how">The map as a list: every country, its thread count by domain, and a page of its own.</p>
 <p><label for="q">Find a country</label> <input id="q" type="search" autocomplete="off"> <span class="note"><span id="n">${allPlaced.length}</span> shown</span></p></div></section>
-<section class="body"><div class="wrap"><ul id="clist" class="clist">${allPlaced.map((c) => { const per = Object.keys(DOMAINS).map((k) => byDomain[k].filter((o) => o.members.includes(c.iso3)).length); return `<li data-k="${esc([c.name, ...c.aliases, c.iso3].join(" ").toLowerCase())}"><a href="country-${c.iso3.toLowerCase()}.html">${esc(c.name)}</a> <span class="cn">${through.get(c.iso3) ?? 0}</span><span class="bars" role="img" aria-label="${Object.keys(DOMAINS).map((k, i) => `${DOMAINS[k].label} ${per[i]}`).join(", ")}">${Object.keys(DOMAINS).map((k, i) => `<i class="b-${k}" style="width:${per[i] * 3}px"></i>`).join("")}</span></li>`; }).join("")}</ul></div></section>`,
+<section class="body"><div class="wrap"><ul id="clist" class="clist">${allPlaced.map((c) => { const per = Object.keys(DOMAINS).map((k) => byDomain[k].filter((o) => o.members.includes(c.iso3)).length); return `<li data-k="${esc([c.name, ...c.aliases, c.iso3].join(" ").toLowerCase())}"><a href="country-${c.iso3.toLowerCase()}.html">${esc(c.name)}</a> <span class="cn">${through.get(c.iso3) ?? 0}</span><span class="bars" role="img" aria-label="${Object.keys(DOMAINS).map((k, i) => `${DOMAINS[k].label} ${per[i]}`).join(", ")}">${Object.keys(DOMAINS).map((k, i) => `<i class="b-${k}" style="width:${per[i] ? Math.max(7, per[i] * 3) : 0}px"></i>`).join("")}</span></li>`; }).join("")}</ul></div></section>`,
 });
 
 for (const c of placed) {
@@ -550,7 +549,7 @@ pages["organisations.html"] = page({
   file: "organisations.html", current: "organisations.html", title: "Organisations · GeoPolitics", description: `All ${orgs.length} organisations, languages and series, threaded or not.`,
   body: `<section class="head"><div class="wrap"><p class="kicker">Organisations</p><h1>${orgs.length} bodies; ${fig("threads")} drawn as threads.</h1><p class="how">Everything the data holds, including what could not be drawn and why, and the stranger records kept beside NATO: a tax-haven list, a religion, a single example of a special-forces team.</p></div></section>
 <section class="body"><div class="wrap">${Object.entries(DOMAINS).map(([k, D]) => orgTable(orgs.filter((o) => o.domain === k), D.label)).join("")}
-<h2 id="loose">The ${notThreaded.length} loose threads</h2><p>Records with fewer than two members that could be placed, each with its reason.</p>${orgTable(notThreaded, "Not drawn")}</div></section>`,
+<h2 id="loose">The ${notThreaded.length} loose threads</h2><p>Records with fewer than two members that could be placed, each with its reason.</p>${orgTable(notThreaded, "Not drawn (each also appears in its domain's table above)", "-loose")}</div></section>`,
 });
 
 pages["data.html"] = page({
@@ -583,7 +582,7 @@ writeFileSync(join(out, "threads.svg"), `<svg xmlns="http://www.w3.org/2000/svg"
 // The map's base (sea, graticule, land) once, styled by the page's own stylesheet through <use>.
 // A <use> of an external file does not take the page's stylesheet, so the base carries its own colours (measured: it
 // rendered black with classes alone).
-writeFileSync(join(out, "land.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><g id="base"><path fill="#e9e1d2" d="${outline}"/><path fill="none" stroke="#fbf8f2" stroke-width=".6" d="${graticule.join("")}"/><path fill="#ddd2bd" stroke="#c9bca3" stroke-width=".35" fill-rule="evenodd" d="${LAND}"/></g></svg>
+writeFileSync(join(out, "land.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><style>@media (forced-colors: active) { .sea { fill: Canvas } .lnd { fill: Canvas; stroke: CanvasText } }</style><g id="base"><path class="sea" fill="#e9e1d2" d="${outline}"/><path fill="none" stroke="#fbf8f2" stroke-width=".6" d="${graticule.join("")}"/><path class="lnd" fill="#ddd2bd" stroke="#c9bca3" stroke-width=".35" fill-rule="evenodd" d="${LAND}"/></g></svg>
 `);
 writeFileSync(join(out, "vercel.json"), JSON.stringify({ outputDirectory: "." }, null, 2) + "\n");
 writeFileSync(join(out, "facts.json"), JSON.stringify({ built_from: `${REPO} data/ and data/sources/`, figures: FIG }, null, 2) + "\n");

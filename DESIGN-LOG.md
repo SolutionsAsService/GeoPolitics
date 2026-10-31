@@ -201,3 +201,100 @@ Intent: make every thread and every size true, the map operable by keyboard, tou
 Alternatives rejected: (a) drop the knots' links and keep only the Countries page: loses the map's main affordance; (b) keep partial fills marked "partial": a short thread draws a false shape.
 Consequence: the weave thins from 181 to 152 threads and France from 40 to 33; the truth costs ink.
 Mode field: Advanced pole: the fringe of loose threads (`Dear Data (Giorgia Lupi, Stefanie Posavec)`). Acceptable pole: WCAG and Tufte.
+
+### Panel, WHOLE, round R2  (artifact examined: commit d1acbbc; `.dada/evidence-R2.md`; `.dada/panel/R2/*.png`)
+| Critic | Anchor used | Observed in the work | Verdict | Requested change |
+|---|---|---|---|---|
+| Critic: Provocateur (Shklovsky) | Art as Technique | the weave still estranges borders; France's page draws only its threads (R1 premise withdrawn); the fringe is a regular comb of ticks; the tiles unchanged; the odd pairings named, not shown | PASS | vary the fringe so it reads as loose thread (open item) |
+| Critic: Evidence (Tufte) | The Visual Display of Quantitative Information: the Lie Factor | key areas recompute 1:10.0:35.2 (LF 1.0); games faint; the own-country knot floored at r=4 (Marshall Islands LF 2.85); a 0.6 paper stroke eats 0.3 of each radius (LF 0.61 at the small end) | OBJECT | no floor on the own knot; no stroke on knots |
+| Critic: Inclusion (Holmes) | Mismatch | R1 F1 to F7 answered; on phones "threads" leaves the tile link's name; the toggle's visible word "shown" is not in its name | PASS | clip the unit visually only; put "shown" in the name |
+| Critic: Usability (Krug) | Don't Make Me Think | five-second and trunk tests pass at both sizes; the nav wraps; "click to open" said; a state word on a button still asks which way it goes | PASS | a checkbox, not a state button (open item) |
+| Critic: Inclusion (Mace) | The Principles of Universal Design | ring and hits answered (read from code); a one-thread bar is 3 px, too narrow for its stripes; the forced capture keeps tan land through `<use>` | PASS | minimum bar width; forced-colours rule inside land.svg |
+| Critic: Provocateur (Debord) | Society of the Spectacle, theses 1 to 4 | "G7" and "Group of Seven" both drawn, both counted in France's 33; the visible hero omits the historic state the map label names | OBJECT | merge G7 into Group of Seven and recompute; name the historic state in the hero |
+| Critic: Evidence (Cairo) | How Charts Lie | heritage rings have no size key; the loose table printed twice with 76 duplicate ids; evidence names a radius formula as the area | PASS | key on heritage; unique ids; correct the evidence wording |
+| Critic: Ecology (McDonough) | Cradle to Cradle | the weave cached once; og 275 KB to 94 KB; about 160 KB of geometry still repeated on theme pages; running cost near zero | PASS | none required |
+
+Statements of meaning: every seat read the weave as the site's argument and the R1 truths as met; the two objections are
+one duplicate body and two Lie Factors, all measured. Andon pulled: no. Six PASS, two OBJECT.
+
+### Resolutions (R2)
+| Finding | Resolution |
+|---|---|
+| Debord: G7 and Group of Seven drawn twice | ADAPT (M7): merge keys keep digits and a name maps to its number-abbreviation (`ABBR_OF`); 152 threads become 151, France 33 becomes 32, maxThrough 35 becomes 34 |
+| Debord: the hero omits the historic state | ADAPT (M7): the h1 reads "151 threads through 196 states, 56 territories and 1 historic state" |
+| Tufte: the own-country knot floored | ADAPT (M7): the own country keeps its true area and is marked by colour and an outer ring (`.me-ring`) |
+| Tufte: knot stroke shrinks the drawn area | ADAPT (M7): `.k { stroke: none }`; the area is the fill, as in the key |
+| Holmes: the unit leaves the name on phones | ADAPT (M7): the unit is clipped visually, not removed |
+| Holmes + Krug: toggle name and state word | ADAPT (M7): a real checkbox labelled "shown", its name "Politics threads shown" |
+| Mace: stripes on narrow bars | ADAPT (M7): a non-zero bar is at least 7 px; the count stays in its label |
+| Mace: forced colours inside land.svg | ADAPT (M7): land.svg carries its own forced-colours rule |
+| Shklovsky: the fringe is a comb | ADAPT (M7): each loose strand varies length, sway and curl by index |
+| Cairo: duplicate ids in the loose table | ADAPT (M7): the second listing's ids take a `-loose` suffix |
+| Cairo: heritage rings have no size key | DEFERRED (round cap): logged as an open item; the table decodes every ring |
+| Cairo: evidence calls the radius formula the area | DEFERRED (round cap): evidence-R2 stays as filed; this log states r = 7 sqrt(n/max), area proportional to n |
+| Shklovsky: the tile row is a stat strip; pairings named, not shown | OVERRULE (MAYA, as in R1: the tiles are the summary and the navigation) |
+| McDonough: 160 KB of repeated geometry on theme pages | DEFERRED (round cap): theme pages could reference threads.svg as country pages do |
+
+## Move M7: Answer R2: one G7, true own-country knot, a checkbox, a frayed fringe  (KEEP-THE-RULE)
+Recorded after the edits, in the same sitting (deviation, stated: the fixes were applied and measured but not re-judged, because the owner's round cap is three WHOLE rounds, R0 to R2).
+Depends on: M3, M6
+Anchors: Rule `The Visual Display of Quantitative Information (Edward Tufte)` | Rule `WCAG 2.2 Contrast and Perceivability (W3C)` | Criterion `MAYA: Most Advanced Yet Acceptable (Raymond Loewy)`
+Intent: close both objections and the PASS seats' open items without new devices.
+Alternatives rejected: (a) a fourth WHOLE round: over the cap; (b) leave the duplicate G7 and footnote it: a known false count on the landing.
+Consequence: 151 threads; the desktop headline steps down to clamp(24px, 2.4vw, 31px) so the longer h1 keeps the hero complete (756 of 800).
+Mode field: Advanced pole: the frayed fringe. Acceptable pole: WCAG and a Lie Factor of 1.0.
+
+## Frontier (final)
+| Candidate | Reached via (edge label, direction) | From anchor | Status |
+|---|---|---|---|
+| Size key on heritage.html | grounds, out | The Visual Display of Quantitative Information (Edward Tufte) | DEFERRED (round cap) |
+| Theme pages reference threads.svg | extends, out | Cradle to Cradle | DEFERRED (round cap) |
+| Show one incongruous pair, not name it | counterpoint, dotted | Art as Technique | DEFERRED (round cap) |
+| Real Tab-press capture of the focus ring | grounds, in | The Principles of Universal Design | DEFERRED (round cap) |
+| Merge G7 duplicates | R2 objection | Society of the Spectacle | TAKEN (M7) |
+
+## 4. Anchor Ledger
+| Anchor | Role | Moves | Critics |
+|---|---|---|---|
+| The Visual Display of Quantitative Information (Edward Tufte) | Rule | M3, M6, M7 | Tufte R0 to R2 |
+| WCAG 2.2 Contrast and Perceivability (W3C) | Rule | M5, M6, M7 | Holmes, Mace |
+| Dear Data (Giorgia Lupi, Stefanie Posavec) | Breaker | M3, M6 | Shklovsky |
+| MAYA: Most Advanced Yet Acceptable (Raymond Loewy) | Criterion | M6, M7 | all seats |
+| Art as Technique | Counterpoint (dotted) | M3 | Shklovsky |
+| Society of the Spectacle | Counterpoint (dotted, with Krug) | M2, M6, M7 | Debord |
+
+## 2f-2g. Final figures (from `site/facts.json`, measured twice)
+- Threads 151 (politics 37, economics 30, defence 22, culture 50, games 3, history 9); 196 states, 56 territories and 1 historic state threaded; maxThrough 34; 77 records loose; 28 duplicates merged; 14 Wikidata fills, 6 refused; World Heritage Sites 1,286.
+- Measure (`.dada/final-a.txt`, `.dada/final-b.txt`): self-test 6 of 6 probes catch their fixture; two runs agree; 30 of 30 page-by-size rows clean (no overflow, no small text, no low contrast, no hidden content shown, no undersized targets).
+- First screen: index@1280 hero 67 to 756 of 800, complete; index@375 hero 150 to 749 of 812, complete.
+- Weight: landing first load 312 KB; site 5.2 MB (13.6 MB before M6); og.jpg 87 KB.
+
+## Stop test
+- S1 (no open Andon): met.
+- S2 (every dotted counterpoint applied or declined): met (Art as Technique in M3; Society of the Spectacle in M6 and M7).
+- S3 (two consecutive quiet WHOLE rounds): not met under the bound. R2 had two OBJECTs; both were answered in M7 and measured, not re-judged.
+- S4 (ambition push): met. Threads 1.15 to 1.45 px, opacity .62 to .72; first screen still complete.
+- S5 (round cap): reached at R2. Open items are in the Frontier above.
+
+## Double loop
+The instrument was wrong three times and each time a seat, not the builder, found it: SVG links not counted as targets,
+a fixed sleep instead of waiting for load, and hit sizes scaled by width on a letterboxed map. A digit-stripping
+normaliser hid a duplicate (G7). Carry-forward: prove the instrument with a fixture before trusting it, and test
+dedupe keys on names that are mostly digits.
+
+## Carry-forward
+See `.dada/carry-forward.md`.
+
+## 5. Compliance Check
+- Mode stated (Adaptive): yes. Run type stated (Full): yes.
+- Tooling inventory recorded: yes (headless Chrome over CDP, sub-agents, panel directory).
+- Traversal Plan with seed labels verbatim: yes.
+- Premortem R0 on the inherited artifact: yes.
+- Decision Records M1 to M7: yes; M6 and M7 recorded after the edits (deviation, stated).
+- Panel one agent per reference, at most three at a time, verdicts filed: yes, 8 seats, R0 to R2.
+- Required critics (Provocateur, Inclusion) and a dotted pair (Krug, Debord): yes.
+- First screen rule at 1280 x 800 and 375 x 812, bottom edge measured: yes, complete at both.
+- Landing summarises every topic: yes, one tile and one domain of threads per page.
+- Multi-page: yes.
+- Stop conditions: S1, S2, S4 met; S3 not met; run ended at the round cap.
+- Skipped: re-judging of M7 (round cap).

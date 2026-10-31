@@ -42,7 +42,7 @@ code { font-size: .9em; }
 .bar nav a:hover, .bar nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--ink); }
 
 .hero { padding: 12px 0 18px; }
-.hero h1 { font-size: clamp(24px, 2.7vw, 34px); margin-bottom: 2px; }
+.hero h1 { font-size: clamp(24px, 2.4vw, 31px); margin-bottom: 2px; }
 .hero h1 span { color: var(--defence); }
 .how { color: var(--mute); margin: 0 0 8px; max-width: 80ch; font-size: 15.5px; }
 #readout { color: var(--ink); font-weight: 600; }
@@ -199,4 +199,17 @@ input[type="search"] { font: inherit; padding: 8px 10px; border: 1px solid var(-
   .tiles-cap { display: block; margin: 6px 0 0; font-size: 12px; color: var(--mute); }
   .tile .tsub { display: none; }
   .t-heritage .tsub { display: none; }
+}
+
+/* After R2 */
+.k { stroke: none; }  /* Tufte R2 F4: a stroke covered 0.3 of each radius; the area is the fill, as in the key */
+.me-ring { fill: none; stroke: var(--defence); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.tog { display: inline-flex; align-items: center; gap: 4px; padding: 0 6px; cursor: pointer; }
+.tog input { margin: 0; width: 16px; height: 16px; accent-color: var(--ink); }
+.tog:has(input:not(:checked)) { color: var(--mute); }
+.tog:focus-within { outline: 3px solid var(--ink); outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 900px) {
+  .tile .tsub { display: block; position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .tog { display: inline-flex; }
 }
