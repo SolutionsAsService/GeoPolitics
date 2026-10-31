@@ -52,7 +52,7 @@ code { font-size: .9em; }
 .sea { fill: var(--sea); }
 .grat { fill: none; stroke: var(--paper); stroke-width: .6; }
 .land { fill: var(--land); stroke: var(--border); stroke-width: .35; fill-rule: evenodd; }
-.th { fill: none; stroke-width: 1.15; opacity: .62; stroke-linecap: round; transition: opacity .15s; }
+.th { fill: none; stroke-width: 1.45; opacity: .72; stroke-linecap: round; transition: opacity .15s; }
 .d-politics { stroke: var(--politics); }
 .d-economics { stroke: var(--economics); stroke-dasharray: 10 5; }
 .d-defence { stroke: var(--defence); stroke-dasharray: 4 3; }
