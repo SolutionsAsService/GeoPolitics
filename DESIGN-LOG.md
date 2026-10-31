@@ -156,3 +156,48 @@ Anchors: Rule `WCAG 2.2 Contrast and Perceivability (W3C)` | Critics `Critic: In
 Intent: the Countries page lists every country with its threads; every country has a page; on the map each knot is a
 link with a name, reachable by keyboard; every domain page carries the table of its organisations.
 Mode field: Advanced pole: none. Acceptable pole: Holmes and Mace.
+
+### Panel, WHOLE, round R1  (artifact examined: commit 21f498b; `.dada/evidence-R1.md`; `.dada/panel/R1/*.png`)
+| Critic | Anchor used | Observed in the work | Verdict | Requested change |
+|---|---|---|---|---|
+| Critic: Provocateur (Shklovsky) | Art as Technique | the weave estranges the map (R0 F1 met); the tile row is a SaaS stat strip; the unthreaded are a footnote, not a visible blur; the country page drowns its threads; the odd pairings vanished | OBJECT | no number tiles; loose threads at the edge; only the country's threads; one incongruous pair on the landing |
+| Critic: Evidence (Tufte) | The Visual Display of Quantitative Information: the Lie Factor | knot area for 1 against 40 threads drawn as 1 to 8.1 (Lie Factor 0.20); heritage 1 against 64 drawn as 1 to 18 (0.28); "area proportional" printed while a floor makes it false; games, 3 of 181 threads, lay down a large share of the ink | OBJECT | strict proportionality or a size key; say so; games drawn lighter |
+| Critic: Inclusion (Holmes) | Mismatch | 253 knot links before the tiles, unsorted, unskippable; role img hides them; about 5 px phone targets; "point at" assumes a mouse; units and toggles hidden on phones; toggle name, state and label disagree; jargon | OBJECT | group, sort, skip; touch tracing; units and toggles on phones; plain words |
+| Critic: Usability (Krug) | Don't Make Me Think | five-second and trunk tests pass; the phone nav scrolls with no cue; "ON" is ambiguous; a knot click leaves the page unannounced | OBJECT | wrap the nav; show or hide wording; say "click to open" |
+| Critic: Inclusion (Mace) | The Principles of Universal Design | knot focus ring about 1 px; knot targets 12 px desktop, 5 px phone; the measure skipped SVG links; country bars by colour alone; toggles gone on phones | OBJECT | non-scaling 2 px ring; 24 px hits or an equivalent; measure SVG; bar patterns; toggles back |
+| Critic: Provocateur (Debord) | Society of the Spectacle, theses 1 to 4 | "Filled" covers partial fills (CERN 4 of 23); NATO, the EU, CERN, Benelux and others drawn twice, inflating 181 and France's 40; games threads run through 1940 and 1944 Games that never happened and miss 1896, 1908, 1928, 1936; three figures for one claim | OBJECT | fill only at the stated count; merge duplicates; drop cancelled, name missing; one figure |
+| Critic: Evidence (Cairo) | How Charts Lie | rebuild byte-identical; the floor makes "proportional" false; "28 filled" is 25 prose plus 3 short lists; the measure slept 700 ms and did not reproduce on phone runs; 590 not 596 | OBJECT | proportional or stated; split the count; wait for load and repeat until two runs agree |
+| Critic: Ecology (McDonough) | Cradle to Cradle | the landing is lean; 258 country pages re-inline the same thread geometry (about 9 MB of 13.6 MB); og.png 275 KB | OBJECT | one shared threads file; og under 100 KB |
+
+Statements of meaning: every seat accepted the weave as the device (Shklovsky: R0 F1 met) and objected to its truth,
+its access or its weight. Andon pulled: no. Two instrument faults were found by seats, again: the measure skipped SVG
+links (Holmes, Mace) and slept instead of waiting for load (Cairo).
+
+### Resolutions (R1)
+| Finding | Resolution |
+|---|---|
+| Debord: the same body drawn twice | ADAPT (M6): records sharing a name or abbreviation merge into one thread (28 merged); the kept record says where else it was listed |
+| Debord + Cairo: partial fills, and the count of fills | ADAPT (M6): a Wikidata fill is accepted only within 10 per cent (or one) of a count the repository states; 6 refused and left unthreaded with the reason; printed as 14 (13 prose, 1 short list) |
+| Debord: cancelled and missing Games | ADAPT (M6): 7 cancelled editions (1916, 1940, 1944 Olympics; 1942, 1946 World Cups) dropped from the threads; held editions Wikidata records without a host are named on the games page; planned editions marked |
+| Debord: three figures for one claim | ADAPT (M6): hero, description and map label read the same figures (196 states, 56 territories, 1 historic state) |
+| Tufte + Cairo: knot and ring areas | ADAPT (M6): areas strictly proportional (knots r = 7 sqrt(n/max), rings 16 sqrt(n/max)), no floor; a size key with three true sizes on the landing |
+| Tufte: games ink | ADAPT (M6): games threads drawn at 0.38 opacity and 1 px, full strength only when traced |
+| Shklovsky: the unthreaded are a footnote | ADAPT (M6): the 76 records that could not be drawn hang under the map as a fringe of loose threads, linked to their reasons |
+| Shklovsky: odd pairings vanished | ADAPT (M6): the landing names them beside NATO (two religions, seven languages, the US presidents, one special-forces record) |
+| Shklovsky: the country page drowns its threads | OVERRULE (premise refuted: country-fra.html draws only the 33 threads through France, by reference to threads.svg; their reach across the world is the data) |
+| Shklovsky: the tiles are a stat strip | OVERRULE (MAYA, and dada-lessons 42: the landing graded A was a poster of one tile per page with a computed figure; the tiles are the site's summary and its navigation) |
+| Holmes + Mace: role, order, skip, focus, targets | ADAPT (M6): the map is a labelled group; knots sorted by name; a skip link before them; hit areas sized by script to 24 px on screen (scaled from the letterboxed map); a 2.5 px non-scaling focus ring with a halo; a country finder on the page as the equivalent control |
+| Holmes + Krug: touch and wording | ADAPT (M6): first tap traces, second opens; the how-to line says so; plain words replace the jargon |
+| Holmes + Krug + Mace: toggles and the phone | ADAPT (M6): toggles read shown or hidden with aria-pressed and the name "Domain threads"; kept on phones; the phone nav wraps; a caption carries the unit on phones |
+| Mace: country bars by colour alone | ADAPT (M6): each domain's bar carries its dash pattern as stripes, an image role with its label, and a forced-colours rule |
+| McDonough: repeated geometry; og weight | ADAPT (M6): country pages reference one shared threads.svg (site 13.6 MB to 5.2 MB; France's page 222 KB to 20 KB); og.jpg 92 KB |
+| Cairo + Holmes + Mace: the instrument | ADAPT (M6): the measure waits for load, fonts and two frames, counts SVG links as targets, and two consecutive runs agreed |
+
+## Move M6: Answer R1: one body one thread, true areas, a reachable map, one shared weave  (BREAK as escalation: the loose fringe)
+Recorded after the edits, in the same sitting (deviation, stated: the fixes were made as one batch against eight filed verdicts).
+Depends on: M2, M3, M4, M5
+Anchors: Rule `The Visual Display of Quantitative Information (Edward Tufte)` | Breaker `Dear Data (Giorgia Lupi, Stefanie Posavec)` (the fringe: what cannot be drawn is drawn as loose thread) | Rule `WCAG 2.2 Contrast and Perceivability (W3C)` | Criterion `MAYA: Most Advanced Yet Acceptable (Raymond Loewy)`
+Intent: make every thread and every size true, the map operable by keyboard, touch and screen reader, and the site light.
+Alternatives rejected: (a) drop the knots' links and keep only the Countries page: loses the map's main affordance; (b) keep partial fills marked "partial": a short thread draws a false shape.
+Consequence: the weave thins from 181 to 152 threads and France from 40 to 33; the truth costs ink.
+Mode field: Advanced pole: the fringe of loose threads (`Dear Data (Giorgia Lupi, Stefanie Posavec)`). Acceptable pole: WCAG and Tufte.

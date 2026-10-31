@@ -1,0 +1,30 @@
+index.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11px, weight 314 KB, hero 67-729 of 800, complete true
+politics.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 263 KB
+economics.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 237 KB
+defence.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 250 KB
+culture.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 246 KB
+games.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 156 KB
+history.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 152 KB
+heritage.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 171 KB
+countries.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 146 KB
+organisations.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 193 KB
+data.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 17 KB
+404.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 12 KB
+country-fra.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 223 KB
+country-mhl.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 179 KB
+country-grl.html@1280: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 138 KB
+index.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 313 KB, hero 61-590 of 812, complete true
+politics.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 263 KB
+economics.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 237 KB
+defence.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 250 KB
+culture.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 246 KB
+games.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 156 KB
+history.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 152 KB
+heritage.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 12.5px, weight 171 KB
+countries.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 146 KB
+organisations.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 11.44px, weight 193 KB
+data.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 17 KB
+404.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 12 KB
+country-fra.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 223 KB
+country-mhl.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 179 KB
+country-grl.html@375: overflow 0, small targets 0, low contrast 0, shown [hidden] 0, smallest text 13px, weight 138 KB

@@ -7,7 +7,7 @@
 <meta name="description" content="Sources, repairs and what could not be placed.">
 <link rel="canonical" href="https://geopolitics.shadw.app/data">
 <meta property="og:type" content="website"><meta property="og:title" content="Data · GeoPolitics"><meta property="og:description" content="Sources, repairs and what could not be placed.">
-<meta property="og:url" content="https://geopolitics.shadw.app/data"><meta property="og:image" content="https://geopolitics.shadw.app/og.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://geopolitics.shadw.app/data"><meta property="og:image" content="https://geopolitics.shadw.app/og.jpg"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f3ede2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
@@ -20,7 +20,7 @@
 <section class="head"><div class="wrap"><p class="kicker">Data</p><h1>Where every thread comes from.</h1></div></section>
 <section class="body"><div class="wrap">
 <h2>Sources</h2><ul>
-<li>This repository's <code>data/</code> folder: 207 organisations with a members field, plus language, religion, defence and tax files. MIT licence.</li>
+<li>This repository's <code>data/</code> folder: 179 organisations with a members field, plus language, religion, defence and tax files. MIT licence.</li>
 <li>Wikidata (CC0), queried by <code>_src/fetch_wikidata.py</code>; each result is kept in <code>data/sources/wikidata/</code> with its query and fetch time: countries and capitals (2026-10-31), memberships (2026-10-31), official languages (2026-10-31), games hosts (2026-10-31), World Heritage Sites (2026-10-31).</li>
 <li>Country shapes: Natural Earth 1:110m (public domain) via world-atlas 2.0.2, in <code>data/sources/countries-110m.json</code>. Projection: Natural Earth I, computed at build time.</li></ul>
 <h2>Repairs</h2><p>7 files did not parse when this site was built. Each was repaired, changing syntax only except where noted:</p>
@@ -28,7 +28,7 @@
 <h2>Names resolved by hand</h2><ul><li>"China" is People's Republic of China (CHN): Wikidata names the state &quot;People's Republic of China&quot;.</li><li>"Brunei Darussalam" is Brunei (BRN): the state's official short name.</li><li>"Cabo Verde" is Cape Verde (CPV): the state's official name since 2013.</li><li>"Korea (Republic of)" is South Korea (KOR): ISO's form of South Korea's name.</li><li>"Venezuela (suspended)" is Venezuela (VEN): Mercosur lists Venezuela as suspended; the thread keeps it and the organisation's record says so.</li><li>"Soviet Union": dissolved 1991; placed at Moscow.</li></ul>
 <h2>Not placed: 17 member names</h2><p>These are territories, regions, prose or states with no ISO code in the source. They stay in their organisations' records and are not drawn.</p>
 <ul class="cols2"><li>22 Arab countries <span class="note">in 1 record</span></li><li>27 European countries <span class="note">in 1 record</span></li><li>Abkhazia <span class="note">in 2 records</span></li><li>Africa <span class="note">in 1 record</span></li><li>All member states of the United Nations except for Egypt, Israel, North Korea, and South Sudan <span class="note">in 1 record</span></li><li>Artsakh <span class="note">in 2 records</span></li><li>Asia <span class="note">in 1 record</span></li><li>European Union <span class="note">in 4 records</span></li><li>Members of the United Nations at that time <span class="note">in 1 record</span></li><li>Middle East <span class="note">in 1 record</span></li><li>New Caledonia's FLNKS <span class="note">in 1 record</span></li><li>Northern Cyprus <span class="note">in 1 record</span></li><li>Operators of nuclear power plants from more than 30 countries, including but not limited to: United States, United Kingdom, France, Canada, Japan, Russia, China, South Korea, Germany, Ukraine, Sweden, Spain, Finland, Belgium, Switzerland, Czech Republic, Slovakia, Hungary, Bulgaria, Romania, Brazil, South Africa, India, Pakistan, United Arab Emirates <span class="note">in 1 record</span></li><li>Palestinian Authority <span class="note">in 1 record</span></li><li>Réunion (France) <span class="note">in 1 record</span></li><li>South Ossetia <span class="note">in 2 records</span></li><li>Transnistria <span class="note">in 2 records</span></li></ul>
-<h2>Not threaded: 75 records</h2><p>Records with fewer than two placed members after filling; they are listed with their reason on the Organisations page.</p>
+<h2>Not threaded: 76 records</h2><p>Records with fewer than two placed members after filling; they are listed with their reason on the Organisations page.</p>
 <h2>How to read a thread</h2><p>A thread visits its members' capitals from west to east (games: in hosting order). Its route and length are geography, not weight; only which countries it passes through is data. A knot's area is proportional to the threads through it.</p>
 </div></section>
 </main>

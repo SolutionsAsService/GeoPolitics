@@ -1,0 +1,30 @@
+index.html@1280    overflowX=0 hero=67-760/800 complete=true small=0 lowContrast=0 hiddenShown=0 minText=11 kb=311 atFold=hero smallKnots=0
+politics.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=257 atFold=body smallKnots=0
+economics.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=219 atFold=body smallKnots=0
+defence.html@1280  overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=251 atFold=body smallKnots=0
+culture.html@1280  overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=248 atFold=body smallKnots=0
+games.html@1280    overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=12.5 kb=160 atFold=body smallKnots=0
+history.html@1280  overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=156 atFold=body smallKnots=0
+heritage.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=12.5 kb=171 atFold=body smallKnots=0
+countries.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=152 atFold=body smallKnots=0
+organisations.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=204 atFold=body smallKnots=0
+data.html@1280     overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=20 atFold=body smallKnots=0
+404.html@1280      overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=15 atFold=? smallKnots=0
+country-fra.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=255 atFold=body smallKnots=0
+country-mhl.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=250 atFold=body smallKnots=0
+country-grl.html@1280 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=238 atFold=body smallKnots=0
+index.html@375     overflowX=0 hero=150-749/812 complete=true small=0 lowContrast=0 hiddenShown=0 minText=11 kb=310 atFold=band smallKnots=0
+politics.html@375  overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=257 atFold=body smallKnots=0
+economics.html@375 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=219 atFold=body smallKnots=0
+defence.html@375   overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=251 atFold=body smallKnots=0
+culture.html@375   overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=248 atFold=body smallKnots=0
+games.html@375     overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=12.5 kb=160 atFold=body smallKnots=0
+history.html@375   overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=156 atFold=body smallKnots=0
+heritage.html@375  overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=12.5 kb=171 atFold=body smallKnots=0
+countries.html@375 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=152 atFold=body smallKnots=0
+organisations.html@375 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=11.44 kb=204 atFold=body smallKnots=0
+data.html@375      overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=20 atFold=body smallKnots=0
+404.html@375       overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=15 atFold=? smallKnots=0
+country-fra.html@375 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=255 atFold=body smallKnots=0
+country-mhl.html@375 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=250 atFold=body smallKnots=0
+country-grl.html@375 overflowX=0 hero=- small=0 lowContrast=0 hiddenShown=0 minText=13 kb=238 atFold=foot smallKnots=0

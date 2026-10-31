@@ -1,0 +1,12 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:59:51+00:00",
+ "query": "SELECT ?event ?eventLabel ?year WHERE {\n  ?event wdt:P31 wd:Q137592217.\n  FILTER NOT EXISTS { ?event wdt:P17 ?c }\n  OPTIONAL { ?event wdt:P580 ?start. }\n  OPTIONAL { ?event wdt:P585 ?date. }\n  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "event": "http://www.wikidata.org/entity/Q115379365",
+   "eventLabel": "2038 Winter Olympics",
+   "year": "2038"
+  }
+ ]
+}

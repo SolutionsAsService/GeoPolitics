@@ -1,0 +1,136 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T22:00:07+00:00",
+ "query": "SELECT ?event ?eventLabel ?year WHERE {\n  ?event wdt:P3450 wd:Q19317.\n  FILTER NOT EXISTS { ?event wdt:P17 ?c }\n  OPTIONAL { ?event wdt:P580 ?start. }\n  OPTIONAL { ?event wdt:P585 ?date. }\n  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "event": "http://www.wikidata.org/entity/Q3792814",
+   "eventLabel": "The Lost World Cup"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q203851",
+   "eventLabel": "1942 FIFA World Cup",
+   "year": "1942"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q426659",
+   "eventLabel": "2014 FIFA World Cup qualification – UEFA Group C",
+   "year": "2012"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q591184",
+   "eventLabel": "2014 FIFA World Cup qualification – UEFA Group D",
+   "year": "2012"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q601980",
+   "eventLabel": "2014 FIFA World Cup qualification – UEFA Group B",
+   "year": "2012"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q757236",
+   "eventLabel": "2014 FIFA World Cup qualification – UEFA Group A",
+   "year": "2012"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q1489646",
+   "eventLabel": "2014 FIFA World Cup qualification – UEFA Second Round",
+   "year": "2013"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q19941398",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Second Round",
+   "year": "2017"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730966",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group A",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730976",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group I",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730977",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group B",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730978",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group C",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730978",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group C",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730980",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group D",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730980",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group D",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730982",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group E",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730982",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group E",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730983",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group F",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730983",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group F",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730985",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group G",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730985",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group G",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q20730988",
+   "eventLabel": "2018 FIFA World Cup qualification – UEFA Group H",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q65273310",
+   "eventLabel": "1946 FIFA World Cup",
+   "year": "1946"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q114027850",
+   "eventLabel": "2038 FIFA World Cup",
+   "year": "2038"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q138679595",
+   "eventLabel": "1942 and 1946 FIFA World Cup",
+   "year": "1942"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q138679595",
+   "eventLabel": "1942 and 1946 FIFA World Cup",
+   "year": "1946"
+  }
+ ]
+}

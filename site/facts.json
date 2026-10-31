@@ -2,7 +2,7 @@
   "built_from": "https://github.com/SolutionsAsService/GeoPolitics data/ and data/sources/",
   "figures": {
     "threads": {
-      "value": 181,
+      "value": 152,
       "procedure": "organisations, languages and games series with two or more placed members (one thread each)"
     },
     "countries": {
@@ -26,19 +26,43 @@
       "procedure": "current Wikidata items with an ISO alpha-3 code that are not sovereign states"
     },
     "repoOrgs": {
-      "value": 207,
-      "procedure": "objects with a `members` field in data/*.json"
+      "value": 179,
+      "procedure": "objects with a `members` field in data/*.json, after merging duplicates"
     },
     "proseMembers": {
-      "value": 96,
+      "value": 86,
       "procedure": "of those, `members` given as prose rather than a list"
     },
     "filledFromWikidata": {
+      "value": 14,
+      "procedure": "member lists filled from Wikidata member-of (P463): a matching name or short name, and a count within 10% (or one) of any count the repository states"
+    },
+    "filledProse": {
+      "value": 13,
+      "procedure": "of those, records whose members the repository gave as prose"
+    },
+    "filledShort": {
+      "value": 1,
+      "procedure": "of those, records whose list had fewer than two members that resolve"
+    },
+    "fillRejected": {
+      "value": 6,
+      "procedure": "records where Wikidata matched but its count disagreed with the repository's; left unthreaded"
+    },
+    "mergedDuplicates": {
       "value": 28,
-      "procedure": "prose or one-member lists filled from Wikidata member-of (P463) by a matching name or short name"
+      "procedure": "records merged because the repository lists the same body twice (same name or abbreviation)"
+    },
+    "historicThreaded": {
+      "value": 1,
+      "procedure": "historic states a thread passes through"
+    },
+    "gamesCancelled": {
+      "value": 7,
+      "procedure": "editions awarded but never held, left off the games threads"
     },
     "stillUnthreaded": {
-      "value": 75,
+      "value": 76,
       "procedure": "organisations with fewer than two placed members after filling"
     },
     "unmappedNames": {
@@ -46,7 +70,7 @@
       "procedure": "distinct member names that resolve to no country (territories, regions, prose)"
     },
     "maxThrough": {
-      "value": 40,
+      "value": 35,
       "procedure": "the most threads through one country"
     },
     "heritageSites": {
@@ -58,7 +82,7 @@
       "procedure": "per-country counts summed: higher than the total because a site that crosses a border counts in each country"
     },
     "gamesHosts": {
-      "value": 88,
+      "value": 84,
       "procedure": "host entries across the games series"
     },
     "repairedFiles": {
@@ -66,19 +90,19 @@
       "procedure": "files that did not parse at dad93b5 and were repaired (the Data page lists each change)"
     },
     "threads_politics": {
-      "value": 46,
+      "value": 37,
       "procedure": "threads in the Politics domain"
     },
     "threads_economics": {
-      "value": 49,
+      "value": 31,
       "procedure": "threads in the Economics domain"
     },
     "threads_defence": {
-      "value": 23,
+      "value": 22,
       "procedure": "threads in the Defence domain"
     },
     "threads_culture": {
-      "value": 51,
+      "value": 50,
       "procedure": "threads in the Culture domain"
     },
     "threads_games": {
@@ -94,7 +118,7 @@
       "procedure": "countries Politics threads pass through"
     },
     "countries_economics": {
-      "value": 193,
+      "value": 185,
       "procedure": "countries Economics threads pass through"
     },
     "countries_defence": {
@@ -102,7 +126,7 @@
       "procedure": "countries Defence threads pass through"
     },
     "countries_culture": {
-      "value": 242,
+      "value": 241,
       "procedure": "countries Culture threads pass through"
     },
     "countries_games": {

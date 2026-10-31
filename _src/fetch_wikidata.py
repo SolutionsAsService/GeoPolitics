@@ -70,6 +70,37 @@ SELECT ?event ?eventLabel ?year ?iso3 WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }
 """,
+    # Games editions Wikidata records without a host country (P17): not drawn, and named on the games page.
+    "games_summer_nohost": """
+SELECT ?event ?eventLabel ?year WHERE {
+  ?event wdt:P31 wd:Q135976384.
+  FILTER NOT EXISTS { ?event wdt:P17 ?c }
+  OPTIONAL { ?event wdt:P580 ?start. }
+  OPTIONAL { ?event wdt:P585 ?date. }
+  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+""",
+    "games_winter_nohost": """
+SELECT ?event ?eventLabel ?year WHERE {
+  ?event wdt:P31 wd:Q137592217.
+  FILTER NOT EXISTS { ?event wdt:P17 ?c }
+  OPTIONAL { ?event wdt:P580 ?start. }
+  OPTIONAL { ?event wdt:P585 ?date. }
+  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+""",
+    "games_worldcup_nohost": """
+SELECT ?event ?eventLabel ?year WHERE {
+  ?event wdt:P3450 wd:Q19317.
+  FILTER NOT EXISTS { ?event wdt:P17 ?c }
+  OPTIONAL { ?event wdt:P580 ?start. }
+  OPTIONAL { ?event wdt:P585 ?date. }
+  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+""",
     # Memberships: current member-of (P463) statements of items with an ISO alpha-3 code, to fill prose member lists.
     "memberships": """
 SELECT ?org ?orgLabel ?orgShort ?iso3 WHERE {

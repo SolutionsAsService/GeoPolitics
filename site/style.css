@@ -145,3 +145,58 @@ input[type="search"] { font: inherit; padding: 8px 10px; border: 1px solid var(-
   .bar nav a[aria-current="page"] { text-decoration: underline 2px; box-shadow: none; }
   .tile { border: 1px solid CanvasText; }
 }
+
+/* M6: answers to R1 */
+.skip-map { position: absolute; left: -9999px; background: var(--ink); color: var(--paper); padding: 8px 12px; z-index: 5; }
+.skip-map:focus { left: 24px; }
+.knot:focus-visible .hit { stroke: var(--ink); stroke-width: 2.5px; vector-effect: non-scaling-stroke; fill: rgba(251, 248, 242, .55); }
+.knot:focus-visible .k { stroke: var(--paper); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.d-games { opacity: .38; stroke-width: 1; }
+.focusing .d-games.lit { opacity: 1; }
+.sizekey { white-space: nowrap; }
+.key { width: 16px; height: 16px; vertical-align: -3px; }
+.key .k { stroke: none; }
+.fringe { display: flex; align-items: center; gap: 10px; color: var(--mute); font-size: 13px; text-decoration: none; margin-top: 2px; }
+.fringe svg { flex: 1; height: 18px; stroke: var(--history); stroke-width: 1.2; fill: none; opacity: .7; }
+.fringe span { flex: none; }
+.fringe:hover span { color: var(--ink); text-decoration: underline; }
+.tog { min-width: 52px; text-transform: none; letter-spacing: 0; }
+.bars { border: 1px solid var(--line); padding: 1px; }
+.b-economics { background: repeating-linear-gradient(90deg, var(--economics) 0 5px, transparent 5px 7px); }
+.b-defence { background: repeating-linear-gradient(90deg, var(--defence) 0 2px, transparent 2px 3px); }
+.b-culture { background: repeating-linear-gradient(90deg, var(--culture) 0 1px, transparent 1px 3px); }
+.b-games { background: repeating-linear-gradient(90deg, var(--games) 0 4px, transparent 4px 5px, var(--games) 5px 6px, transparent 6px 7px); }
+.b-history { background: repeating-linear-gradient(90deg, var(--history) 0 3px, transparent 3px 4px); }
+#find { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 3px; background: var(--paper); min-height: 40px; }
+@media (max-width: 900px) {
+  .bar-in { flex-wrap: wrap; min-height: 0; padding-top: 4px; padding-bottom: 2px; row-gap: 0; }
+  .bar nav { flex-wrap: wrap; overflow: visible; gap: 0 12px; }
+  .bar nav a { padding: 4px 0; min-height: 26px; }
+  .tile > a { grid-template-areas: 'name name' 'num sub'; }
+  .tname { padding-right: 52px; }
+  .tsub { display: block; font-size: 11px; }
+  .tog { display: block; top: 3px; right: 3px; min-height: 24px; min-width: 50px; font-size: 11px; }
+  .fringe { font-size: 12px; }
+  .fringe svg { height: 14px; }
+  .sizekey { white-space: normal; }
+}
+@media (forced-colors: active) {
+  .bars i { forced-color-adjust: none; background-color: CanvasText; }
+  .fringe svg { stroke: CanvasText; }
+}
+
+/* M6 tiles: the toggle sits bottom-right, clear of the name */
+.tog { top: auto; bottom: 6px; right: 6px; }
+.tname { padding-right: 0; }
+@media (max-width: 900px) {
+  .tog { top: auto; bottom: 4px; right: 4px; min-width: 46px; }
+  .tname { padding-right: 0; }
+  .tile > a { padding-bottom: 6px; }
+  .tsub { font-size: 11px; }
+}
+.tiles-cap { display: none; }
+@media (max-width: 900px) {
+  .tiles-cap { display: block; margin: 6px 0 0; font-size: 12px; color: var(--mute); }
+  .tile .tsub { display: none; }
+  .t-heritage .tsub { display: none; }
+}

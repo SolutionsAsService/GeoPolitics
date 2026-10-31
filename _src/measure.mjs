@@ -70,6 +70,15 @@ const { targetId } = await send("Target.createTarget", { url: "about:blank" });
 const { sessionId } = await send("Target.attachToTarget", { targetId, flatten: true });
 const s = (m, p) => send(m, p, sessionId);
 await s("Page.enable");
+// Wait for the navigation's load event, then for fonts and two frames, so no probe reads a page half laid out.
+const waitLoaded = async () => {
+  for (let i = 0; i < 200; i++) {
+    const { result } = await s("Runtime.evaluate", { expression: "document.readyState", returnByValue: true }).catch(() => ({ result: {} }));
+    if (result.value === "complete") break;
+    await new Promise((r) => setTimeout(r, 50));
+  }
+  await s("Runtime.evaluate", { expression: "document.fonts.ready.then(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))))", awaitPromise: true });
+};
 await s("Runtime.enable");
 
 // Runs in the page: overflow, the hero's full box, small targets, text contrast, hidden-attribute state.
@@ -88,8 +97,10 @@ const probe = `(() => {
     out.hero.complete = out.hero.bottom <= vh && out.hero.right <= vw;
     out.relayOverflow = [...document.querySelectorAll(".stage a")].map(a => a.scrollWidth - a.clientWidth).filter(x => x > 0).length;
   }
-  const targets = [...document.querySelectorAll("a, button")].filter(a => a.offsetParent).map(a => { const r = a.getBoundingClientRect(); return { t: (a.textContent.trim() || a.getAttribute("title") || a.className).slice(0, 40), w: Math.round(r.width), h: Math.round(r.height), cx: r.left + r.width/2, cy: r.top + r.height/2, inline: getComputedStyle(a).display === "inline" && a.closest("p, li, dd, td") !== null }; });
-  out.smallTargets = targets.filter(t => !t.inline && (t.w < 24 || t.h < 24)).filter(t => targets.some(o => o !== t && Math.hypot(o.cx - t.cx, o.cy - t.cy) < 24)).map(t => t.t + " " + t.w + "x" + t.h);
+  const targets = [...document.querySelectorAll("a, button")].filter(a => a.getClientRects().length && getComputedStyle(a).visibility !== "hidden").map(a => { const r = a.getBoundingClientRect(); return { t: (a.getAttribute("aria-label") || a.textContent.trim() || a.getAttribute("title") || String(a.className.baseVal ?? a.className)).slice(0, 40), knot: a.classList.contains("knot"), w: Math.round(r.width), h: Math.round(r.height), cx: r.left + r.width/2, cy: r.top + r.height/2, inline: getComputedStyle(a).display === "inline" && a.closest("p, li, dd, td") !== null }; });
+  const small = targets.filter(t => !t.inline && (t.w < 24 || t.h < 24)).filter(t => targets.some(o => o !== t && Math.hypot(o.cx - t.cx, o.cy - t.cy) < 24));
+  out.smallTargets = small.filter(t => !t.knot).map(t => t.t + " " + t.w + "x" + t.h);
+  out.smallKnots = small.filter(t => t.knot).length;
   const lows = [];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   for (let n; (n = walker.nextNode());) {
@@ -112,7 +123,7 @@ for (const [w, h] of SIZES) {
   await s("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
   for (const p of PAGES) {
     await s("Page.navigate", { url: base + p });
-    await new Promise((r) => setTimeout(r, 700));
+    await waitLoaded();
     const { result } = await s("Runtime.evaluate", { expression: probe.replace("vw = innerWidth, vh = innerHeight", `vw = ${w}, vh = ${h}`) /* the emulated device, not a zoomed-out layout viewport */, returnByValue: true });
     results[`${p}@${w}`] = result.value;
     if (p === "index.html" || w === 1280) {
@@ -136,11 +147,11 @@ if (!SELFTEST) {
   await s("Emulation.setDeviceMetricsOverride", { width: 1200, height: 630, deviceScaleFactor: 1, mobile: false });
   await s("Page.navigate", { url: base + "index.html" });
   await new Promise((r) => setTimeout(r, 700));
-  const og = await s("Page.captureScreenshot", { format: "png", clip: { x: 0, y: 0, width: 1200, height: 630, scale: 1 } });
-  writeFileSync(join(site, "og.png"), Buffer.from(og.data, "base64"));
+  const og = await s("Page.captureScreenshot", { format: "jpeg", quality: 74, clip: { x: 0, y: 0, width: 1200, height: 630, scale: 1 } });
+  writeFileSync(join(site, "og.jpg"), Buffer.from(og.data, "base64"));
 }
 writeFileSync(join(outDir, "measure.json"), JSON.stringify(results, null, 2));
-const summary = Object.entries(results).map(([k, v]) => `${k.padEnd(18)} overflowX=${v.overflowX} hero=${v.hero ? `${v.hero.top}-${v.hero.bottom}/${v.vh} complete=${v.hero.complete}` : "-"} small=${v.smallTargets.length} lowContrast=${v.lowContrast.length} hiddenShown=${v.hiddenShown} minText=${v.smallestText} kb=${Math.round(v.weight / 1024)} atFold=${v.belowFold}`);
+const summary = Object.entries(results).map(([k, v]) => `${k.padEnd(18)} overflowX=${v.overflowX} hero=${v.hero ? `${v.hero.top}-${v.hero.bottom}/${v.vh} complete=${v.hero.complete}` : "-"} small=${v.smallTargets.length} lowContrast=${v.lowContrast.length} hiddenShown=${v.hiddenShown} minText=${v.smallestText} kb=${Math.round(v.weight / 1024)} atFold=${v.belowFold} smallKnots=${v.smallKnots}`);
 console.log(summary.join("\n"));
 ws.close();
 chrome.kill();

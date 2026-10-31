@@ -1,0 +1,17 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:59:35+00:00",
+ "query": "SELECT ?event ?eventLabel ?year WHERE {\n  ?event wdt:P31 wd:Q135976384.\n  FILTER NOT EXISTS { ?event wdt:P17 ?c }\n  OPTIONAL { ?event wdt:P580 ?start. }\n  OPTIONAL { ?event wdt:P585 ?date. }\n  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "event": "http://www.wikidata.org/entity/Q108045332",
+   "eventLabel": "2036 Summer Olympics",
+   "year": "2036"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q128996541",
+   "eventLabel": "2040 Summer Olympics",
+   "year": "2040"
+  }
+ ]
+}

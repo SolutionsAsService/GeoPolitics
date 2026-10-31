@@ -132,7 +132,29 @@ for (const file of files) {
   })(d);
 }
 
-// Prose member lists: filled from Wikidata's member-of (P463) only when the organisation matches by short name or name.
+// One body, one thread: the repository lists some bodies in two files (NATO in CountryBlocks and TranscontinentOrgs;
+// the EU as "EU" and "European Union"). Records sharing a name or abbreviation are merged; the longer member list is
+// drawn, and the record says it was listed twice and where.
+const keysOf = (o) => [o.name, o.abbr].filter((k) => k && norm(k).length >= 2).map(norm);
+const groups = [];
+for (const o of orgs) {
+  const g = groups.find((g) => g.keys.some((k) => keysOf(o).includes(k)));
+  if (g) { g.list.push(o); for (const k of keysOf(o)) if (!g.keys.includes(k)) g.keys.push(k); }
+  else groups.push({ keys: keysOf(o), list: [o] });
+}
+let mergedDuplicates = 0;
+for (const g of groups) {
+  if (g.list.length < 2) continue;
+  g.list.sort((a, b) => b.members.length - a.members.length || (a.prose ? 1 : 0) - (b.prose ? 1 : 0));
+  const [keep, ...drop] = g.list;
+  keep.listedAlso = drop.map((d) => `${d.file} as "${d.name}"${d.members.length ? ` (${d.members.length} members)` : d.prose ? ` ("${d.prose}")` : ""}`);
+  keep.abbr = keep.abbr ?? drop.find((d) => d.abbr)?.abbr ?? null;
+  for (const d of drop) orgs.splice(orgs.indexOf(d), 1);
+  mergedDuplicates += drop.length;
+}
+
+// Prose member lists: filled from Wikidata's member-of (P463) only when the organisation matches by short name or name,
+// and only when Wikidata's count agrees with a count the repository states (within 10 per cent or one member).
 const WD_MEM = existsSync(join(SRC, "wikidata", "memberships.json")) ? wd("memberships") : null;
 const wdOrgs = new Map();
 if (WD_MEM) for (const r of WD_MEM.rows) {
@@ -146,7 +168,7 @@ for (const [qid, o] of wdOrgs) for (const k of [o.label, ...o.short]) {
   const n = norm(k);
   wdByKey.set(n, wdByKey.has(n) && wdByKey.get(n) !== qid ? null : qid);
 }
-let filledFromWikidata = 0;
+let filledFromWikidata = 0, filledProse = 0, filledShort = 0, fillRejected = 0;
 for (const o of orgs) {
   if (o.members.length >= 2 || !WD_MEM) continue;
   const qid = [o.abbr, o.name].filter(Boolean).map((k) => wdByKey.get(norm(k))).find(Boolean);
@@ -154,6 +176,13 @@ for (const o of orgs) {
   const w = wdOrgs.get(qid);
   const members = [...w.members].filter((iso) => countries.has(iso));
   if (members.length < 2) continue;
+  const stated = Number((o.prose ?? "").match(/\b(\d{1,3})\b/)?.[1] ?? NaN);
+  if (Number.isFinite(stated) && Math.abs(members.length - stated) > Math.max(1, Math.round(stated * 0.1))) {
+    o.fillRejected = `Wikidata lists ${members.length} members and the repository says ${stated}, so it is left unthreaded rather than drawn short`;
+    fillRejected++;
+    continue;
+  }
+  if (o.prose) filledProse++; else filledShort++;
   o.members = members;
   o.source = `Wikidata member-of (P463) for ${w.label} (https://www.wikidata.org/wiki/${qid.split("/").pop()}), fetched ${WD_MEM.fetched.slice(0, 10)}`;
   o.filled = o.prose ? `the repository gives "${o.prose}"` : "the repository listed fewer than two resolvable members";
@@ -191,6 +220,14 @@ if (WD_LANG) {
 
 // Games: one thread per series, from host to host in year order (Wikidata).
 const GAME_FILES = { "Summer Olympic Games": "games_summer", "Winter Olympic Games": "games_winter", "FIFA World Cup": "games_worldcup" };
+// Editions awarded but never held (the World Wars); Wikidata keeps their hosts, the threads do not.
+const CANCELLED = { "Summer Olympic Games": [1916, 1940, 1944], "Winter Olympic Games": [1940, 1944], "FIFA World Cup": [1942, 1946] };
+// The years each series was held up to 2026, from its schedule, to name the editions Wikidata does not record.
+const SCHEDULE = {
+  "Summer Olympic Games": [...Array.from({ length: 31 }, (_, i) => 1896 + 4 * i).filter((y) => y <= 2024 && y !== 2020), 2021],
+  "Winter Olympic Games": [...Array.from({ length: 18 }, (_, i) => 1924 + 4 * i).filter((y) => y <= 1992), ...Array.from({ length: 9 }, (_, i) => 1994 + 4 * i)],
+  "FIFA World Cup": Array.from({ length: 25 }, (_, i) => 1930 + 4 * i).filter((y) => y <= 2026),
+};
 const THIS_YEAR = 2026;
 const games = [];
 let gamesFetched = null;
@@ -201,12 +238,15 @@ for (const [label, file] of Object.entries(GAME_FILES)) {
   const s = new Map();
   for (const r of W.rows) {
     if (!r.year || !countries.has(r.iso3)) continue;
+    if (CANCELLED[label].includes(Number(r.year))) continue;
     const key = `${r.year}|${r.iso3}`;
     if (!s.has(key)) s.set(key, { year: Number(r.year), iso3: r.iso3, event: r.eventLabel, planned: Number(r.year) > THIS_YEAR });
   }
   const hosts = [...s.values()].sort((x, y) => x.year - y.year || x.iso3.localeCompare(y.iso3));
   if (hosts.length < 2) continue;
-  games.push({ label, hosts });
+  const held = new Set(hosts.map((h) => h.year));
+  const missing = SCHEDULE[label].filter((y) => !held.has(y) && !CANCELLED[label].includes(y));
+  games.push({ label, hosts, missing, cancelled: CANCELLED[label] });
   orgs.push({ id: slug(`games-${label}`), name: label, abbr: null, type: "Games series", file: null, domain: "games",
     purpose: `Host countries in order of hosting, ${hosts[0].year} to ${hosts.at(-1).year}${hosts.some((h) => h.planned) ? " (later editions are planned)" : ""}.`,
     members: [...new Set(hosts.map((h) => h.iso3))], order: hosts.map((h) => h.iso3), hosts, unresolved: [],
@@ -287,7 +327,8 @@ for (const o of threaded) o.d = threadPath(o);
 const through = new Map();
 for (const o of threaded) for (const m of o.members) through.set(m, (through.get(m) ?? 0) + 1);
 const maxThrough = Math.max(...through.values());
-const knotR = (n) => +(1.6 + 5.4 * Math.sqrt(n / maxThrough)).toFixed(2); // area ∝ n above a visible floor
+const KNOT_MAX = 7;
+const knotR = (n) => +(KNOT_MAX * Math.sqrt(n / maxThrough)).toFixed(2); // area strictly proportional to n (no floor)
 const placed = [...countries.values()].filter((c) => c.lon != null);
 
 // ---- figures ------------------------------------------------------------------------------------------------------
@@ -301,9 +342,15 @@ const FIG = {
   territoriesThreaded: { value: [...through.keys()].filter((i) => !countries.get(i).sovereign && !countries.get(i).historic).length, procedure: "of those, territories" },
   states: { value: [...countries.values()].filter((c) => c.sovereign).length, procedure: "sovereign states (P31 Q3624078) among current Wikidata items with an ISO 3166 alpha-3 code (P298)" },
   territories: { value: [...countries.values()].filter((c) => !c.sovereign && !c.historic).length, procedure: "current Wikidata items with an ISO alpha-3 code that are not sovereign states" },
-  repoOrgs: { value: repoOrgs.length, procedure: "objects with a `members` field in data/*.json" },
+  repoOrgs: { value: repoOrgs.length, procedure: "objects with a `members` field in data/*.json, after merging duplicates" },
   proseMembers: { value: repoOrgs.filter((o) => o.prose).length, procedure: "of those, `members` given as prose rather than a list" },
-  filledFromWikidata: { value: filledFromWikidata, procedure: "prose or one-member lists filled from Wikidata member-of (P463) by a matching name or short name" },
+  filledFromWikidata: { value: filledProse + filledShort, procedure: "member lists filled from Wikidata member-of (P463): a matching name or short name, and a count within 10% (or one) of any count the repository states" },
+  filledProse: { value: filledProse, procedure: "of those, records whose members the repository gave as prose" },
+  filledShort: { value: filledShort, procedure: "of those, records whose list had fewer than two members that resolve" },
+  fillRejected: { value: fillRejected, procedure: "records where Wikidata matched but its count disagreed with the repository's; left unthreaded" },
+  mergedDuplicates: { value: mergedDuplicates, procedure: "records merged because the repository lists the same body twice (same name or abbreviation)" },
+  historicThreaded: { value: [...through.keys()].filter((i) => countries.get(i).historic).length, procedure: "historic states a thread passes through" },
+  gamesCancelled: { value: Object.values(CANCELLED).flat().length, procedure: "editions awarded but never held, left off the games threads" },
   stillUnthreaded: { value: notThreaded.length, procedure: "organisations with fewer than two placed members after filling" },
   unmappedNames: { value: unmapped.size, procedure: "distinct member names that resolve to no country (territories, regions, prose)" },
   maxThrough: { value: maxThrough, procedure: "the most threads through one country" },
@@ -321,17 +368,29 @@ function mapSvg({ only = null, focus = null, id = "weave", label, interactive = 
   const list = threaded.filter((o) => (!only || only.includes(o.domain)) && (!focus || o.members.includes(focus)));
   const threads = list.map((o) => `<path class="th d-${o.domain}" d="${o.d}" data-o="${o.id}" data-c="${o.members.join(" ")}"><title>${esc(o.name)}: ${o.members.length} members</title></path>`).join("");
   const showKnots = knotsFor ?? new Set(list.flatMap((o) => o.members));
-  const knots = placed.filter((c) => showKnots.has(c.iso3)).map((c) => {
+  const knots = placed.filter((c) => showKnots.has(c.iso3)).sort((a, b) => a.name.localeCompare(b.name)).map((c) => {
     const [x, y] = proj(c.lon, c.lat), n = through.get(c.iso3) ?? 0;
-    const r = focus === c.iso3 ? Math.max(knotR(n), 5) : knotR(n);
-    const inner = `<circle class="hit" cx="${x}" cy="${y}" r="7"/><circle class="k${focus === c.iso3 ? " me" : ""}" cx="${x}" cy="${y}" r="${r}"/>`;
+    const r = knotR(n);
+    const inner = `<circle class="hit" cx="${x}" cy="${y}" r="10"/><circle class="k${focus === c.iso3 ? " me" : ""}" cx="${x}" cy="${y}" r="${r}"/>`;
     return interactive
       ? `<a href="country-${c.iso3.toLowerCase()}.html" class="knot" data-c="${c.iso3}" aria-label="${esc(c.name)}: ${n} threads">${inner}</a>`
       : `<g class="knot">${inner}</g>`;
   }).join("");
-  return `<svg class="map" id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}"><title>${esc(label)}</title>
+  const skip = interactive ? `<a class="skip-map" href="#after-${id}">Skip the map's ${showKnots.size} country links</a>` : "";
+  return `${skip}<svg class="map" id="${id}" viewBox="0 0 ${W} ${H}" role="group" aria-label="${esc(label)}"><title>${esc(label)}</title>
 <use href="land.svg#base"/>
-<g class="threads">${threads}</g><g class="knots">${knots}</g></svg>`;
+<g class="threads" aria-hidden="true">${threads}</g><g class="knots">${knots}</g></svg><span id="after-${id}"></span>`;
+}
+
+// A country's own map: its threads by reference to the shared threads.svg (cached once for the site), its knots inline.
+function countryMap(c) {
+  const mine = threaded.filter((o) => o.members.includes(c.iso3));
+  const members = new Set(mine.flatMap((o) => o.members));
+  const knots = placed.filter((p) => members.has(p.iso3)).map((p) => {
+    const [x, y] = proj(p.lon, p.lat);
+    return `<circle class="k${p.iso3 === c.iso3 ? " me" : ""}" cx="${x}" cy="${y}" r="${p.iso3 === c.iso3 ? Math.max(knotR(through.get(p.iso3) ?? 1), 4) : knotR(through.get(p.iso3) ?? 0)}"/>`;
+  }).join("");
+  return `<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`The ${mine.length} threads through ${c.name}`)}"><use href="land.svg#base"/>${mine.map((o) => `<use href="threads.svg#t-${o.id}"/>`).join("")}<g aria-hidden="true">${knots}</g></svg>`;
 }
 
 // ---- pages ----------------------------------------------------------------------------------------------------------
@@ -348,7 +407,7 @@ function page({ file, title, description, body, current, script = "" }) {
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">
 <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}">
-<meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE}og.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE}og.jpg"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f3ede2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
@@ -370,8 +429,8 @@ ${script}
 }
 
 const legendSwatch = (k) => `<svg class="sw" viewBox="0 0 40 10" aria-hidden="true"><path d="M1 5H39" stroke="${DOMAINS[k].color}" stroke-width="2.4" stroke-dasharray="${DOMAINS[k].dash}" fill="none"/></svg>`;
-const domainTile = (k) => `<li class="tile t-${k}"><a href="${k}.html"><span class="tname">${legendSwatch(k)}${DOMAINS[k].label}</span><span class="tnum">${fig(`threads_${k}`)}</span><span class="tsub">threads · ${fig(`countries_${k}`)} places</span></a><button type="button" class="tog" aria-pressed="true" data-d="${k}" aria-label="Show ${DOMAINS[k].label} threads">on</button></li>`;
-const heritageTile = `<li class="tile t-heritage"><a href="heritage.html"><span class="tname"><svg class="sw" viewBox="0 0 40 10" aria-hidden="true"><circle cx="20" cy="5" r="4" fill="none" stroke="#0f6b74" stroke-width="2"/></svg>Heritage</span><span class="tnum">${fig("heritageSites")}</span><span class="tsub">World Heritage Sites · ${heritage.size} places</span></a></li>`;
+const domainTile = (k) => `<li class="tile t-${k}"><a href="${k}.html"><span class="tname">${legendSwatch(k)}${DOMAINS[k].label}</span><span class="tnum">${fig(`threads_${k}`)}</span><span class="tsub">threads</span></a><button type="button" class="tog" aria-pressed="true" data-d="${k}" aria-label="${DOMAINS[k].label} threads">shown</button></li>`;
+const heritageTile = `<li class="tile t-heritage"><a href="heritage.html"><span class="tname"><svg class="sw" viewBox="0 0 40 10" aria-hidden="true"><circle cx="20" cy="5" r="4" fill="none" stroke="#0f6b74" stroke-width="2"/></svg>Heritage</span><span class="tnum">${fig("heritageSites")}</span><span class="tsub">World Heritage Sites</span></a></li>`;
 
 const SCRIPT = `<script>
 (() => {
@@ -379,7 +438,7 @@ const SCRIPT = `<script>
   const ths = [...svg.querySelectorAll(".th")];
   for (const b of document.querySelectorAll(".tog")) b.addEventListener("click", () => {
     const on = b.getAttribute("aria-pressed") !== "true";
-    b.setAttribute("aria-pressed", on); b.textContent = on ? "on" : "off";
+    b.setAttribute("aria-pressed", on); b.textContent = on ? "shown" : "hidden";
     svg.classList.toggle("hide-" + b.dataset.d, !on);
   });
   const out = document.getElementById("readout");
@@ -389,15 +448,37 @@ const SCRIPT = `<script>
     if (out) out.textContent = name + ": " + n + " threads. Open its page for the list.";
   };
   const clear = () => { svg.classList.remove("focusing"); for (const t of ths) t.classList.remove("lit"); };
+  // Hit areas 24 px across on screen whatever the map's scale (WCAG 2.5.8); the country finder below is the
+  // equivalent control where knots crowd.
+  const sizeHits = () => { const bb = svg.getBoundingClientRect(); const sc = Math.min(bb.width / 1000, bb.height / 520) || 1; /* the map is letterboxed when its height is capped */ for (const h of svg.querySelectorAll(".hit")) h.setAttribute("r", (12.5 / sc).toFixed(1)); };
+  sizeHits(); addEventListener("resize", sizeHits);
+  let armed = null;
   for (const k of svg.querySelectorAll(".knot")) {
     const [name, rest] = k.getAttribute("aria-label").split(": ");
     const n = parseInt(rest, 10);
     k.addEventListener("mouseenter", () => show(k.dataset.c, name, n));
     k.addEventListener("focus", () => show(k.dataset.c, name, n));
     k.addEventListener("mouseleave", clear); k.addEventListener("blur", clear);
+    // On a touch screen the first tap traces the country and the second opens it.
+    k.addEventListener("pointerdown", (e) => { k.dataset.touch = e.pointerType === "touch" ? "1" : ""; });
+    k.addEventListener("click", (e) => {
+      if (k.dataset.touch && armed !== k) { e.preventDefault(); armed = k; show(k.dataset.c, name, n); }
+    });
   }
 })();
 </script>`;
+
+// The landing's extras: the size key, the fringe of loose threads, the odd records' counts.
+const keyDot = (n) => `<svg class="key" viewBox="-8 -8 16 16" aria-hidden="true"><circle r="${knotR(n)}" class="k"/></svg>`;
+const sizeKey = `<span class="sizekey">A knot's area is proportional to the threads through it: ${keyDot(1)} 1 ${keyDot(10)} 10 ${keyDot(maxThrough)} ${maxThrough}.</span>`;
+const fringe = (() => {
+  const n = notThreaded.length, w = 1000, step = w / (n + 1);
+  const strands = Array.from({ length: n }, (_, i) => { const x = (step * (i + 1)).toFixed(1), d = (i * 37) % 7 - 3; return `<path d="M${x} 2c${d} 6 ${-d} 10 ${d / 2} 16"/>`; }).join("");
+  return `<a class="fringe" href="organisations.html#loose" aria-label="${n} records too loose to draw: see why"><svg viewBox="0 0 1000 20" preserveAspectRatio="none" aria-hidden="true">${strands}</svg><span>${n} loose threads: records that could not be drawn</span></a>`;
+})();
+const religionCount = readdirSync(join(DATA, "Religion")).length;
+const languageCount = readdirSync(join(DATA, "Languages")).length;
+const presidentCount = json(join(DATA, "US", "USPresidents.json")).USpresidents.length;
 
 const pages = {};
 pages["index.html"] = page({
@@ -406,26 +487,30 @@ pages["index.html"] = page({
   script: SCRIPT,
   body: `<section class="hero"><div class="wrap">
 <h1>The world, woven: <span>${fig("threads")} threads</span> through ${fig("statesThreaded")} states and ${fig("territoriesThreaded")} territories.</h1>
-<p class="how">One thread is one organisation, language or games series, drawn through its members from west to east; a knot grows with the threads through it. <span id="readout" aria-live="polite">Point at a country, or Tab to it.</span></p>
-${mapSvg({ id: "weave", label: `World map with ${fig("threads")} threads across ${fig("countries")} states and territories` })}
+<p class="how">One thread is one organisation, shared language or games series, drawn through its members from west to east. ${sizeKey} <span id="readout" aria-live="polite">Point at a country to trace it (on a phone, tap once); click to open it.</span></p>
+${mapSvg({ id: "weave", label: `World map with ${fig("threads")} threads through ${fig("statesThreaded")} states, ${fig("territoriesThreaded")} territories and ${fig("historicThreaded")} historic state` })}
+${fringe}
+<p class="tiles-cap" aria-hidden="true">Threads by domain, and World Heritage Sites</p>
 <ul class="tiles" aria-label="The domains, with their counts">${Object.keys(DOMAINS).map(domainTile).join("")}${heritageTile}</ul>
 </div></section>
 <section class="band"><div class="wrap cols">
-<div><h2>Read it as cloth</h2><p>A dense knot is a country many bodies pass through; ${esc(countries.get([...through.entries()].sort((a, b) => b[1] - a[1])[0][0]).name)} carries the most, ${fig("maxThrough")} threads. A long thread is a body that spans the world; a short bow is two neighbours bound together.</p></div>
-<div><h2>What is not here, and why</h2><p>${fig("proseMembers")} of the repository's ${fig("repoOrgs")} organisations name their members in prose; ${fig("filledFromWikidata")} were filled from Wikidata where the organisation matched, and ${fig("stillUnthreaded")} remain unthreaded. ${fig("unmappedNames")} member names are territories, regions or sentences, not countries. <a href="data.html">See the Data page.</a></p></div>
+<div><h2>Read it as cloth</h2><p>A large knot is a country many organisations include: ${esc(countries.get([...through.entries()].sort((a, b) => b[1] - a[1])[0][0]).name)} is in the most, ${fig("maxThrough")}. A long thread is an organisation that spans the world; a short curve joins two neighbours.</p>
+<p><label for="find">Find a country</label> <input id="find" type="search" list="places" autocomplete="off"> <span class="note">and open its page</span><datalist id="places">${placed.filter((c) => through.has(c.iso3)).map((c) => `<option value="${esc(c.name)}">`).join("")}</datalist></p></div>
+<div><h2>What is not drawn, and why</h2><p>The ${fig("stillUnthreaded")} loose threads under the map are records that could not be drawn: ${fig("proseMembers")} of the repository's ${fig("repoOrgs")} records name their members only in words ("27 European countries"); Wikidata filled ${fig("filledFromWikidata")} where its count agreed and refused ${fig("fillRejected")} where it did not. ${fig("mergedDuplicates")} records were the same organisation listed twice and are drawn once. ${fig("unmappedNames")} member names are territories, regions or sentences. <a href="data.html">The Data page lists every one.</a></p>
+<p>Kept beside NATO in the same data: profiles of ${religionCount} religions and ${languageCount} languages, ${presidentCount} US presidents, and one example record of a US Army special-forces team. <a href="organisations.html">See them all.</a></p></div>
 </div></section>`,
 });
 
-const orgRow = (o) => `<tr id="${o.id}"><th scope="row">${esc(o.name)}${o.abbr && o.abbr !== o.name ? ` <span class="abbr">${esc(o.abbr)}</span>` : ""}${o.note ? `<br><span class="note">${esc(o.note)}</span>` : ""}</th><td>${esc(o.type)}</td><td>${o.members.length >= 2 ? o.members.map((m) => `<a href="country-${m.toLowerCase()}.html">${esc(countries.get(m).name)}</a>`).join(", ") : `<span class="note">Not threaded: ${esc(o.prose ? `members given as "${o.prose}"` : "fewer than two members resolve to countries")}</span>`}${o.unresolved?.length ? `<br><span class="note">Not placed: ${o.unresolved.map(esc).join("; ")}</span>` : ""}</td><td class="src">${esc(o.source)}${o.filled ? `<br><span class="note">Filled because ${esc(o.filled)}</span>` : ""}</td></tr>`;
+const orgRow = (o) => `<tr id="${o.id}"><th scope="row">${esc(o.name)}${o.abbr && o.abbr !== o.name ? ` <span class="abbr">${esc(o.abbr)}</span>` : ""}${o.note ? `<br><span class="note">${esc(o.note)}</span>` : ""}</th><td>${esc(o.type)}</td><td>${o.members.length >= 2 ? o.members.map((m) => `<a href="country-${m.toLowerCase()}.html">${esc(countries.get(m).name)}</a>`).join(", ") : `<span class="note">Not threaded: ${esc(o.prose ? `members given as "${o.prose}"` : "fewer than two members resolve to countries")}</span>`}${o.unresolved?.length ? `<br><span class="note">Not placed: ${o.unresolved.map(esc).join("; ")}</span>` : ""}</td><td class="src">${esc(o.source)}${o.filled ? `<br><span class="note">Filled because ${esc(o.filled)}</span>` : ""}${o.fillRejected ? `<br><span class="note">${esc(o.fillRejected)}</span>` : ""}${o.listedAlso ? `<br><span class="note">Also listed in ${esc(o.listedAlso.join("; "))}; drawn once</span>` : ""}</td></tr>`;
 const orgTable = (list, caption) => `<div class="tbl"><table><caption>${esc(caption)}</caption><thead><tr><th scope="col">Organisation</th><th scope="col">Type</th><th scope="col">Members</th><th scope="col">Source</th></tr></thead><tbody>${list.map(orgRow).join("")}</tbody></table></div>`;
 
 for (const [k, D] of Object.entries(DOMAINS)) {
   const list = orgs.filter((o) => o.domain === k);
   const extra = k === "economics" ? `<h2>Tax havens</h2><p>The repository keeps a list of ${taxHavens.length} places it calls tax havens. It is a classification, not an organisation, so it is listed here and not threaded. ${taxHavens.filter((t) => t.iso3).length} are sovereign states; the rest are territories.</p><div class="tbl"><table><caption>Tax havens in data/TaxHavens.json</caption><thead><tr><th scope="col">Place</th><th scope="col">Corporate tax</th><th scope="col">Personal income tax</th><th scope="col">Notes</th></tr></thead><tbody>${taxHavens.map((t) => `<tr><th scope="row">${t.iso3 ? `<a href="country-${t.iso3.toLowerCase()}.html">${esc(t.country)}</a>` : esc(t.country)}</th><td>${esc(t.corporate_tax)}</td><td>${esc(t.individual_income_tax)}${t.country === "Marshall Islands" ? '<br><span class="note">The source contradicts itself here: its note says there is no personal income tax.</span>' : ""}</td><td>${esc(t.notes)}</td></tr>`).join("")}</tbody></table></div>` : "";
-  const gamesExtra = k === "games" ? games.map((g) => `<h2>${esc(g.label)}</h2><ol class="hosts">${g.hosts.map((h) => `<li><span class="yr">${h.year}</span> <a href="country-${h.iso3.toLowerCase()}.html">${esc(countries.get(h.iso3).name)}</a>${h.planned ? ' <span class="note">planned</span>' : ""}</li>`).join("")}</ol>`).join("") : "";
+  const gamesExtra = k === "games" ? games.map((g) => `<h2>${esc(g.label)}</h2><p class="note">Not drawn: ${g.cancelled.join(", ")} (awarded, never held)${g.missing.length ? `; ${g.missing.join(", ")} (held, but Wikidata records no host country for them)` : ""}.</p><ol class="hosts">${g.hosts.map((h) => `<li><span class="yr">${h.year}</span> <a href="country-${h.iso3.toLowerCase()}.html">${esc(countries.get(h.iso3).name)}</a>${h.planned ? ' <span class="note">planned</span>' : ""}</li>`).join("")}</ol>`).join("") : "";
   pages[`${k}.html`] = page({
     file: `${k}.html`, current: `${k}.html`, title: `${D.label} · GeoPolitics`, description: `${D.blurb} ${fig(`threads_${k}`)} threads through ${fig(`countries_${k}`)} countries.`, script: SCRIPT,
-    body: `<section class="head"><div class="wrap"><p class="kicker">${legendSwatch(k)} ${D.label}</p><h1>${fig(`threads_${k}`)} threads through ${fig(`countries_${k}`)} countries.</h1><p class="how">${esc(D.blurb)} <span id="readout" aria-live="polite"></span></p>
+    body: `<section class="head"><div class="wrap"><p class="kicker">${legendSwatch(k)} ${D.label}</p><h1>${k === "games" ? `${games.length} series, from host to host, through ${fig(`countries_${k}`)} countries.` : `${fig(`threads_${k}`)} threads through ${fig(`countries_${k}`)} places.`}</h1><p class="how">${esc(D.blurb)} <span id="readout" aria-live="polite"></span></p>
 ${mapSvg({ only: [k], id: "weave", label: `${D.label} threads on the world map` })}</div></section>
 <section class="body"><div class="wrap">${gamesExtra}${orgTable(list, `${D.label}: every organisation, threaded or not`)}${extra}</div></section>`,
   });
@@ -435,7 +520,7 @@ pages["heritage.html"] = page({
   file: "heritage.html", current: "heritage.html", title: "Heritage · GeoPolitics", description: `${fig("heritageSites")} World Heritage Sites across ${heritage.size} places, from Wikidata.`,
   body: `<section class="head"><div class="wrap"><p class="kicker">Heritage</p><h1>${fig("heritageSites")} World Heritage Sites in ${heritage.size} places.</h1>
 <p class="how">Art and heritage are not threads: a site belongs to a place. Each ring's area is proportional to the place's sites. A site that crosses a border counts in each country it lies in, so the table sums to ${fig("heritageByCountrySum")}, more than the ${fig("heritageSites")} sites. Source: Wikidata, UNESCO World Heritage Site id (P757) by country (P17)${WD_HER ? `, fetched ${WD_HER.fetched.slice(0, 10)}` : ""}.</p>
-<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="World Heritage Sites by country"><use href="land.svg#base"/>${[...heritage.entries()].filter(([iso]) => countries.get(iso)?.lon != null).sort((a, b) => b[1] - a[1]).map(([iso, n]) => { const [x, y] = proj(countries.get(iso).lon, countries.get(iso).lat); const mx = Math.max(...heritage.values()); return `<a href="country-${iso.toLowerCase()}.html" aria-label="${esc(countries.get(iso).name)}: ${n} sites"><circle class="her" cx="${x}" cy="${y}" r="${(2 + 14 * Math.sqrt(n / mx)).toFixed(1)}"/></a>`; }).join("")}</svg></div></section>
+<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="World Heritage Sites by country: the table below lists every country"><use href="land.svg#base"/>${[...heritage.entries()].filter(([iso]) => countries.get(iso)?.lon != null).sort((a, b) => b[1] - a[1]).map(([iso, n]) => { const [x, y] = proj(countries.get(iso).lon, countries.get(iso).lat); const mx = Math.max(...heritage.values()); return `<circle class="her" cx="${x}" cy="${y}" r="${(16 * Math.sqrt(n / mx)).toFixed(2)}"><title>${esc(countries.get(iso).name)}: ${n} sites</title></circle>`; }).join("")}</svg></div></section>
 <section class="body"><div class="wrap"><div class="tbl"><table><caption>World Heritage Sites by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Sites</th></tr></thead><tbody>${[...heritage.entries()].sort((a, b) => b[1] - a[1] || countries.get(a[0]).name.localeCompare(countries.get(b[0]).name)).map(([iso, n]) => `<tr><th scope="row"><a href="country-${iso.toLowerCase()}.html">${esc(countries.get(iso).name)}</a></th><td class="num">${n}</td></tr>`).join("")}</tbody></table></div></div></section>`,
 });
 
@@ -445,18 +530,18 @@ pages["countries.html"] = page({
   script: `<script>(() => { const q = document.getElementById("q"), rows = [...document.querySelectorAll("#clist li")]; const n = document.getElementById("n"); q.addEventListener("input", () => { const v = q.value.trim().toLowerCase(); let k = 0; for (const r of rows) { const hit = !v || r.dataset.k.includes(v); r.hidden = !hit; k += hit; } n.textContent = k; }); })();</script>`,
   body: `<section class="head"><div class="wrap"><p class="kicker">Countries</p><h1>${allPlaced.length} countries, and the threads through each.</h1><p class="how">The map as a list: every country, its thread count by domain, and a page of its own.</p>
 <p><label for="q">Find a country</label> <input id="q" type="search" autocomplete="off"> <span class="note"><span id="n">${allPlaced.length}</span> shown</span></p></div></section>
-<section class="body"><div class="wrap"><ul id="clist" class="clist">${allPlaced.map((c) => { const per = Object.keys(DOMAINS).map((k) => byDomain[k].filter((o) => o.members.includes(c.iso3)).length); return `<li data-k="${esc([c.name, ...c.aliases, c.iso3].join(" ").toLowerCase())}"><a href="country-${c.iso3.toLowerCase()}.html">${esc(c.name)}</a> <span class="cn">${through.get(c.iso3) ?? 0}</span><span class="bars" aria-label="${Object.keys(DOMAINS).map((k, i) => `${DOMAINS[k].label} ${per[i]}`).join(", ")}">${Object.keys(DOMAINS).map((k, i) => `<i class="b-${k}" style="width:${per[i] * 3}px"></i>`).join("")}</span></li>`; }).join("")}</ul></div></section>`,
+<section class="body"><div class="wrap"><ul id="clist" class="clist">${allPlaced.map((c) => { const per = Object.keys(DOMAINS).map((k) => byDomain[k].filter((o) => o.members.includes(c.iso3)).length); return `<li data-k="${esc([c.name, ...c.aliases, c.iso3].join(" ").toLowerCase())}"><a href="country-${c.iso3.toLowerCase()}.html">${esc(c.name)}</a> <span class="cn">${through.get(c.iso3) ?? 0}</span><span class="bars" role="img" aria-label="${Object.keys(DOMAINS).map((k, i) => `${DOMAINS[k].label} ${per[i]}`).join(", ")}">${Object.keys(DOMAINS).map((k, i) => `<i class="b-${k}" style="width:${per[i] * 3}px"></i>`).join("")}</span></li>`; }).join("")}</ul></div></section>`,
 });
 
 for (const c of placed) {
   const mine = threaded.filter((o) => o.members.includes(c.iso3));
   const lists = Object.entries(DOMAINS).map(([k, D]) => { const l = mine.filter((o) => o.domain === k); return l.length ? `<h2>${legendSwatch(k)} ${D.label} <span class="cn">${l.length}</span></h2><ul class="olist">${l.map((o) => `<li><a href="${o.domain}.html#${o.id}">${esc(o.name)}</a> <span class="note">${o.members.length} members</span></li>`).join("")}</ul>` : ""; }).join("");
-  const hosted = games.flatMap((g) => g.hosts.filter((h) => h.iso3 === c.iso3).map((h) => `${g.label} ${h.year}`));
+  const hosted = games.flatMap((g) => g.hosts.filter((h) => h.iso3 === c.iso3).map((h) => `${g.label} ${h.year}${h.planned ? " (planned)" : ""}`));
   pages[`country-${c.iso3.toLowerCase()}.html`] = page({
     file: `country-${c.iso3.toLowerCase()}.html`, current: "countries.html", title: `${c.name} · GeoPolitics`, description: `${c.name}: ${through.get(c.iso3) ?? 0} threads across the Weave.`,
     body: `<section class="head"><div class="wrap"><p class="kicker"><a href="countries.html">Countries</a> · ${esc(c.iso3)}</p><h1>${esc(c.name)}: ${through.get(c.iso3) ?? 0} threads.</h1>
 <p class="how">${c.historic ? `A historic state (${esc(c.historic)}). ` : c.sovereign ? "" : "A territory, not a sovereign state. "}Placed at ${esc(c.capital ?? "its coordinate")}${c.placedBy ? ` (${esc(c.placedBy)})` : ""}. ${heritage.has(c.iso3) ? `${heritage.get(c.iso3)} World Heritage Sites. ` : ""}${hosted.length ? `Hosted ${esc(hosted.join(", "))}.` : ""}</p>
-${mapSvg({ focus: c.iso3, id: `m-${c.iso3}`, label: `The threads through ${c.name}`, interactive: false })}</div></section>
+${countryMap(c)}</div></section>
 <section class="body"><div class="wrap">${lists || '<p class="note">No thread passes through this country in this data.</p>'}</div></section>`,
   });
 }
@@ -464,7 +549,8 @@ ${mapSvg({ focus: c.iso3, id: `m-${c.iso3}`, label: `The threads through ${c.nam
 pages["organisations.html"] = page({
   file: "organisations.html", current: "organisations.html", title: "Organisations · GeoPolitics", description: `All ${orgs.length} organisations, languages and series, threaded or not.`,
   body: `<section class="head"><div class="wrap"><p class="kicker">Organisations</p><h1>${orgs.length} bodies; ${fig("threads")} drawn as threads.</h1><p class="how">Everything the data holds, including what could not be drawn and why, and the stranger records kept beside NATO: a tax-haven list, a religion, a single example of a special-forces team.</p></div></section>
-<section class="body"><div class="wrap">${Object.entries(DOMAINS).map(([k, D]) => orgTable(orgs.filter((o) => o.domain === k), D.label)).join("")}</div></section>`,
+<section class="body"><div class="wrap">${Object.entries(DOMAINS).map(([k, D]) => orgTable(orgs.filter((o) => o.domain === k), D.label)).join("")}
+<h2 id="loose">The ${notThreaded.length} loose threads</h2><p>Records with fewer than two members that could be placed, each with its reason.</p>${orgTable(notThreaded, "Not drawn")}</div></section>`,
 });
 
 pages["data.html"] = page({
@@ -492,6 +578,8 @@ if (existsSync(out)) for (const f of readdirSync(out)) if (f.endsWith(".html")) 
 mkdirSync(out, { recursive: true });
 for (const [f, html] of Object.entries(pages)) writeFileSync(join(out, f), html);
 for (const f of ["style.css", "favicon.svg"]) copyFileSync(join(here, f), join(out, f));
+// Every thread once, with its own stroke (a <use> of an external file does not take the page's stylesheet).
+writeFileSync(join(out, "threads.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><defs>${threaded.map((o) => `<path id="t-${o.id}" fill="none" stroke="${DOMAINS[o.domain].color}" stroke-width="${o.domain === "games" ? 1 : 1.3}"${o.domain === "games" ? ' stroke-opacity=".45"' : ""} stroke-linecap="round"${DOMAINS[o.domain].dash ? ` stroke-dasharray="${DOMAINS[o.domain].dash}"` : ""} d="${o.d}"/>`).join("")}</defs></svg>\n`);
 // The map's base (sea, graticule, land) once, styled by the page's own stylesheet through <use>.
 // A <use> of an external file does not take the page's stylesheet, so the base carries its own colours (measured: it
 // rendered black with classes alone).
