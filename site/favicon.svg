@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #f3ede2; stroke: #c9bca3; }
+    .ink { fill: #1d1a16; }
+    @media (prefers-color-scheme: dark) { .bg { fill: #1d1a16; stroke: #5b544a; } .ink { fill: #f3ede2; } }
+  </style>
+  <symbol id="mark" viewBox="0 0 32 32">
+    <rect class="bg" x="1" y="1" width="30" height="30" rx="6"/>
+    <path d="M4 22C10 6 16 26 28 9" fill="none" stroke="#1f4e9c" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M4 11C12 26 20 6 28 21" fill="none" stroke="#a3262a" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 2.5"/>
+    <circle class="ink" cx="16" cy="16" r="3.4"/>
+  </symbol>
+  <use href="#mark"/>
+</svg>

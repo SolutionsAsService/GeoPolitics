@@ -1,0 +1,10 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:23:27+00:00",
+ "query": "SELECT (COUNT(DISTINCT ?base) AS ?sites) WHERE {\n  ?site wdt:P757 ?whs.\n  BIND(REPLACE(STR(?whs), \"^([0-9]+).*$\", \"$1\") AS ?base)\n}",
+ "rows": [
+  {
+   "sites": "1286"
+  }
+ ]
+}

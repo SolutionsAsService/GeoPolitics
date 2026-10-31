@@ -1,0 +1,193 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:21:04+00:00",
+ "query": "SELECT ?event ?eventLabel ?year ?iso3 WHERE {\n  ?event wdt:P31 wd:Q135976384; wdt:P17 ?country. ?country wdt:P298 ?iso3.\n  OPTIONAL { ?event wdt:P580 ?start. }\n  OPTIONAL { ?event wdt:P585 ?date. }\n  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "event": "http://www.wikidata.org/entity/Q8088",
+   "iso3": "FRA",
+   "eventLabel": "1900 Summer Olympics",
+   "year": "1900"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8098",
+   "iso3": "USA",
+   "eventLabel": "1904 Summer Olympics",
+   "year": "1904"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8118",
+   "iso3": "SWE",
+   "eventLabel": "1912 Summer Olympics",
+   "year": "1912"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8128",
+   "iso3": "BEL",
+   "eventLabel": "1920 Summer Olympics",
+   "year": "1920"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8132",
+   "iso3": "FRA",
+   "eventLabel": "1924 Summer Olympics",
+   "year": "1924"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8143",
+   "iso3": "USA",
+   "eventLabel": "1932 Summer Olympics",
+   "year": "1932"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8368",
+   "iso3": "JPN",
+   "eventLabel": "1940 Summer Olympics",
+   "year": "1940"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8368",
+   "iso3": "FIN",
+   "eventLabel": "1940 Summer Olympics",
+   "year": "1940"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8376",
+   "iso3": "GBR",
+   "eventLabel": "1944 Summer Olympics",
+   "year": "1944"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8403",
+   "iso3": "GBR",
+   "eventLabel": "1948 Summer Olympics",
+   "year": "1948"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8407",
+   "iso3": "FIN",
+   "eventLabel": "1952 Summer Olympics",
+   "year": "1952"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8411",
+   "iso3": "AUS",
+   "eventLabel": "1956 Summer Olympics",
+   "year": "1956"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8415",
+   "iso3": "ITA",
+   "eventLabel": "1960 Summer Olympics",
+   "year": "1960"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8420",
+   "iso3": "JPN",
+   "eventLabel": "1964 Summer Olympics",
+   "year": "1964"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8429",
+   "iso3": "MEX",
+   "eventLabel": "1968 Summer Olympics",
+   "year": "1968"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8438",
+   "iso3": "DEU",
+   "eventLabel": "1972 Summer Olympics",
+   "year": "1972"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8444",
+   "iso3": "CAN",
+   "eventLabel": "1976 Summer Olympics",
+   "year": "1976"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8450",
+   "iso3": "SUN",
+   "eventLabel": "1980 Summer Olympics",
+   "year": "1980"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8456",
+   "iso3": "USA",
+   "eventLabel": "1984 Summer Olympics",
+   "year": "1984"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8470",
+   "iso3": "KOR",
+   "eventLabel": "1988 Summer Olympics",
+   "year": "1988"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8488",
+   "iso3": "ESP",
+   "eventLabel": "1992 Summer Olympics",
+   "year": "1992"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8531",
+   "iso3": "USA",
+   "eventLabel": "1996 Summer Olympics",
+   "year": "1996"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8544",
+   "iso3": "AUS",
+   "eventLabel": "2000 Summer Olympics",
+   "year": "2000"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8558",
+   "iso3": "GRC",
+   "eventLabel": "2004 Summer Olympics",
+   "year": "2004"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8567",
+   "iso3": "CHN",
+   "eventLabel": "2008 Summer Olympics",
+   "year": "2008"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8577",
+   "iso3": "GBR",
+   "eventLabel": "2012 Summer Olympics",
+   "year": "2012"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q8613",
+   "iso3": "BRA",
+   "eventLabel": "2016 Summer Olympics",
+   "year": "2016"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q181278",
+   "iso3": "JPN",
+   "eventLabel": "2020 Summer Olympics",
+   "year": "2021"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q995653",
+   "iso3": "FRA",
+   "eventLabel": "2024 Summer Olympics",
+   "year": "2024"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q1451505",
+   "iso3": "USA",
+   "eventLabel": "2028 Summer Olympics",
+   "year": "2028"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q31039462",
+   "iso3": "AUS",
+   "eventLabel": "2032 Summer Olympics",
+   "year": "2032"
+  }
+ ]
+}

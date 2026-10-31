@@ -1,0 +1,7 @@
+- `AmericanOrgs.json`: Mercosur's `establishedBy` repeated the keys `treaty` and `year` inside one object and missed a comma; it is now a list of two treaties, so neither is lost.
+- `Languages/French.json`: a bare string inside the `Writing System` object became the pair `"Braille": "French Braille"`.
+- `Languages/Portuguese.json`: removed a trailing comma after the `Lusophones` list.
+- `Languages/Arabic.json`: removed a `references` list of placeholders ("Source 1", "Source 2", "Source 3", "..."); it cited nothing.
+- `Languages/Hindi.json`: removed a `references` list of placeholders ("Source 1", "Source 2", "Source 3", "..."); it cited nothing.
+- `TransatlanticOrgs.json`: the file stopped after its first entry with a dangling comma; closed the list and the object (one entry, the OEI, is all the file held).
+- `DefenseAgreements/UKDefense.json`: the file held two JSON objects one after another; merged into one object with the keys UKDefense, NonEUDefenceCooperation (no key was in both).

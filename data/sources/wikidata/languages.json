@@ -1,0 +1,1851 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:09:46+00:00",
+ "query": "SELECT ?iso3 ?langLabel WHERE {\n  ?country wdt:P298 ?iso3; wdt:P37 ?lang.\n  FILTER NOT EXISTS { ?country wdt:P576 ?d }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "iso3": "CAN",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "CAN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "JPN",
+   "langLabel": "Japanese"
+  },
+  {
+   "iso3": "NOR",
+   "langLabel": "Norwegian"
+  },
+  {
+   "iso3": "NOR",
+   "langLabel": "Nynorsk"
+  },
+  {
+   "iso3": "NOR",
+   "langLabel": "Bokmål"
+  },
+  {
+   "iso3": "NOR",
+   "langLabel": "Sámi"
+  },
+  {
+   "iso3": "IRL",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "IRL",
+   "langLabel": "Irish"
+  },
+  {
+   "iso3": "HUN",
+   "langLabel": "Hungarian"
+  },
+  {
+   "iso3": "ESP",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "USA",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "USA",
+   "langLabel": "Carolinian"
+  },
+  {
+   "iso3": "USA",
+   "langLabel": "Chamorro"
+  },
+  {
+   "iso3": "USA",
+   "langLabel": "Hawaiian"
+  },
+  {
+   "iso3": "USA",
+   "langLabel": "Samoan"
+  },
+  {
+   "iso3": "BEL",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "BEL",
+   "langLabel": "German"
+  },
+  {
+   "iso3": "BEL",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "LUX",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "LUX",
+   "langLabel": "German"
+  },
+  {
+   "iso3": "LUX",
+   "langLabel": "Luxembourgish"
+  },
+  {
+   "iso3": "FIN",
+   "langLabel": "Finnish"
+  },
+  {
+   "iso3": "FIN",
+   "langLabel": "Swedish"
+  },
+  {
+   "iso3": "SWE",
+   "langLabel": "Swedish"
+  },
+  {
+   "iso3": "DNK",
+   "langLabel": "Danish"
+  },
+  {
+   "iso3": "POL",
+   "langLabel": "Polish"
+  },
+  {
+   "iso3": "LTU",
+   "langLabel": "Lithuanian"
+  },
+  {
+   "iso3": "ITA",
+   "langLabel": "Italian"
+  },
+  {
+   "iso3": "CHE",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "CHE",
+   "langLabel": "German"
+  },
+  {
+   "iso3": "CHE",
+   "langLabel": "Italian"
+  },
+  {
+   "iso3": "CHE",
+   "langLabel": "Romansh"
+  },
+  {
+   "iso3": "AUT",
+   "langLabel": "German"
+  },
+  {
+   "iso3": "AUT",
+   "langLabel": "Austrian Sign Language"
+  },
+  {
+   "iso3": "GRC",
+   "langLabel": "Greek"
+  },
+  {
+   "iso3": "TUR",
+   "langLabel": "Turkish"
+  },
+  {
+   "iso3": "PRT",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "EGY",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "MEX",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "MEX",
+   "langLabel": "Nahuatl"
+  },
+  {
+   "iso3": "MEX",
+   "langLabel": "Yucatec Maya"
+  },
+  {
+   "iso3": "KEN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "KEN",
+   "langLabel": "Swahili"
+  },
+  {
+   "iso3": "ETH",
+   "langLabel": "Amharic"
+  },
+  {
+   "iso3": "GHA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "FRA",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "GBR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "CHN",
+   "langLabel": "Putonghua"
+  },
+  {
+   "iso3": "BRA",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "RUS",
+   "langLabel": "Russian"
+  },
+  {
+   "iso3": "DEU",
+   "langLabel": "German"
+  },
+  {
+   "iso3": "BLR",
+   "langLabel": "Russian"
+  },
+  {
+   "iso3": "BLR",
+   "langLabel": "Belarusian"
+  },
+  {
+   "iso3": "ISL",
+   "langLabel": "Icelandic"
+  },
+  {
+   "iso3": "EST",
+   "langLabel": "Estonian"
+  },
+  {
+   "iso3": "LVA",
+   "langLabel": "Latvian"
+  },
+  {
+   "iso3": "UKR",
+   "langLabel": "Ukrainian"
+  },
+  {
+   "iso3": "CZE",
+   "langLabel": "Czech"
+  },
+  {
+   "iso3": "SVK",
+   "langLabel": "Slovak"
+  },
+  {
+   "iso3": "SVN",
+   "langLabel": "Slovene"
+  },
+  {
+   "iso3": "MDA",
+   "langLabel": "Romanian"
+  },
+  {
+   "iso3": "ROU",
+   "langLabel": "Romanian"
+  },
+  {
+   "iso3": "BGR",
+   "langLabel": "Bulgarian"
+  },
+  {
+   "iso3": "MKD",
+   "langLabel": "Albanian"
+  },
+  {
+   "iso3": "MKD",
+   "langLabel": "Macedonian"
+  },
+  {
+   "iso3": "ALB",
+   "langLabel": "Albanian"
+  },
+  {
+   "iso3": "GRL",
+   "langLabel": "Greenlandic"
+  },
+  {
+   "iso3": "HRV",
+   "langLabel": "Croatian"
+  },
+  {
+   "iso3": "BIH",
+   "langLabel": "Croatian"
+  },
+  {
+   "iso3": "BIH",
+   "langLabel": "Serbian"
+  },
+  {
+   "iso3": "BIH",
+   "langLabel": "Bosnian"
+  },
+  {
+   "iso3": "AZE",
+   "langLabel": "Azerbaijani"
+  },
+  {
+   "iso3": "AZE",
+   "langLabel": "Azerbaijani Sign Language"
+  },
+  {
+   "iso3": "AND",
+   "langLabel": "Catalan"
+  },
+  {
+   "iso3": "CYP",
+   "langLabel": "Turkish"
+  },
+  {
+   "iso3": "CYP",
+   "langLabel": "Modern Greek"
+  },
+  {
+   "iso3": "GEO",
+   "langLabel": "Georgian"
+  },
+  {
+   "iso3": "KAZ",
+   "langLabel": "Russian"
+  },
+  {
+   "iso3": "KAZ",
+   "langLabel": "Kazakh"
+  },
+  {
+   "iso3": "MLT",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MLT",
+   "langLabel": "Maltese"
+  },
+  {
+   "iso3": "MCO",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "MNE",
+   "langLabel": "Montenegrin"
+  },
+  {
+   "iso3": "VAT",
+   "langLabel": "Latin"
+  },
+  {
+   "iso3": "VAT",
+   "langLabel": "Italian"
+  },
+  {
+   "iso3": "SMR",
+   "langLabel": "Italian"
+  },
+  {
+   "iso3": "CUB",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "BLZ",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BRB",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BRB",
+   "langLabel": "Bajan Creole"
+  },
+  {
+   "iso3": "IDN",
+   "langLabel": "Indonesian"
+  },
+  {
+   "iso3": "CXR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "NCL",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "NIU",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "NIU",
+   "langLabel": "Niuean"
+  },
+  {
+   "iso3": "SPM",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "SGS",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "WLF",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "WLF",
+   "langLabel": "Futunan"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Zulu"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Xhosa"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Afrikaans"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Venda"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Northern Sotho"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Swazi"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Tswana"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Tsonga"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Sesotho"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "Southern Ndebele"
+  },
+  {
+   "iso3": "ZAF",
+   "langLabel": "South African Sign Language"
+  },
+  {
+   "iso3": "DZA",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "DZA",
+   "langLabel": "Standard Algerian Berber"
+  },
+  {
+   "iso3": "UZB",
+   "langLabel": "Uzbek"
+  },
+  {
+   "iso3": "CHL",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "SGP",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "SGP",
+   "langLabel": "Tamil"
+  },
+  {
+   "iso3": "SGP",
+   "langLabel": "Malay"
+  },
+  {
+   "iso3": "SGP",
+   "langLabel": "Standard Chinese"
+  },
+  {
+   "iso3": "LIE",
+   "langLabel": "German"
+  },
+  {
+   "iso3": "BHR",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "ARM",
+   "langLabel": "Armenian"
+  },
+  {
+   "iso3": "SRB",
+   "langLabel": "Serbian"
+  },
+  {
+   "iso3": "AUS",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ARG",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "PER",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "PER",
+   "langLabel": "Aymara"
+  },
+  {
+   "iso3": "PER",
+   "langLabel": "Quechua"
+  },
+  {
+   "iso3": "PRK",
+   "langLabel": "Korean"
+  },
+  {
+   "iso3": "PRK",
+   "langLabel": "North Korean standard language"
+  },
+  {
+   "iso3": "KHM",
+   "langLabel": "Khmer"
+  },
+  {
+   "iso3": "TLS",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "TLS",
+   "langLabel": "Tetum"
+  },
+  {
+   "iso3": "TCD",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "TCD",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "NZL",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "NZL",
+   "langLabel": "New Zealand Sign Language"
+  },
+  {
+   "iso3": "NZL",
+   "langLabel": "Māori"
+  },
+  {
+   "iso3": "IND",
+   "langLabel": "Hindi"
+  },
+  {
+   "iso3": "IND",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "TUV",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "TUV",
+   "langLabel": "Tuvaluan"
+  },
+  {
+   "iso3": "TON",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "TON",
+   "langLabel": "Tongan"
+  },
+  {
+   "iso3": "WSM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "WSM",
+   "langLabel": "Samoan"
+  },
+  {
+   "iso3": "SLB",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "VUT",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "VUT",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "VUT",
+   "langLabel": "Bislama"
+  },
+  {
+   "iso3": "PNG",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "PNG",
+   "langLabel": "Hiri Motu"
+  },
+  {
+   "iso3": "PNG",
+   "langLabel": "Tok Pisin"
+  },
+  {
+   "iso3": "PNG",
+   "langLabel": "Papua New Guinean Sign Language"
+  },
+  {
+   "iso3": "PLW",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "PLW",
+   "langLabel": "Japanese"
+  },
+  {
+   "iso3": "PLW",
+   "langLabel": "Palauan"
+  },
+  {
+   "iso3": "NRU",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "NRU",
+   "langLabel": "Nauruan"
+  },
+  {
+   "iso3": "FSM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MHL",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MHL",
+   "langLabel": "Marshallese"
+  },
+  {
+   "iso3": "KIR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "KIR",
+   "langLabel": "Gilbertese"
+  },
+  {
+   "iso3": "MNG",
+   "langLabel": "Mongolian"
+  },
+  {
+   "iso3": "FJI",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "FJI",
+   "langLabel": "Fijian"
+  },
+  {
+   "iso3": "FJI",
+   "langLabel": "Fiji Hindi"
+  },
+  {
+   "iso3": "VEN",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "VEN",
+   "langLabel": "Venezuelan Sign Language"
+  },
+  {
+   "iso3": "SUR",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "PRY",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "PRY",
+   "langLabel": "Guarani"
+  },
+  {
+   "iso3": "GUY",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ECU",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "ECU",
+   "langLabel": "Shuar"
+  },
+  {
+   "iso3": "ECU",
+   "langLabel": "Northern Quichua"
+  },
+  {
+   "iso3": "COL",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "BOL",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "BOL",
+   "langLabel": "Aymara"
+  },
+  {
+   "iso3": "BOL",
+   "langLabel": "Quechua"
+  },
+  {
+   "iso3": "BOL",
+   "langLabel": "Guarani"
+  },
+  {
+   "iso3": "TTO",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "VCT",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "LCA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "KNA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "JAM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "JAM",
+   "langLabel": "Jamaican Patois"
+  },
+  {
+   "iso3": "GRD",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "GRD",
+   "langLabel": "Grenadian Creole English"
+  },
+  {
+   "iso3": "GTM",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "BHS",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ATG",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "ATG",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "HND",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "DMA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "JEY",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "JEY",
+   "langLabel": "Jèrriais"
+  },
+  {
+   "iso3": "JEY",
+   "langLabel": "Jersey Legal French"
+  },
+  {
+   "iso3": "COD",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "DJI",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "DJI",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "GNQ",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "GNQ",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "GNQ",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "ERI",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ERI",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "ERI",
+   "langLabel": "Tigrinya"
+  },
+  {
+   "iso3": "GAB",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "GMB",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "GIN",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "GIN",
+   "langLabel": "languages of Guinea"
+  },
+  {
+   "iso3": "GNB",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "CIV",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "CMR",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "CMR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "CPV",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "CPV",
+   "langLabel": "Cape Verdean Creole"
+  },
+  {
+   "iso3": "LSO",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "LSO",
+   "langLabel": "Sesotho"
+  },
+  {
+   "iso3": "LBR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "LBY",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "MDG",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "MDG",
+   "langLabel": "Malagasy"
+  },
+  {
+   "iso3": "MWI",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MWI",
+   "langLabel": "Chewa"
+  },
+  {
+   "iso3": "MWI",
+   "langLabel": "Tumbuka"
+  },
+  {
+   "iso3": "MRT",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "MRT",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "MUS",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "MUS",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MAR",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "MAR",
+   "langLabel": "Standard Moroccan Tamazight"
+  },
+  {
+   "iso3": "MOZ",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "NAM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "NER",
+   "langLabel": "Hausa"
+  },
+  {
+   "iso3": "NGA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "UGA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "UGA",
+   "langLabel": "Swahili"
+  },
+  {
+   "iso3": "RWA",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "RWA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "RWA",
+   "langLabel": "Swahili"
+  },
+  {
+   "iso3": "RWA",
+   "langLabel": "Kinyarwanda"
+  },
+  {
+   "iso3": "STP",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "SEN",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "SEN",
+   "langLabel": "Wolof"
+  },
+  {
+   "iso3": "SEN",
+   "langLabel": "Balanta"
+  },
+  {
+   "iso3": "SEN",
+   "langLabel": "Badyara"
+  },
+  {
+   "iso3": "SYC",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "SYC",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "SYC",
+   "langLabel": "Seychellois Creole"
+  },
+  {
+   "iso3": "SLE",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "SLE",
+   "langLabel": "Krio"
+  },
+  {
+   "iso3": "SOM",
+   "langLabel": "Somali"
+  },
+  {
+   "iso3": "SOM",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "SDN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "SDN",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "SWZ",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "SWZ",
+   "langLabel": "Swazi"
+  },
+  {
+   "iso3": "PRI",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "PRI",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "XKS",
+   "langLabel": "Albanian"
+  },
+  {
+   "iso3": "XKS",
+   "langLabel": "Serbian"
+  },
+  {
+   "iso3": "GIB",
+   "langLabel": "British English"
+  },
+  {
+   "iso3": "GUF",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "GUF",
+   "langLabel": "Guianan Creole"
+  },
+  {
+   "iso3": "FRO",
+   "langLabel": "Danish"
+  },
+  {
+   "iso3": "FRO",
+   "langLabel": "Faroese"
+  },
+  {
+   "iso3": "ALA",
+   "langLabel": "Swedish"
+  },
+  {
+   "iso3": "CYM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ESH",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "HKG",
+   "langLabel": "Standard Chinese"
+  },
+  {
+   "iso3": "FLK",
+   "langLabel": "British English"
+  },
+  {
+   "iso3": "IMN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "IMN",
+   "langLabel": "Manx"
+  },
+  {
+   "iso3": "VIR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MSR",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MAC",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "MAC",
+   "langLabel": "Cantonese"
+  },
+  {
+   "iso3": "MAC",
+   "langLabel": "Standard Chinese"
+  },
+  {
+   "iso3": "GUM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "GUM",
+   "langLabel": "Chamorro"
+  },
+  {
+   "iso3": "ASM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ASM",
+   "langLabel": "Samoan"
+  },
+  {
+   "iso3": "MNP",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MNP",
+   "langLabel": "Carolinian"
+  },
+  {
+   "iso3": "MNP",
+   "langLabel": "Chamorro"
+  },
+  {
+   "iso3": "UMI",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MYT",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "MYT",
+   "langLabel": "Maore"
+  },
+  {
+   "iso3": "MYT",
+   "langLabel": "Bushi"
+  },
+  {
+   "iso3": "REU",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "TCA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ABW",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "ABW",
+   "langLabel": "Papiamento"
+  },
+  {
+   "iso3": "BMU",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "AIA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "GGY",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "GGY",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "QAT",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "SAU",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "LKA",
+   "langLabel": "Tamil"
+  },
+  {
+   "iso3": "LKA",
+   "langLabel": "Sinhala"
+  },
+  {
+   "iso3": "SYR",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "TJK",
+   "langLabel": "Tajik"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Taiwanese Sign Language"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Amis"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Taiwanese Hokkien"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Rukai"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Bunun"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Kanakanavu"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Standard Taiwanese Mandarin"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Paiwan"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Yami"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Atayal"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Saaroa"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Kavalan"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Tsou"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Seediq"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Puyuma"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Saisiyat"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Sakizaya"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Taiwanese Hakka"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Truku"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Matsu dialect"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Kinmen dialect"
+  },
+  {
+   "iso3": "TWN",
+   "langLabel": "Wuqiu dialect"
+  },
+  {
+   "iso3": "THA",
+   "langLabel": "Thai"
+  },
+  {
+   "iso3": "TKM",
+   "langLabel": "Turkmen"
+  },
+  {
+   "iso3": "ARE",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "VNM",
+   "langLabel": "Vietnamese"
+  },
+  {
+   "iso3": "KOR",
+   "langLabel": "Korean"
+  },
+  {
+   "iso3": "KOR",
+   "langLabel": "Korean Sign Language"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Uzbek"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Turkmen"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Balochi"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Pashayi"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Pashto"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Nuristani"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Dari"
+  },
+  {
+   "iso3": "AFG",
+   "langLabel": "Pamir"
+  },
+  {
+   "iso3": "BGD",
+   "langLabel": "Bangla"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Bambara"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Fula"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Senufo"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Bozo"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Maninka"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Minyanka"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Soninke"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Kassonke"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Hassaniya Arabic"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Songhay"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Dogon"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Tamasheq"
+  },
+  {
+   "iso3": "MLI",
+   "langLabel": "Bobo"
+  },
+  {
+   "iso3": "AGO",
+   "langLabel": "Portuguese"
+  },
+  {
+   "iso3": "BTN",
+   "langLabel": "Dzongkha"
+  },
+  {
+   "iso3": "BRN",
+   "langLabel": "British English"
+  },
+  {
+   "iso3": "BRN",
+   "langLabel": "Malay"
+  },
+  {
+   "iso3": "TZA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "TZA",
+   "langLabel": "Swahili"
+  },
+  {
+   "iso3": "PHL",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "PHL",
+   "langLabel": "Filipino"
+  },
+  {
+   "iso3": "PHL",
+   "langLabel": "Taglish"
+  },
+  {
+   "iso3": "CAF",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "CAF",
+   "langLabel": "Sango"
+  },
+  {
+   "iso3": "TGO",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "TUN",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "ZMB",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Xhosa"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Ndau"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Venda"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Chewa"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Khoisan"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Kalanga"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Shona"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Tonga"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Tswana"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Tsonga"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Sesotho"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Northern Ndebele"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Nambya"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Zimbabwe Sign Language"
+  },
+  {
+   "iso3": "ZWE",
+   "langLabel": "Barwe"
+  },
+  {
+   "iso3": "SSD",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BEN",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "BWA",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BFA",
+   "langLabel": "Dioula"
+  },
+  {
+   "iso3": "BFA",
+   "langLabel": "Bissa"
+  },
+  {
+   "iso3": "BFA",
+   "langLabel": "Mooré"
+  },
+  {
+   "iso3": "BDI",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "BDI",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BDI",
+   "langLabel": "Kirundi"
+  },
+  {
+   "iso3": "COM",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "COM",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "COM",
+   "langLabel": "Comorian"
+  },
+  {
+   "iso3": "COG",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "WLF",
+   "langLabel": "Wallisian"
+  },
+  {
+   "iso3": "PCN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "PCN",
+   "langLabel": "Pitkern"
+  },
+  {
+   "iso3": "CCK",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "TKL",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "TKL",
+   "langLabel": "Tokelauan"
+  },
+  {
+   "iso3": "IOT",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MID",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "DOM",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "HTI",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "HTI",
+   "langLabel": "Haitian Creole"
+  },
+  {
+   "iso3": "SLV",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "IRN",
+   "langLabel": "Persian"
+  },
+  {
+   "iso3": "IRQ",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "IRQ",
+   "langLabel": "Kurdish language"
+  },
+  {
+   "iso3": "CRI",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "ISR",
+   "langLabel": "Hebrew"
+  },
+  {
+   "iso3": "PAN",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "YEM",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "JOR",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "NIC",
+   "langLabel": "Spanish"
+  },
+  {
+   "iso3": "KGZ",
+   "langLabel": "Kyrgyz"
+  },
+  {
+   "iso3": "KWT",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "LAO",
+   "langLabel": "Lao"
+  },
+  {
+   "iso3": "LBN",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "MDV",
+   "langLabel": "Maldivian"
+  },
+  {
+   "iso3": "MYS",
+   "langLabel": "Malay"
+  },
+  {
+   "iso3": "MMR",
+   "langLabel": "Burmese"
+  },
+  {
+   "iso3": "NPL",
+   "langLabel": "Nepali"
+  },
+  {
+   "iso3": "OMN",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "PAK",
+   "langLabel": "Urdu"
+  },
+  {
+   "iso3": "PAK",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "MAF",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "ATF",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "JTN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "HMD",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ATB",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ATN",
+   "langLabel": "Norwegian"
+  },
+  {
+   "iso3": "SHN",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "PSE",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "PSE",
+   "langLabel": "Arabic"
+  },
+  {
+   "iso3": "SJM",
+   "langLabel": "Norwegian"
+  },
+  {
+   "iso3": "CRQ",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "CRQ",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "ASC",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "CUW",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "CUW",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "CUW",
+   "langLabel": "Papiamento"
+  },
+  {
+   "iso3": "VGB",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BLM",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "SXM",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "SXM",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "COK",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "COK",
+   "langLabel": "Cook Islands Maori"
+  },
+  {
+   "iso3": "BES",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "BES",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "BES",
+   "langLabel": "Papiamento"
+  },
+  {
+   "iso3": "NLD",
+   "langLabel": "Dutch"
+  },
+  {
+   "iso3": "PYF",
+   "langLabel": "French"
+  },
+  {
+   "iso3": "NFK",
+   "langLabel": "English"
+  },
+  {
+   "iso3": "NFK",
+   "langLabel": "Norfuk"
+  }
+ ]
+}

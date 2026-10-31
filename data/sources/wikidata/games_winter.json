@@ -1,0 +1,175 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:21:20+00:00",
+ "query": "SELECT ?event ?eventLabel ?year ?iso3 WHERE {\n  ?event wdt:P31 wd:Q137592217; wdt:P17 ?country. ?country wdt:P298 ?iso3.\n  OPTIONAL { ?event wdt:P580 ?start. }\n  OPTIONAL { ?event wdt:P585 ?date. }\n  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "event": "http://www.wikidata.org/entity/Q9583",
+   "iso3": "FRA",
+   "eventLabel": "1924 Winter Olympics",
+   "year": "1924"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9591",
+   "iso3": "CHE",
+   "eventLabel": "1928 Winter Olympics",
+   "year": "1928"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9596",
+   "iso3": "USA",
+   "eventLabel": "1932 Winter Olympics",
+   "year": "1932"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9607",
+   "iso3": "JPN",
+   "eventLabel": "1940 Winter Olympics",
+   "year": "1940"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9615",
+   "iso3": "CHE",
+   "eventLabel": "1948 Winter Olympics",
+   "year": "1948"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9623",
+   "iso3": "NOR",
+   "eventLabel": "1952 Winter Olympics",
+   "year": "1952"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9632",
+   "iso3": "ITA",
+   "eventLabel": "1956 Winter Olympics",
+   "year": "1956"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9634",
+   "iso3": "USA",
+   "eventLabel": "1960 Winter Olympics",
+   "year": "1960"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9636",
+   "iso3": "AUT",
+   "eventLabel": "1964 Winter Olympics",
+   "year": "1964"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9642",
+   "iso3": "FRA",
+   "eventLabel": "1968 Winter Olympics",
+   "year": "1968"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9646",
+   "iso3": "JPN",
+   "eventLabel": "1972 Winter Olympics",
+   "year": "1972"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9651",
+   "iso3": "AUT",
+   "eventLabel": "1976 Winter Olympics",
+   "year": "1976"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9652",
+   "iso3": "USA",
+   "eventLabel": "1980 Winter Olympics",
+   "year": "1980"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9657",
+   "iso3": "YUG",
+   "eventLabel": "1984 Winter Olympics",
+   "year": "1984"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9658",
+   "iso3": "CAN",
+   "eventLabel": "1988 Winter Olympics",
+   "year": "1988"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9660",
+   "iso3": "FRA",
+   "eventLabel": "1992 Winter Olympics",
+   "year": "1992"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9663",
+   "iso3": "NOR",
+   "eventLabel": "1994 Winter Olympics",
+   "year": "1994"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9664",
+   "iso3": "JPN",
+   "eventLabel": "1998 Winter Olympics",
+   "year": "1998"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9668",
+   "iso3": "USA",
+   "eventLabel": "2002 Winter Olympics",
+   "year": "2002"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9672",
+   "iso3": "ITA",
+   "eventLabel": "2006 Winter Olympics",
+   "year": "2006"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9674",
+   "iso3": "CAN",
+   "eventLabel": "2010 Winter Olympics",
+   "year": "2010"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9678",
+   "iso3": "RUS",
+   "eventLabel": "2014 Winter Olympics",
+   "year": "2014"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q9680",
+   "iso3": "KOR",
+   "eventLabel": "2018 Winter Olympics",
+   "year": "2018"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q193074",
+   "iso3": "CHN",
+   "eventLabel": "2022 Winter Olympics",
+   "year": "2022"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q699653",
+   "iso3": "AUT",
+   "eventLabel": "1988 Winter Paralympics",
+   "year": "1988"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q4630399",
+   "iso3": "ITA",
+   "eventLabel": "2026 Winter Olympics",
+   "year": "2026"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q29389034",
+   "iso3": "FRA",
+   "eventLabel": "2030 Winter Olympics",
+   "year": "2030"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q113511381",
+   "iso3": "USA",
+   "eventLabel": "2034 Winter Olympics",
+   "year": "2034"
+  }
+ ]
+}

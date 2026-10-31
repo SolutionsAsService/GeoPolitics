@@ -1,0 +1,187 @@
+{
+ "source": "Wikidata (CC0), https://query.wikidata.org/",
+ "fetched": "2026-10-31T21:21:35+00:00",
+ "query": "SELECT ?event ?eventLabel ?year ?iso3 WHERE {\n  ?event wdt:P3450 wd:Q19317; wdt:P17 ?country. ?country wdt:P298 ?iso3.\n  OPTIONAL { ?event wdt:P580 ?start. }\n  OPTIONAL { ?event wdt:P585 ?date. }\n  BIND(YEAR(COALESCE(?start, ?date)) AS ?year)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+ "rows": [
+  {
+   "event": "http://www.wikidata.org/entity/Q37285",
+   "iso3": "DEU",
+   "eventLabel": "2006 FIFA World Cup",
+   "year": "2006"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q46934",
+   "iso3": "ESP",
+   "eventLabel": "1982 FIFA World Cup",
+   "year": "1982"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q46938",
+   "iso3": "MEX",
+   "eventLabel": "1986 FIFA World Cup",
+   "year": "1986"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q46943",
+   "iso3": "ARG",
+   "eventLabel": "1978 FIFA World Cup",
+   "year": "1978"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q47735",
+   "iso3": "JPN",
+   "eventLabel": "2002 FIFA World Cup",
+   "year": "2002"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q47735",
+   "iso3": "KOR",
+   "eventLabel": "2002 FIFA World Cup",
+   "year": "2002"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q48432",
+   "iso3": "URY",
+   "eventLabel": "1930 FIFA World Cup",
+   "year": "1930"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q79859",
+   "iso3": "BRA",
+   "eventLabel": "2014 FIFA World Cup",
+   "year": "2014"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q101730",
+   "iso3": "FRA",
+   "eventLabel": "1998 FIFA World Cup",
+   "year": "1998"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q101751",
+   "iso3": "USA",
+   "eventLabel": "1994 FIFA World Cup",
+   "year": "1994"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q131075",
+   "iso3": "CHE",
+   "eventLabel": "1954 FIFA World Cup",
+   "year": "1954"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q131591",
+   "iso3": "FRA",
+   "eventLabel": "1938 FIFA World Cup",
+   "year": "1938"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q132515",
+   "iso3": "BRA",
+   "eventLabel": "1950 FIFA World Cup",
+   "year": "1950"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q132529",
+   "iso3": "ITA",
+   "eventLabel": "1990 FIFA World Cup",
+   "year": "1990"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q132533",
+   "iso3": "SWE",
+   "eventLabel": "1958 FIFA World Cup",
+   "year": "1958"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q132664",
+   "iso3": "MEX",
+   "eventLabel": "1970 FIFA World Cup",
+   "year": "1970"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q134202",
+   "iso3": "GBR",
+   "eventLabel": "1966 FIFA World Cup",
+   "year": "1966"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q160813",
+   "iso3": "CHL",
+   "eventLabel": "1962 FIFA World Cup",
+   "year": "1962"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q166121",
+   "iso3": "DEU",
+   "eventLabel": "1974 FIFA World Cup",
+   "year": "1974"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q170645",
+   "iso3": "RUS",
+   "eventLabel": "2018 FIFA World Cup",
+   "year": "2018"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q176883",
+   "iso3": "ZAF",
+   "eventLabel": "2010 FIFA World Cup",
+   "year": "2010"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q284163",
+   "iso3": "QAT",
+   "eventLabel": "2022 FIFA World Cup",
+   "year": "2022"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q1477177",
+   "iso3": "ITA",
+   "eventLabel": "1934 FIFA World Cup",
+   "year": "1934"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q5020214",
+   "iso3": "CAN",
+   "eventLabel": "2026 FIFA World Cup",
+   "year": "2026"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q5020214",
+   "iso3": "USA",
+   "eventLabel": "2026 FIFA World Cup",
+   "year": "2026"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q5020214",
+   "iso3": "MEX",
+   "eventLabel": "2026 FIFA World Cup",
+   "year": "2026"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q14935989",
+   "iso3": "ESP",
+   "eventLabel": "2030 FIFA World Cup",
+   "year": "2030"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q14935989",
+   "iso3": "PRT",
+   "eventLabel": "2030 FIFA World Cup",
+   "year": "2030"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q14935989",
+   "iso3": "MAR",
+   "eventLabel": "2030 FIFA World Cup",
+   "year": "2030"
+  },
+  {
+   "event": "http://www.wikidata.org/entity/Q43215379",
+   "iso3": "SAU",
+   "eventLabel": "FIFA World Cup Saudi Arabia 2034",
+   "year": "2034"
+  }
+ ]
+}
